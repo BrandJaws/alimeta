@@ -1,0 +1,70 @@
+.Persons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.Persons img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.Persons img:hover {
+    filter: grayscale(0%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.Persons span {
+    display: block !important;
+}
+
+.person-content {
+    padding: 20px 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.person-content h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg, #571fdf, #ab24d4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.Persons div {
+    flex: 0 0 auto;
+    width: 20%;
+    cursor: url(../../public/images/video-popup.svg), auto;
+}
+
+
+@media(max-width: 1400px){
+    .person-content h2{
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width: 991px){
+    .person-content h2{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 767px){
+    .person-content h2{
+        font-size: 18px;
+    }
+}

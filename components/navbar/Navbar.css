@@ -1,0 +1,260 @@
+nav.navbar {
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: .5;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    background-color: #000 !important;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 45%);
+    z-index: 1;
+    max-width: 1370px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    transform: translate(0px, -100%);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.NavLoad .navbar.sticky {
+    position: fixed;
+    transform: translate(0px, 16px);
+}
+
+.NavLoad nav.navbar {
+    transform: translate(0px, 26px);
+    animation-delay: 2s;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    z-index: -1;
+    border-radius: 0.5rem;
+    content: '';
+}
+
+.navbar:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(270deg, #b421d3 0, #fed4a4 48.96%, #fed4a4 73.96%, #4d1f80 97.92%);
+    z-index: -2;
+    border-radius: 0.5rem;
+    content: '';
+}
+
+.navWrapp {
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavItems a {
+    color: #fff;
+    padding: 0 26px;
+    font-weight: normal;
+    font-size: 15px;
+    display: block;
+    line-height: 24px;
+}
+
+.NavItems a:hover {
+    color: #d24eea;
+}
+
+.NavItems ul li:last-child a {
+    color: #d24eea;
+    border-left: 1px solid #d24eea;
+    padding-left: 35px;
+    margin-left: 20px;
+    padding-right: 0;
+}
+
+.NavItems ul li:last-child a:hover {
+    color: #fff;
+}
+
+.NavItems ul li.submenu {
+    background-image: url(../../public/images/dropdown-icon.png);
+    background-repeat: no-repeat;
+    background-position: center right 6px;
+}
+
+.NavItems ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MenuToggler{
+    display: none !important;
+}
+
+
+/* IPAD responsive */
+
+@media(max-width: 1400px){
+    nav.navbar{
+        max-width: 95%;
+    }
+    .NavItems a{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1100px){
+    nav.navbar{
+        max-width: 95%;
+    }
+}
+
+@media(max-width: 991px) {
+    .NavItems {
+        display: none;
+    }
+
+    nav.navbar {
+        max-width: 90%;
+    }
+
+    .navWrapp {
+        padding: 0 15px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .Logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .MenuToggler{
+        display: block !important;
+    }
+
+    .MenuOpened .NavItems{
+        display: block;
+    }
+
+    .MenuOpened .NavItems ul{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .MenuOpened .NavItems a {
+        padding: 6px 26px 6px 0px;
+    }
+
+    .MenuOpened .NavItems ul li:last-child a {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .closeImage{
+        display: none !important;
+    }
+
+    .MenuOpened .closeImage{
+        display: block !important;
+    }
+
+    .MenuOpened .MenuImage{
+        display: none !important;
+    }
+}
+
+
+/* Mobile responsive */
+
+@media(max-width: 767px) {
+    .NavItems {
+        display: none;
+    }
+
+    nav.navbar {
+        max-width: 90%;
+    }
+
+    .navWrapp {
+        padding: 0 15px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .Logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .MenuToggler{
+        display: block !important;
+    }
+
+    .MenuOpened .NavItems{
+        display: block;
+    }
+
+    .MenuOpened .NavItems ul{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .MenuOpened .NavItems a {
+        padding: 6px 26px 6px 0px;
+    }
+
+    .MenuOpened .NavItems ul li:last-child a {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .closeImage{
+        display: none !important;
+    }
+
+    .MenuOpened .closeImage{
+        display: block !important;
+    }
+
+    .MenuOpened .MenuImage{
+        display: none !important;
+    }
+}

@@ -1,0 +1,61 @@
+.Offer {
+    background: url(../../public/images/offer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px;
+}
+
+.Offer h2 {
+    font-size: 76px;
+    color: #fff;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.Offer p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0px auto;
+    font-family: 'Akzidenz-Grotesk BQ Extended';
+    max-width: 910px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+
+@media(max-width: 1400px){
+    .Offer h2{
+        font-size: 56px;
+    }
+    .Offer p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .Offer{
+        padding: 40px 0px 60px 0px;
+    }
+    .Offer h2{
+        font-size: 42px;
+    }
+    .Offer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media(max-width: 767px){
+    .Offer{
+        padding: 40px 0px 60px 0px;
+    }
+    .Offer h2{
+        font-size: 42px;
+    }
+    .Offer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

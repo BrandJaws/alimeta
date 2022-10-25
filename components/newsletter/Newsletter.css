@@ -1,0 +1,127 @@
+.Newsletter {
+    background: url(../../public/images/newsletter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.Newsletter h2 {
+    font-size: 57px;
+    font-weight: normal;
+    margin: 0px 0px 15px 0px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Newsletter p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0px;
+    font-family: 'Akzidenz-Grotesk BQ Extended';
+}
+
+.formControl {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+    border: none;
+    margin-right: 20px;
+    outline: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Akzidenz-Grotesk BQ Extended';
+}
+
+.formControl:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(270deg, #b421d3 0, #fed4a4 48.96%, #fed4a4 73.96%, #4d1f80 97.92%);
+    z-index: -2;
+    border-radius: 0.5rem;
+    content: '';
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.submitBtn {
+    position: relative;
+    background: url(../../public/images/Subscribe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+    padding: 18px 55px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submitBtn::after {
+    content: "";
+    background: url(../../public/images/subscribe-dotted.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -13px;
+    top: -18px;
+    width: 100%;
+    height: 60px;
+    z-index: -1;
+}
+
+
+@media(max-width: 991px){
+    .Newsletter{
+        padding: 40px 0px;
+    }
+    .Newsletter h2{
+        font-size: 42px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .formControl{
+        margin-right: 0px;
+    }
+    .submitBtn{
+        margin-top: 20px;
+    }
+    .Newsletter p{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .Newsletter{
+        padding: 40px 0px;
+    }
+    .Newsletter h2{
+        font-size: 42px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .formControl{
+        margin-right: 0px;
+    }
+    .submitBtn{
+        margin-top: 20px;
+    }
+    .Newsletter p{
+        font-size: 16px;
+    }
+}

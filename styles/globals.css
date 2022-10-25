@@ -1,0 +1,48 @@
+html,
+body {
+  padding: 0 0 325px  0;
+  margin: 0;
+  font-family: 'Akzidenz-Grotesk';
+}
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk';
+  src: url('../public/fonts/AkzidenzGroteskBQ-MedExt.eot');
+  src: url('../public/fonts/AkzidenzGroteskBQ-MedExt.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/AkzidenzGroteskBQ-MedExt.woff2') format('woff2'),
+    url('../public/fonts/AkzidenzGroteskBQ-MedExt.woff') format('woff'),
+    url('../public/fonts/AkzidenzGroteskBQ-MedExt.svg#AkzidenzGroteskBQ-MedExt') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk BQ Extended';
+  src: url('../public/fonts/AkzidenzGroteskBQ-Ext.eot');
+  src: url('../public/fonts/AkzidenzGroteskBQ-Ext.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/AkzidenzGroteskBQ-Ext.woff2') format('woff2'),
+    url('../public/fonts/AkzidenzGroteskBQ-Ext.woff') format('woff'),
+    url('../public/fonts/AkzidenzGroteskBQ-Ext.svg#AkzidenzGroteskBQ-Ext') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@media(max-width: 991px){
+  body,html{
+    padding: 0px;
+  }
+}
