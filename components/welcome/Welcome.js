@@ -13,13 +13,13 @@ const Welcome = () => {
         <>
             <section className="Splash">
                 <h1>
-                    <span><Image src={char1} /></span>
-                    <span><Image src={char2} /></span>
-                    <span><Image src={char3} /></span>
-                    <span><Image src={char4} /></span>
-                    <span><Image src={char5} /></span>
-                    <span><Image src={char6} /></span>
-                    <span><Image src={char7} /></span>
+                    <span><Image src={char1} alt="char1" /></span>
+                    <span><Image src={char2} alt="char2" /></span>
+                    <span><Image src={char3} alt="char3" /></span>
+                    <span><Image src={char4} alt="char4" /></span>
+                    <span><Image src={char5} alt="char5" /></span>
+                    <span><Image src={char6} alt="char6" /></span>
+                    <span><Image src={char7} alt="char7" /></span>
                 </h1>
             </section>
         </>

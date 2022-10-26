@@ -17,10 +17,10 @@ function Navbar() {
                 <div className='navWrapp'>
                     <div className='Logo'>
                         <Link href='/'>
-                            <a><Image src={Logo} /></a>
+                            <a><Image src={Logo} alt="Logo" /></a>
                         </Link>
                         <Link href='/'>
-                            <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} /></div><div className='closeImage'><Image src={CloseIcon} /></div></a>
+                            <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
                         </Link>
                     </div>
                     <div className='NavItems' id='NavItems'>

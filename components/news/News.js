@@ -19,7 +19,7 @@ function News() {
                                 <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
                             </video>
                             <Link href='/'>
-                                <a className='playBtn'><Image src={Play} /></a>
+                                <a className='playBtn'><Image src={Play} alt="Play" /></a>
                             </Link>
                         </div>
                         <div className='videoGroup' data-aos="fade-up" data-aos-offset="500">
@@ -27,7 +27,7 @@ function News() {
                                 <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
                             </video>
                             <Link href='/'>
-                                <a className='playBtn'><Image src={Play} /></a>
+                                <a className='playBtn'><Image src={Play}  alt="Play" /></a>
                             </Link>
                         </div>
                         <div className='videoGroup' data-aos="fade-up" data-aos-offset="700">
@@ -35,7 +35,7 @@ function News() {
                                 <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
                             </video>
                             <Link href='/'>
-                                <a className='playBtn'><Image src={Play} /></a>
+                                <a className='playBtn'><Image src={Play} alt="Play" /></a>
                             </Link>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ function News() {
                     </div>
                     <div className='NewsPost'>
                         <div className='ImagePost'>
-                            <Image src={Post} />
+                            <Image src={Post} alt="Post" />
                         </div>
                         <div className='PostData'>
                             <Link href='/'>

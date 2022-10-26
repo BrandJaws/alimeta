@@ -24,13 +24,13 @@ function Started() {
     });
     return (
         <>
-            <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} /></button>
+            <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} alt="Down" /></button>
             <section className='Started' id='Started'>
                 <div className='container'>
                     <div className='text-center'>
                     {/* style={{ width: `${width}` }} */}
                         <h2>Gain Popularity. Achieve Growth.</h2>
-                        <h1><Image src={HeadingTxt} width={width} /></h1>
+                        <h1><Image src={HeadingTxt} width={width} alt="headingTxt" /></h1>
                     </div>
                 </div>
             </section>

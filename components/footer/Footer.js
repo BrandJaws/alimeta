@@ -15,14 +15,14 @@ function Footer() {
             <section className='Footer'>
                 <div className='container flex'>
                     <div className='footer-left'>
-                        <Image src={FooterStarted} />
+                        <Image src={FooterStarted} alt="FooterStarted" />
                         <Link href='/'>
                             <a className='getTouch'>GET IN TOUCH</a>
                         </Link>
                     </div>
                     <div className='footer-right'>
                         <div className='LogoFooter'>
-                            <Image src={FooterLogo} />
+                            <Image src={FooterLogo} alt="FooterLogo" />
                         </div>
                         <div className='footerLinks'>
                             <ul>
@@ -85,27 +85,27 @@ function Footer() {
                             <ul>
                                 <li>
                                     <Link href='/'>
-                                        <a><Image src={Facebook} /></a>
+                                        <a><Image src={Facebook} alt="Facebook" /></a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href='/'>
-                                        <a><Image src={Instagram} /></a>
+                                        <a><Image src={Instagram} alt="Instagram" /></a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href='/'>
-                                        <a><Image src={Linkedin} /></a>
+                                        <a><Image src={Linkedin} alt="Linkedin" /></a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href='/'>
-                                        <a><Image src={Twitter} /></a>
+                                        <a><Image src={Twitter} alt="Twitter" /></a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href='/'>
-                                        <a><Image src={Youtube} /></a>
+                                        <a><Image src={Youtube} alt="Youtube" /></a>
                                     </Link>
                                 </li>
                             </ul>

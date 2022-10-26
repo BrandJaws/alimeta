@@ -17,21 +17,21 @@ function Persons() {
     return (
         <>
             <section className='Persons'>
-                <div onClick={() => setShow(true)}><Image src={p1} /></div>
-                <div onClick={() => setShow(true)}><Image src={p2} /></div>
-                <div onClick={() => setShow(true)}><Image src={p3} /></div>
-                <div onClick={() => setShow(true)}><Image src={p4} /></div>
-                <div onClick={() => setShow(true)}><Image src={p5} /></div>
+                <div onClick={() => setShow(true)}><Image src={p1} alt="p1" /></div>
+                <div onClick={() => setShow(true)}><Image src={p2} alt="p2" /></div>
+                <div onClick={() => setShow(true)}><Image src={p3} alt="p3" /></div>
+                <div onClick={() => setShow(true)}><Image src={p4} alt="p4" /></div>
+                <div onClick={() => setShow(true)}><Image src={p5} alt="p5" /></div>
             </section>
             <section className='person-content'>
                 <h2 data-aos="fade-right">Shaping the future of the creator economy</h2>
             </section>
             <section className='Persons'>
-                <div onClick={() => setShow(true)}><Image src={p6} /></div>
-                <div onClick={() => setShow(true)}><Image src={p7} /></div>
-                <div onClick={() => setShow(true)}><Image src={p8} /></div>
-                <div onClick={() => setShow(true)}><Image src={p9} /></div>
-                <div onClick={() => setShow(true)}><Image src={p10} /></div>
+                <div onClick={() => setShow(true)}><Image src={p6} alt="p6" /></div>
+                <div onClick={() => setShow(true)}><Image src={p7} alt="p7" /></div>
+                <div onClick={() => setShow(true)}><Image src={p8}  alt="p8"/></div>
+                <div onClick={() => setShow(true)}><Image src={p9} alt="p9" /></div>
+                <div onClick={() => setShow(true)}><Image src={p10} alt="p10" /></div>
             </section>
             {show && <Modal show={show} setShow={setShow} />}
         </>
