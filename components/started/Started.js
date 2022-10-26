@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Image from "next/image";
-import HeadingTxt from "../../public/images/started-heading.png";
 import Down from "../../public/images/down-icon.png";
 import $ from "jquery";
 
 
 function Started() {
-    const [width, setWidth] = useState('20%');
+
     const scrollToSection = (e) => {
         if (typeof window !== "undefined") {
             $('html, body').animate({
@@ -14,23 +13,26 @@ function Started() {
             }, 2000);
         }
     }
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.onscroll = (e) => {
-                console.log(e, "event target");
-                setWidth(window.scrollY)
-            }
-        }
-    });
+
+    if (typeof window !== "undefined") {
+        $(window).scroll(function () {
+            var mass = Math.min(20, 1 + 0.005 * $(this).scrollTop());
+            $('#expandable').css('transform', 'scale(' + mass + ')');
+        });
+    }
+
     return (
         <>
             <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} alt="Down" /></button>
             <section className='Started' id='Started'>
-                <div className='container'>
+                <div className=''>
                     <div className='text-center'>
-                    {/* style={{ width: `${width}` }} */}
+                        {/* style={{ width: `${width}` }} */}
                         <h2>Gain Popularity. Achieve Growth.</h2>
-                        <h1><Image src={HeadingTxt} width={width} alt="headingTxt" /></h1>
+                        <h1 id='expandable'>
+                            Get Starrrrred!
+                            {/* <Image src={HeadingTxt} width={width} alt="headingTxt" /> */}
+                        </h1>
                     </div>
                 </div>
             </section>

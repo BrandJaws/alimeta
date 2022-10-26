@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0px;
+    overflow: hidden;
 }
 
 .container {
@@ -23,14 +24,16 @@
 }
 
 .Started h1 {
-    margin: 30px 0px;
-    font-size: 120px;
-    background: -webkit-linear-gradient(45deg, #3f02d3, #8d35f1 80%);
+    margin: 50px 0px 20px;
+    font-size: 20px;
+    background: url(../../public/images/texture.jpg);
+    background-size: cover;
     -webkit-background-clip: text;
+    background-clip:text; 
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
+    font-weight: normal;
+    white-space: nowrap;
 }
 
 .Started p {
