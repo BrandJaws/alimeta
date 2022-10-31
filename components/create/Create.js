@@ -47,7 +47,7 @@ function Create() {
                         <h3>We will make you the Star</h3>
                         <p>Being Creators ourselves, we know how help creators expand & grow. We will be the wind beneath your wings as you take flight!</p>
                         <Link href='/'>
-                            <a className='btn-theme'><Image src={StarIcon} alt="Stars" /> Star Maker</a>
+                            <a className='btn-theme'><Image src={StarIcon} alt="Stars" /> Starmaker Program</a>
                         </Link>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 .CreateSection {
-    padding: 120px 0px;
+    padding: 90px 0px;
     background-color: #fff;
 }
 
@@ -45,13 +45,13 @@
     background: url(../../public/images/btn-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 80px;
+    padding: 20px 40px;
     border-radius: 50px;
     display: flex;
     font-size: 21px;
     text-transform: uppercase;
     position: relative;
-    max-width: 360px;
+    max-width: 420px;
     align-items: center;
     justify-content: space-between;
     margin: 35px auto 0 auto;
