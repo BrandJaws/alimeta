@@ -44,11 +44,19 @@
     font-size: 20px;
     float: right;
     position: relative;
-    margin-top: 35px;
+    margin-top: 0px;
     margin-right: 145px;
+    z-index: 2;
 }
 
-.getTouch::after {
+.btn-wrapp.footerBtn {
+    position: relative;
+    pointer-events: auto !important;
+    height: 123px;
+    padding: 25px 0px;
+}
+
+/* .getTouch::after {
     background: url(../../public/images/touch-dotted.png);
     content: "";
     position: absolute;
@@ -60,10 +68,26 @@
     height: 75px;
     border-radius: 50px;
     z-index: -1;
-}
+} */
 
 .footer-left {
     overflow: hidden;
+}
+
+.btn-shadow-3 {
+    content: "";
+    background: url(../../public/images/touch-dotted.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 134px;
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+    max-width: 420px;
+    margin: 0 auto;
+    z-index: 1;
+    max-width: 290px;
+    left: 70px !important;
 }
 
 .Footer .flex {

@@ -8,10 +8,27 @@
 .newsHeader h2 {
     font-size: 57px;
     margin: 0px;
-    background: -webkit-linear-gradient(90deg, #7f38f8, #fee0af 80%);
+    background: url(../../public/images/heading-overllay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -820px 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: normal;
+    text-transform: uppercase;
+}
+
+.newsHeader h3 {
+    font-size: 57px;
+    margin: 0px;
+    background: url(../../public/images/heading-overllay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -520px 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 .newsHeader {

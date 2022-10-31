@@ -10,15 +10,24 @@ import Youtube from "../../public/images/youtube.jpg";
 import FooterStarted from "../../public/images/footer-heading.png";
 
 function Footer() {
+    if (typeof window !== "undefined") {
+        var scene = document.getElementById('scene3');
+        var parallax = new Parallax(scene);
+    }
     return (
         <>
             <section className='Footer'>
                 <div className='container flex'>
                     <div className='footer-left'>
                         <Image src={FooterStarted} alt="FooterStarted" />
-                        <Link href='/'>
-                            <a className='getTouch'>GET IN TOUCH</a>
-                        </Link>
+                        <div className='btn-wrapp footerBtn'>
+                            <Link href='/'>
+                                <a className='getTouch'>GET IN TOUCH</a>
+                            </Link>
+                            <div className='scene2' id='scene3'>
+                                <span className='btn-shadow-3' data-depth="0.80"></span>
+                            </div>
+                        </div>
                     </div>
                     <div className='footer-right'>
                         <div className='LogoFooter'>

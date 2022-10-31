@@ -40,7 +40,7 @@ function News() {
                         </div>
                     </div>
                     <div className='newsHeader'>
-                        <h2>Breaking News!</h2>
+                        <h3>Breaking News!</h3>
                     </div>
                     <div className='NewsPost'>
                         <div className='ImagePost'>

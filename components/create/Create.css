@@ -55,9 +55,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 35px auto 0 auto;
+    z-index: 2;
 }
 
-.btn-theme::after {
+.btn-shadow {
     content: "";
     background: url(../../public/images/btn-dotted.png);
     background-repeat: no-repeat;
@@ -65,9 +66,9 @@
     height: 124px;
     position: absolute;
     background-size: contain;
-    left: -10px;
-    bottom: -84px;
-    z-index: -1;
+    z-index: 1;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
 .btn-theme:hover {
@@ -75,9 +76,28 @@
     color: #fff;
 }
 
+.btn-wrapp{
+    position: relative;
+    pointer-events: auto !important;
+    height: 65px;
+}
+
+.scene{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+}
+
 .starImage {
     -webkit-animation: rotating 40s linear infinite;
     animation: rotating 40s linear infinite;
+    width: 676px;
+    height: 554px;
+}
+
+.starImage img{
+    width: 100% !important;
 }
 
 .btn-theme img {
