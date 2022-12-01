@@ -1,13 +1,17 @@
 import React from 'react'
+import Image from "next/image";
+import Line from "../../public/images/heading-border.png";
 
 function Offer() {
     return (
         <>
             <section className='Offer'>
                 <div className='container'>
-                    <div className='text-center'>
-                        <h2>What do<br />we offer?</h2>
-                        <p>We offer Financial Investment, Data Analytics & Business Intelligence, Content Strategy & Creative Supervision, Brand, PR & Social Media Expertise to our creator partners, which will ensure that they Gain Popularity & Achieve Growth.</p>
+                    <div className='offer-text'>
+                        <div className='text-center'>
+                            <h2>WE'LL TAKE CARE OF EVERYTHING ELSE.</h2>
+                            <Image src={Line} alt="Line" />
+                        </div>
                     </div>
                 </div>
             </section>

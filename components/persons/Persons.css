@@ -4,6 +4,14 @@
     background-color: #fff;
 }
 
+.gallery{
+    padding: 120px;
+    background-image: url(../../public/images/gallery-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .Persons img {
     width: 100%;
     display: block;
@@ -31,13 +39,17 @@
 .category {
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .category h2 {
     position: absolute;
-    left: 60px;
+    left: 0px;
+    right: 0px;
     bottom: -100%;
     color: #fff;
+    font-family: 'Gotham';
+    font-weight: 500;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
@@ -57,16 +69,14 @@
 .person-content {
     padding: 20px 15px;
     text-align: center;
-    background-color: #fff;
 }
 
 .person-content h2 {
-    font-size: 42px;
-    text-transform: uppercase;
-    background: -webkit-linear-gradient(45deg, #571fdf, #ab24d4 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    color: #febbff;
     margin: 0px;
+    font-family: 'FatFrank';
+    text-transform: uppercase;
 }
 
 .Persons div {

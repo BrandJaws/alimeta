@@ -1,37 +1,39 @@
 import React, { useEffect, useState } from 'react'
 import Image from "next/image";
-import Down from "../../public/images/down-icon.png";
+import HeadingTxt from "../../public/images/started-heading.png";
 import $ from "jquery";
 
 
 function Started() {
 
-    const scrollToSection = (e) => {
+    // const scrollToSection = (e) => {
+    //     if (typeof window !== "undefined") {
+    //         $('html, body').animate({
+    //             scrollTop: $("#Started").offset().top
+    //         }, 2000);
+    //     }
+    // }
+    const [width, setWidth] = useState('20%');
+    useEffect(() => {
         if (typeof window !== "undefined") {
-            $('html, body').animate({
-                scrollTop: $("#Started").offset().top
-            }, 2000);
+            window.onscroll = (e) => {
+                console.log(e, "event target");
+                setWidth(window.scrollY)
+            }
         }
-    }
-
-    if (typeof window !== "undefined") {
-        $(window).scroll(function () {
-            var mass = Math.min(20, 1 + 0.005 * $(this).scrollTop());
-            $('#expandable').css('transform', 'scale(' + mass + ')');
-        });
-    }
+    });
 
     return (
         <>
-            <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} alt="Down" /></button>
+            {/* <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} alt="Down" /></button> */}
             <section className='Started' id='Started'>
                 <div className=''>
                     <div className='text-center'>
-                        {/* style={{ width: `${width}` }} */}
-                        <h2>Gain Popularity. Achieve Growth.</h2>
+                        
+                        <h2>Gain Popularity. Achieve Growth. Go Global.</h2>
                         <h1 id='expandable'>
-                            Get Starrrrred!
-                            {/* <Image src={HeadingTxt} width={width} alt="headingTxt" /> */}
+                            {/* Get Starrrrred! */}
+                            <Image src={HeadingTxt} width={width} alt="headingTxt" />
                         </h1>
                     </div>
                 </div>

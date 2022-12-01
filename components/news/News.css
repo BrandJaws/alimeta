@@ -1,6 +1,6 @@
 .News {
-    padding: 80px 0px;
-    background: url(../../public/images/news-bg.jpg);
+    padding: 140px 0px;
+    background: url(../../public/images/hot-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,20 +19,45 @@
 }
 
 .newsHeader h3 {
-    font-size: 57px;
+    font-size: 49px;
+    color: #fea5ff;
+    font-family: 'FatFrank';
+    text-transform: uppercase;
+    margin: 0 55px;
+}
+
+
+.newsHeader {
+    margin: 0px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoGroup h4{
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.videoGroup p{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Gotham Book';
+}
+
+.bottom-heading h5{
+    font-size: 32px;
+    color: #fea5ff;
     margin: 0px;
-    background: url(../../public/images/heading-overllay.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -520px 0px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: normal;
     text-transform: uppercase;
 }
 
-.newsHeader {
-    margin: 0px 0px 40px 50px;
+.newsHeader div{
+    width: 50%;
 }
 
 .newsHeader p {

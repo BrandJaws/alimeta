@@ -1,8 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from "next/image";
-import Play from "../../public/images/play-btn.png";
-import Post from "../../public/images/post.jpg";
+import Heading from "../../public/images/hot-heading.png";
+import Blog1 from "../../public/images/blog-1.jpg";
+import Blog2 from "../../public/images/blog-2.jpg";
+import Blog3 from "../../public/images/blog-3.jpg";
+
 
 function News() {
     return (
@@ -10,48 +12,32 @@ function News() {
             <section className='News'>
                 <div className='container'>
                     <div className='newsHeader'>
-                        <h2>What’s Hot!</h2>
-                        <p>Click here to get your daily dose of the latest & most happening trends!</p>
+                        <div>
+                            <Image src={Heading} alt="Play" />
+                        </div>
+                        <div>
+                            <h3>Get your daily dose of what's up and coming in the creator world.</h3>
+                        </div>
                     </div>
                     <div className='videoList'>
                         <div className='videoGroup' data-aos="fade-up" data-aos-offset="300">
-                            <video className='videoBox'>
-                                <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
-                            </video>
-                            <Link href='/'>
-                                <a className='playBtn'><Image src={Play} alt="Play" /></a>
-                            </Link>
+                            <Image src={Blog1} alt="Play" />
+                            <h4>Lorem ipsum dolor sit ameT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
                         <div className='videoGroup' data-aos="fade-up" data-aos-offset="500">
-                            <video className='videoBox'>
-                                <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
-                            </video>
-                            <Link href='/'>
-                                <a className='playBtn'><Image src={Play}  alt="Play" /></a>
-                            </Link>
+                            <Image src={Blog2} alt="Play" />
+                            <h4>Lorem ipsum dolor sit ameT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
                         <div className='videoGroup' data-aos="fade-up" data-aos-offset="700">
-                            <video className='videoBox'>
-                                <source src="https://jellysmack.com/wp-content/uploads/2022/02/ADDTL_jellysmack_longform_1920x1080_SANSattribution.mp4" type="video/mp4" />
-                            </video>
-                            <Link href='/'>
-                                <a className='playBtn'><Image src={Play} alt="Play" /></a>
-                            </Link>
+                            <Image src={Blog3} alt="Play" />
+                            <h4>Lorem ipsum dolor sit ameT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
                     </div>
-                    <div className='newsHeader'>
-                        <h3>Breaking News!</h3>
-                    </div>
-                    <div className='NewsPost'>
-                        <div className='ImagePost'>
-                            <Image src={Post} alt="Post" />
-                        </div>
-                        <div className='PostData'>
-                            <Link href='/'>
-                                <a>Click here </a>
-                            </Link>
-                            <p>to get the latest<br />news about the <span>‘Creator Economy’.</span></p>
-                        </div>
+                    <div className='text-center bottom-heading'>
+                        <h5>Be the first to know of the latest, on the creator economy.</h5>
                     </div>
                 </div>
             </section>

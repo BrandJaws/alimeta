@@ -4,6 +4,7 @@ import Banner from '../components/banner/Banner'
 import Started from '../components/started/Started'
 import Create from '../components/create/Create'
 import Offer from '../components/offer/Offer'
+import What from '../components/what/what'
 import Persons from '../components/persons/Persons'
 import News from '../components/news/News'
 import Newsletter from '../components/newsletter/Newsletter'
@@ -67,6 +68,7 @@ export default function Home() {
       <Started />
       <Create />
       <Offer />
+      <What />
       <Persons />
       <News />
       <Newsletter />

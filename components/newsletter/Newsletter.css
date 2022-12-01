@@ -1,8 +1,8 @@
 .Newsletter {
-    background: url(../../public/images/newsletter-bg.jpg);
+    background: #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0px;
+    padding: 160px 0px 0px 0px;
 }
 
 .Newsletter h2 {
@@ -21,9 +21,54 @@
     font-family: 'Akzidenz-Grotesk BQ Extended';
 }
 
+.headSubs{
+    max-width: 500px;
+}
+
+.headSubs h4 {
+    font-size: 27px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    width: 100%;
+    border: none;
+    background-color: #8500e2;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.max-width-1000{
+    max-width: 1000px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
+
 .width-adjust{
     width: 330px;
     height: 32px;
+}
+
+.max-width-1000 p{
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 60px;
 }
 
 .btn-shadow-2 {

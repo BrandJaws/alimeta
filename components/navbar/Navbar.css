@@ -1,15 +1,18 @@
 nav.navbar {
-    border-radius: 0.5rem;
+    border-radius: 0;
     margin-top: 1rem;
     text-transform: uppercase;
     font-weight: 600;
     line-height: .5;
-    padding-top: 1.125rem;
-    padding-bottom: 1.125rem;
-    background-color: #000 !important;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: transparent !important;
+    background-image: url(../../public/images/header-bg.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
     box-shadow: 0 4px 10px rgb(0 0 0 / 45%);
     z-index: 1;
-    max-width: 1370px;
+    max-width: 100%;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -26,11 +29,11 @@ nav.navbar {
 
 .NavLoad .navbar.sticky {
     position: fixed;
-    transform: translate(0px, 16px);
+    transform: translate(0px, 0px);
 }
 
 .NavLoad nav.navbar {
-    transform: translate(0px, 26px);
+    transform: translate(0px, 0px);
     animation-delay: 2s;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -39,35 +42,13 @@ nav.navbar {
     transition: all .5s ease-in-out;
 }
 
-.navbar:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: inherit;
-    z-index: -1;
-    border-radius: 0.5rem;
-    content: '';
-}
-
-.navbar:after {
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background: linear-gradient(270deg, #b421d3 0, #fed4a4 48.96%, #fed4a4 73.96%, #4d1f80 97.92%);
-    z-index: -2;
-    border-radius: 0.5rem;
-    content: '';
-}
-
 .navWrapp {
-    padding: 0 36px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1106px;
+    margin: 0 auto;
 }
 
 .NavItems a {
@@ -77,22 +58,11 @@ nav.navbar {
     font-size: 15px;
     display: block;
     line-height: 24px;
+    font-family: 'Gotham Book';
 }
 
 .NavItems a:hover {
-    color: #d24eea;
-}
-
-.NavItems ul li:last-child a {
-    color: #d24eea;
-    border-left: 1px solid #d24eea;
-    padding-left: 35px;
-    margin-left: 20px;
-    padding-right: 0;
-}
-
-.NavItems ul li:last-child a:hover {
-    color: #fff;
+    color: #fe94ff;
 }
 
 .NavItems ul li.submenu {
@@ -110,6 +80,10 @@ nav.navbar {
     justify-content: space-between;
 }
 
+.NavItems ul li:last-child a{
+    padding-right: 0px;
+}
+
 .MenuToggler{
     display: none !important;
 }
@@ -119,7 +93,7 @@ nav.navbar {
 
 @media(max-width: 1400px){
     nav.navbar{
-        max-width: 95%;
+        max-width: 100%;
     }
     .NavItems a{
         font-size: 13px;
@@ -128,7 +102,7 @@ nav.navbar {
 
 @media(max-width: 1100px){
     nav.navbar{
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
@@ -138,7 +112,7 @@ nav.navbar {
     }
 
     nav.navbar {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .navWrapp {
@@ -203,7 +177,7 @@ nav.navbar {
     }
 
     nav.navbar {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .navWrapp {

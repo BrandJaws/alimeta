@@ -17,7 +17,7 @@ function Navbar() {
                 <div className='navWrapp'>
                     <div className='Logo'>
                         <Link href='/'>
-                            <a><Image src={Logo} alt="Logo" /></a>
+                            <a><Image src={Logo} alt="Logo" height={33} width={200} /></a>
                         </Link>
                         <Link href='/'>
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
@@ -25,34 +25,24 @@ function Navbar() {
                     </div>
                     <div className='NavItems' id='NavItems'>
                         <ul>
-                            <li className='submenu'>
+                            <li>
                                 <Link href='/'>
-                                    <a>FOR CREATORS</a>
-                                </Link>
-                            </li>
-                            <li className='submenu'>
-                                <Link href='/'>
-                                    <a>FOR MEDIA COMPANIES</a>
+                                    <a>ABOUT</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/'>
-                                    <a>FOR BRANDS</a>
+                                    <a>CREATORS</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/'>
-                                    <a>CULTURE</a>
+                                    <a>BRAND</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/'>
-                                    <a>BLOG</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href='/'>
-                                    <a>GET IN TOUCH</a>
+                                    <a>CONTACT</a>
                                 </Link>
                             </li>
                         </ul>
