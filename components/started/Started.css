@@ -48,6 +48,10 @@
     font-family: 'Akzidenz-Grotesk BQ Extended';
 }
 
+.mobile-only{
+    display: none;
+}
+
 @media(max-width:1400px) {
     .container {
         max-width: 90%;
@@ -106,5 +110,17 @@
         padding: 0;
         line-height: 24px;
         text-align: justify;
+    }
+
+    .mobile-only{
+        display: block;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .Started h1{
+        margin: 20px 0px 20px;
     }
 }

@@ -82,7 +82,7 @@
 .Persons div {
     flex: 0 0 auto;
     width: 20%;
-    cursor: url(../../public/images/video-popup.svg), auto;
+    cursor: pointer;
 }
 
 
@@ -103,4 +103,27 @@
     .person-content h2 {
         font-size: 18px;
     }
+
+    .gallery{
+        padding: 0px;
+    }
+
+    .headSubs {
+        max-width: 290px;
+    }
+
+    
+
+    .Started{
+        padding: 30px 15px;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .category h2{
+        bottom: 5%;
+    }
+
 }

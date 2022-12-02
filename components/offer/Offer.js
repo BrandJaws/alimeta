@@ -9,7 +9,7 @@ function Offer() {
                 <div className='container'>
                     <div className='offer-text'>
                         <div className='text-center'>
-                            <h2>WE'LL TAKE CARE OF EVERYTHING ELSE.</h2>
+                            <h2>WE&apos;LL TAKE CARE OF EVERYTHING ELSE.</h2>
                             <Image src={Line} alt="Line" />
                         </div>
                     </div>

@@ -96,20 +96,20 @@
     align-items: flex-start;
 }
 
-.footer-left h3{
+.footer-left h3 {
     color: #000;
     font-size: 60px;
     font-family: 'FatFrank';
     margin-bottom: 25px;
 }
 
-.footer-left p b{
+.footer-left p b {
     font-size: 22px;
     display: block;
     margin-bottom: 30px;
 }
 
-.footer-left p{
+.footer-left p {
     font-size: 18px;
 }
 
@@ -171,8 +171,8 @@
 }
 
 
-@media(max-width: 1400px){
-    .footer-left h2 span{
+@media(max-width: 1400px) {
+    .footer-left h2 span {
         font-size: 60px;
     }
 }
@@ -246,7 +246,7 @@
         float: none;
         margin-right: 0px;
     }
-    
+
 }
 
 @media(max-width: 767px) {
@@ -285,6 +285,79 @@
     }
 
     .Footer {
-        padding: 85px 0px 45px 0px;
+        padding: 0px 0px 25px 0px;
     }
+
+    .footerLinks {
+        display: none;
+    }
+
+    .LogoFooter {
+        text-align: center;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+    }
+
+    .footer-left p b {
+        font-size: 15px;
+    }
+
+    .footer-left h3 {
+        font-size: 35px;
+    }
+
+    
+
+    .form-control {
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    .headSubs h4{
+        font-size: 16px;
+    }
+
+    .Newsletter p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    
+    form{
+        margin-bottom: 15px;
+    }
+
+    .BannerSection{
+        height: 40vh;
+    }
+
+    nav.navbar{
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .HeroScreen{
+        margin-top: 59px;
+    }
+
+    .BannerSection video{
+        height: auto;
+    }
+
+    .BannerSection{
+        height: auto;
+    }
+
+    .what p{
+        font-size: 14px;
+        margin: 10px auto 0 auto;
+    }
+
+    .what {
+        height: auto;
+        padding: 60px 20px;
+    }    
+
 }

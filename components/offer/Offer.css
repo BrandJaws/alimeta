@@ -75,4 +75,18 @@
         font-size: 16px;
         line-height: 26px;
     }
+
+    .Offer h2 {
+        font-size: 12px;
+    }
+
+    .offer-text{
+        padding: 1px 0px;
+        background-position: center top 0px;
+        background-size: contain;
+    }
+
+    .Offer h2{
+        margin-top: 80px;
+    }
 }
