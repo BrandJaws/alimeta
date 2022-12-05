@@ -48,7 +48,7 @@ function Persons() {
             <section className='Persons desktop-only'>
                 <div onClick={() => setUrl("https://orla.ae/assets/video/new_food_beverage.mp4")} className="category"><Image src={p6} alt="p6" /> <h2>Food</h2></div>
                 <div onClick={() => setUrl("https://orla.ae/assets/video/new_gaming.mp4")} className="category"><Image src={p7} alt="p7" /> <h2>gaming</h2></div>
-                <div onClick={() => setUrl()} className="category"><Image src={p8} alt="p8" /> <h2>health</h2></div>
+                <div onClick={() => setUrl("https://orla.ae/assets/video/new_health_fitness_self_help.mp4")} className="category"><Image src={p8} alt="p8" /> <h2>health</h2></div>
                 <div onClick={() => setUrl("https://orla.ae/assets/video/new_pranks_and_challenges.mp4")} className="category"><Image src={p9} alt="p9" /> <h2>pranks n challenge</h2></div>
                 <div onClick={() => setUrl("https://orla.ae/assets/video/new_travel_new.mp4")} className="category"><Image src={p10} alt="p10" /> <h2>travel</h2></div>
             </section>
@@ -78,7 +78,7 @@ function Persons() {
                         <div onClick={() =>  setUrl("https://orla.ae/assets/video/new_gaming.mp4")} className="category"><Image src={p7} alt="p7" /> <h2>gaming</h2></div>
                     </div>
                     <div>
-                        <div onClick={() =>  setUrl("")} className="category"><Image src={p8} alt="p8" /> <h2>health</h2></div>
+                        <div onClick={() =>  setUrl("https://orla.ae/assets/video/new_health_fitness_self_help.mp4")} className="category"><Image src={p8} alt="p8" /> <h2>health</h2></div>
                     </div>
                     <div>
                         <div onClick={() =>  setUrl("https://orla.ae/assets/video/new_pranks_and_challenges.mp4")} className="category"><Image src={p9} alt="p9" /> <h2>pranks n challenge</h2></div>
