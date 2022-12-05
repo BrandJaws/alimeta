@@ -27,21 +27,21 @@ function Persons() {
     return (
         <div className='gallery'>
             <section className='Persons desktop-only'>
-                <div onClick={() => setShow(true)} className="category"><Image src={p1} alt="p1" /> <h2>MOTION</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p2} alt="p2" /> <h2>FASHION</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p3} alt="p3" /> <h2>BEAUTY</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p4} alt="p4" /> <h2>GAMING</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p5} alt="p5" /> <h2>MUSIC</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p1} alt="p1" /> <h2>Animals and pets</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p2} alt="p2" /> <h2>Beauty</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p3} alt="p3" /> <h2>DIY</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p4} alt="p4" /> <h2>family and parenting</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p5} alt="p5" /> <h2>fashion and lifestyle</h2></div>
             </section>
             <section className='person-content desktop-only'>
                 <h2 data-aos="fade-right">Shaping the future of the creator economy</h2>
             </section>
             <section className='Persons desktop-only'>
-                <div onClick={() => setShow(true)} className="category"><Image src={p6} alt="p6" /> <h2>FITNESS</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p7} alt="p7" /> <h2>FILM</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p8} alt="p8" /> <h2>CUISINE</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p9} alt="p9" /> <h2>ART</h2></div>
-                <div onClick={() => setShow(true)} className="category"><Image src={p10} alt="p10" /> <h2>MAKE-UP</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p6} alt="p6" /> <h2>Food</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p7} alt="p7" /> <h2>gaming</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p8} alt="p8" /> <h2>health</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p9} alt="p9" /> <h2>pranks n challenge</h2></div>
+                <div onClick={() => setShow(true)} className="category"><Image src={p10} alt="p10" /> <h2>travel</h2></div>
             </section>
 
             <section className='mobile-only'>

@@ -14,8 +14,9 @@ function Footer() {
                         <p><b>GET IN TOUCH: enquiries@animeta.ai</b></p>
                         <p>ANIMETA PTE. LTD. <br />
                             (202238585K)<br />
-                            9 Raffles Place, #27-00 Republic Plaza<br />
-                            048619, Singapore
+                            9 Raffles Place #27-100 Republic Plaza<br />
+                            SINGAPORE<br />
+                            048619
                         </p>
                     </div>
                     <div className='footer-right'>

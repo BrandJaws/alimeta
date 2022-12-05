@@ -1,11 +1,11 @@
 .CreateSection {
-    padding: 160px 0px;
+    padding: 70px 70px 70px;
     background-color: transparent;
     background-image: url(../../public/images/CreateSection.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -29,13 +29,13 @@
 }
 
 .CreateSection p {
-    max-width: 650px;
-    font-size: 34px;
+    max-width: 780px;
+    font-size: 1.9vw;
     font-family: 'Gotham';
-    margin: 0 auto;
+    /* margin: 0 auto; */
     line-height: normal;
     text-align: center;
-    color: #7e13e2;
+    color: #000;
     font-weight: 500;
     margin-left: -100px;
 }
@@ -189,7 +189,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 200px 540px;
+    padding: 0px;
     min-height: 900px;
     display: flex;
     align-items: center;
@@ -210,6 +210,12 @@
     display: none;
 }
 
+@media(max-width: 1600px){
+    .CreateSection p{
+        padding: 0 55px;
+    }
+}
+
 @media(max-width: 1400px) {
     .CreateSection h2 {
         font-size: 66px;
@@ -228,7 +234,7 @@
 
 @media(max-width: 991px) {
     .CreateSection {
-        padding: 40px 0px 60px 0px;
+        padding: 0px 20px 0px;
         overflow: hidden;
     }
 
@@ -244,14 +250,75 @@
         font-size: 42px;
     }
 
+    .gallery{
+        padding: 0px;
+    }
+
+    .category h2{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .newsHeader {
+        margin: 0px 0px 30px 0px;
+        flex-direction: column;
+    }
+
+    .newsHeader div {
+        width: 100%;
+    }
+    
+    .newsHeader h3 {
+        font-size: 33px;
+        margin: 50px 55px;
+        text-align: center;
+    }
+
+    .News {
+        padding: 80px 0px;
+    }
+
+    .wording{
+        min-height: 550px;
+    }
+
     .CreateSection h3 {
         font-size: 18px;
         margin: 10px 0px;
     }
 
-    .CreateSection p {
-        font-size: 16px;
+    .what{
+        height: 80vh;
     }
+
+    .what p{
+        font-size: 22px;
+    }
+
+    .CreateSection p {
+        font-size: 13px;
+        margin-left: -50px;
+        padding: 0 120px;
+    }
+    .HeroScreen {
+        height: calc(55vh - 81px);
+        margin-top: 81px;
+    }
+
+    .offer-text {
+        background-size: contain;
+        background-position: center top 0px;
+    }
+    
+    .Offer {
+        padding: 40px 0px 10px 0px;
+    }    
+
+    .Offer h2 {
+        font-size: 25px;
+        margin-top: 95px;
+    }
+    
 
     .btn-theme {
         padding: 20px 70px;
@@ -346,4 +413,17 @@
     .mobile-only{
         display: block;
     }
+
+    .HeroScreen {
+        height: 100%;
+    }
+
+    .Started h2 {
+        font-size: 18px;
+    }
+    .CreateSection p {
+        font-size: 13px;
+        padding: 0;
+    }
+    
 }

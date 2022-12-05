@@ -1,5 +1,5 @@
 .BannerSection{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #fff;
 }
@@ -12,6 +12,8 @@
 .HeroScreen{
     position: relative;
     cursor: url(../../public/images/Asset2.svg), auto;
+    height: calc(100vh - 81px);
+    margin-top: 81px;
 }
 
 .NextSection{
@@ -40,4 +42,8 @@
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+
+video{
+    object-fit: fill;
 }

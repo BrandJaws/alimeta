@@ -13,15 +13,15 @@ function Started() {
     //         }, 2000);
     //     }
     // }
-    const [width, setWidth] = useState('20%');
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.onscroll = (e) => {
-                console.log(e, "event target");
-                setWidth(window.scrollY)
-            }
-        }
-    });
+    // const [width, setWidth] = useState('20%');
+    // useEffect(() => {
+    //     if (typeof window !== "undefined") {
+    //         window.onscroll = (e) => {
+    //             console.log(e, "event target");
+    //             setWidth(window.scrollY)
+    //         }
+    //     }
+    // });
 
     return (
         <>
@@ -33,7 +33,7 @@ function Started() {
                         <h2>Gain Popularity. Achieve Growth. Go Global.</h2>
                         <h1 id='expandable' className='desktop-only'>
                             {/* Get Starrrrred! */}
-                            <Image src={HeadingTxt} width={width} alt="headingTxt" />
+                            <Image src={HeadingTxt} alt="headingTxt" />
                         </h1>
                         <h1 className='mobile-only'>
                             <Image src={HeadingTxt} alt="headingTxt" />
