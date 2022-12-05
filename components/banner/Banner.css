@@ -47,5 +47,12 @@
 }
 
 video{
-    object-fit: fill;
+    object-fit: cover;
+}
+
+
+@media(max-width: 991px){
+    video{
+        object-fit: fill;
+    }
 }

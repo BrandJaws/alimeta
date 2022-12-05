@@ -88,6 +88,13 @@
     cursor: pointer;
 }
 
+.headindvideo h3{
+    font-size: 18px;
+    color: #febbff;
+    text-align: center;
+    padding: 14px 10px;
+}
+
 @media(max-width: 1750px){
     .person-content h2{
         font-size: 52px;
@@ -141,5 +148,7 @@
     .category h2{
         bottom: 5%;
     }
+
+    
 
 }

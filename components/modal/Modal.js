@@ -3,7 +3,7 @@ import Image from "next/image";
 import CloseIcon from "../../public/images/close-icon.png";
 
 
-function Modal({ setShow, show }) {
+function Modal({ setShow, show, videoPath  }) {
     // const [show, setShow] = useState(false);
     // const handleClick = () => {
     //     document.body.classList.remove('popupOpend');
@@ -15,7 +15,7 @@ function Modal({ setShow, show }) {
                 <button onClick={() => setShow(false)} className='closePopup'><Image src={CloseIcon} alt="CloseIcon" /></button>
                 <div className='modal'>
                     <video className='Bannervideo' controls autoPlay={show} muted>
-                        <source src="https://orla.ae/assets/video/video8.mp4" type="video/mp4" />
+                        <source src={videoPath} type="video/mp4" />
                     </video>
                 </div>
             </section>
