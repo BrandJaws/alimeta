@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
 import FooterLogo from "../../public/images/footer-logo.png";
+import WhatsApp from "../../public/images/whatsapp.png";
+import Email from "../../public/images/email.png";
+import Phone from "../../public/images/phone-icon.png";
 
 function Footer() {
 
@@ -11,7 +14,24 @@ function Footer() {
                 <div className='container flex'>
                     <div className='footer-left'>
                         <h3>YOUR TIME IS NOW!</h3>
-                        <p><b>GET IN TOUCH: enquiries@animeta.ai</b></p>
+                        <p><b>GET IN TOUCH:</b></p>
+                        <ul className='footer-social'>
+                            <li>
+                                <Link href='/'>
+                                    <Image src={WhatsApp} alt="FooterLogo" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='mailto:collaborations@animeta.ai'>
+                                    <Image src={Email} alt="FooterLogo" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='/'>
+                                    <Image src={Phone} alt="FooterLogo" />
+                                </Link>
+                            </li>
+                        </ul>
                         <p>ANIMETA PTE. LTD. <br />
                             (202238585K)<br />
                             9 Raffles Place #27-100 Republic Plaza<br />
@@ -23,7 +43,7 @@ function Footer() {
                         <div className='LogoFooter'>
                             <Image src={FooterLogo} alt="FooterLogo" />
                         </div>
-                        <div className='footerLinks'>
+                        {/* <div className='footerLinks'>
                             <ul>
                                 <li>
                                     <Link href='/'>
@@ -79,7 +99,7 @@ function Footer() {
                                     </Link>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

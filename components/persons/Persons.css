@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+    position: relative;
+    z-index: 3;
 }
 
 .gallery{
@@ -10,6 +12,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .Persons img {
@@ -46,7 +50,7 @@
     position: absolute;
     left: 0px;
     right: 0px;
-    bottom: 45%;
+    bottom: 5%;
     color: #fff;
     font-family: 'Gotham';
     font-weight: 500;
@@ -56,7 +60,7 @@
 }
 
 .category:hover h2 {
-    bottom: 45%;
+    bottom: 5%;
     letter-spacing: 2px;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -84,10 +88,23 @@
     cursor: pointer;
 }
 
+@media(max-width: 1750px){
+    .person-content h2{
+        font-size: 52px;
+    }
+    .category h2{
+        font-size: 15px;
+    }
+}
+
 
 @media(max-width: 1400px) {
     .person-content h2 {
         font-size: 28px;
+    }
+
+    .category h2{
+        font-size: 13px;
     }
 }
 

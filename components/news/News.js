@@ -10,13 +10,10 @@ import Slider from "react-slick";
 function News() {
     var settings = {
         dots: false,
-        controls: false,
+        controls: true,
         infinite: true,
         autoplay: true,
-        adaptiveHeight: true,
         speed: 500,
-        centerMode: true,
-        centerPadding: '60px',
         slidesToShow: 1,
         slidesToScroll: 1
     };
@@ -25,7 +22,7 @@ function News() {
             <section className='News'>
                 <div className='container'>
                     <div className='newsHeader'>
-                        <div>
+                        <div className='mobile-size-fix'>
                             <Image src={Heading} alt="Play" />
                         </div>
                         <div>
@@ -33,35 +30,26 @@ function News() {
                         </div>
                     </div>
                     <div className='videoList desktop-only'>
-                        <div className='videoGroup' data-aos="fade-up" data-aos-offset="300">
+                        <div className='videoGroup' data-aos="fade-up">
                             <Image src={Blog1} alt="Play" />
-                            <h4>Lorem ipsum dolor sit ameT</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
-                        <div className='videoGroup' data-aos="fade-up" data-aos-offset="300">
+                        <div className='videoGroup' data-aos="fade-up">
                             <Image src={Blog2} alt="Play" />
-                            <h4>Lorem ipsum dolor sit ameT</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
-                        <div className='videoGroup' data-aos="fade-up" data-aos-offset="300">
+                        <div className='videoGroup' data-aos="fade-up">
                             <Image src={Blog3} alt="Play" />
-                            <h4>Lorem ipsum dolor sit ameT</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         </div>
                     </div>
                     <div className='mobile-only mobileS'>
                         <Slider {...settings}>
                             <div>
                                 <Image src={Blog1} alt="Play" />
-                                <h4>Lorem ipsum dolor sit ameT</h4>
                             </div>
                             <div>
                                 <Image src={Blog2} alt="Play" />
-                                <h4>Lorem ipsum dolor sit ameT</h4>
                             </div>
                             <div>
                                 <Image src={Blog3} alt="Play" />
-                                <h4>Lorem ipsum dolor sit ameT</h4>
                             </div>
                         </Slider>
                     </div>

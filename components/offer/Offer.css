@@ -3,6 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px 0px 60px 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .offer-text {

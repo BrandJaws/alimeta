@@ -17,7 +17,9 @@ function Newsletter() {
                             <input type="text" className="form-control" placeholder='Enter your email address'></input>
                         </form>
                         <p>By signing up you agree to receive communications via email.<br />For more information please refer to our Privacy Policy.</p>
-                        <Image className='desktop-only' src={Signature} alt="Logo" />
+                        <div className='desktop-only'>
+                            <Image src={Signature} alt="Logo" />
+                        </div>
                     </div>
                 </div>
             </section>

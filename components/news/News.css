@@ -3,6 +3,8 @@
     background: url(../../public/images/hot-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .newsHeader h2 {
@@ -146,27 +148,17 @@
     text-transform: uppercase;
 }
 
+.mobileS {
+    margin-bottom: 40px;
+    margin-left: -20px;
+    margin-right: -19px;
+}
+
 .PostData p span {
     font-size: 38px;
     color: #fff;
     font-family: 'Akzidenz-Grotesk';
     display: block;
-}
-
-.mobileS .slick-next {
-    display: none !important;
-}
-
-.mobileS .slick-prev {
-    display: none !important;
-}
-
-.mobileS .slick-slide {
-    margin: 0 10px;
-}
-
-.mobileS .slick-list {
-    margin: 0 -10px;
 }
 
 @media(max-width: 1100px) {
@@ -296,8 +288,8 @@
 
     .newsHeader h3 {
         text-align: center;
-        margin: 40px 0 0 0;
-        font-size: 29px;
+        margin: 20px 0 0 0;
+        font-size: 22px;
     }
 
     .videoGroup p {
@@ -320,5 +312,14 @@
         color: #fff;
         margin: 10px 0px;
         padding: 0 20px;
+    }
+
+    .mobile-size-fix {
+        text-align: center;
+    }
+
+    .mobile-size-fix img{
+        max-width: 250px !important;
+        margin: 0 auto !important;
     }
 }

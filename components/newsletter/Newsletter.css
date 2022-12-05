@@ -3,6 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 160px 0px 0px 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .Newsletter h2 {
@@ -180,5 +182,9 @@ form {
     }
     .desktop-only{
         display: none !important;
+    }
+
+    .headSubs img{
+        max-width: 250px !important;
     }
 }

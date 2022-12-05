@@ -1,11 +1,11 @@
 .Footer {
-    padding: 85px 0px;
+    padding: 50px 0px 35px 0px;
     border-bottom: 11px solid #7f38f8;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .footer-left h2 span {
@@ -106,7 +106,7 @@
 .footer-left p b {
     font-size: 22px;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-left p {
@@ -168,6 +168,22 @@
 
 .socialIcons ul li a:hover {
     background-color: #eee;
+}
+
+.footer-left p a:hover{
+    color: #8500e2;
+}
+
+.footer-social{
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    list-style: none;
+}
+
+.footer-social li{
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
 }
 
 
@@ -351,7 +367,7 @@
     }
 
     .what p{
-        font-size: 14px;
+        font-size: 18px;
         margin: 10px auto 0 auto;
     }
 

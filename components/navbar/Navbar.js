@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
-import MenuIcon from "../../public/images/menuIcon.png";
-import CloseIcon from "../../public/images/close-icon.png";
+// import MenuIcon from "../../public/images/menuIcon.png";
+// import CloseIcon from "../../public/images/close-icon.png";
 
 function Navbar() {
 
@@ -19,11 +19,11 @@ function Navbar() {
                         <Link href='/'>
                             <a><Image src={Logo} alt="Logo" height={33} width={200} /></a>
                         </Link>
-                        <Link href='/'>
+                        {/* <Link href='/'>
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
-                        </Link>
+                        </Link> */}
                     </div>
-                    <div className='NavItems' id='NavItems'>
+                    {/* <div className='NavItems' id='NavItems'>
                         <ul>
                             <li>
                                 <Link href='/'>
@@ -46,7 +46,7 @@ function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </>

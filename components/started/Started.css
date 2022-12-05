@@ -4,6 +4,8 @@
     background-size: cover;
     padding: 100px 0px;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .container {
