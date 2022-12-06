@@ -165,6 +165,14 @@ form div{
     display: block;
 }
 
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
 @media(max-width: 991px){
     .Newsletter{
         padding: 40px 0px;
