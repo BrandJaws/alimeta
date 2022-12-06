@@ -58,7 +58,7 @@ export default function Home() {
         <title>ANIMETA</title>
         <meta name="description" content="ANIMETA" />
         <link rel="icon" href="/favicon.ico" />
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
+        {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script> */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
       </Head>
       {/* <Welcome /> */}
