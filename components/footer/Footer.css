@@ -338,7 +338,7 @@
 
     .Newsletter p{
         font-size: 12px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     
     form{
@@ -373,7 +373,8 @@
 
     .what {
         height: auto;
-        padding: 60px 20px;
-    }    
+        padding: 30px 20px;
+    }
+      
 
 }

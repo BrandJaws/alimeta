@@ -19,7 +19,7 @@ nav.navbar {
     z-index: 9;
     left: 0;
     right: 0;
-    transform: translate(0px, -100%);
+    transform: translate(0px, 0%);
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
@@ -166,6 +166,12 @@ nav.navbar {
     .MenuOpened .MenuImage{
         display: none !important;
     }
+    .Logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -230,5 +236,11 @@ nav.navbar {
 
     .MenuOpened .MenuImage{
         display: none !important;
+    }
+    .Logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -12,11 +12,15 @@ function News() {
         dots: false,
         controls: true,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
     };
+    const handlePlayVideo = (event) => {
+        console.log("dsajdlkjasd", event.target);
+
+    }
     return (
         <>
             <section className='News'>
@@ -31,25 +35,25 @@ function News() {
                     </div>
                     <div className='videoList desktop-only'>
                         <div className='videoGroup' data-aos="fade-up">
-                            <Image src={Blog1} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className='videoGroup' data-aos="fade-up">
-                            <Image src={Blog2} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className='videoGroup' data-aos="fade-up">
-                            <Image src={Blog3} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className='mobile-only mobileS'>
                         <Slider {...settings}>
                             <div>
-                                <Image src={Blog1} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div>
-                                <Image src={Blog2} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div>
-                                <Image src={Blog3} alt="Play" />
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         </Slider>
                     </div>

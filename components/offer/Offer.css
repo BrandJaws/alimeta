@@ -2,7 +2,7 @@
     background: url(../../public/images/offer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0px 60px 0px;
+    padding: 60px 0px 20px 0px;
     position: relative;
     z-index: 2;
 }
@@ -66,7 +66,7 @@
 
 @media(max-width: 767px) {
     .Offer {
-        padding: 40px 0px 60px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     .Offer h2 {
@@ -79,7 +79,7 @@
     }
 
     .Offer h2 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .offer-text{

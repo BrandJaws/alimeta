@@ -61,7 +61,7 @@ export default function Home() {
         <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
       </Head>
-      <Welcome />
+      {/* <Welcome /> */}
       <section className='HeroScreen'>
         <Banner />
       </section>

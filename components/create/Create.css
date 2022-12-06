@@ -32,7 +32,7 @@
 
 .CreateSection p {
     max-width: 780px;
-    font-size: 1.9vw;
+    font-size: 25px;
     font-family: 'Gotham';
     /* margin: 0 auto; */
     line-height: normal;
@@ -230,7 +230,7 @@
 
     .CreateSection p {
         max-width: 610px;
-        font-size: 17px;
+        font-size: 25px;
     }
 }
 
@@ -309,9 +309,9 @@
     }
 
     .CreateSection p {
-        font-size: 13px;
+        font-size: 25px;
         margin-left: -50px;
-        padding: 0 120px;
+        padding: 0 30px;
     }
     .HeroScreen {
         height: calc(55vh - 81px);
@@ -402,7 +402,7 @@
     }
 
     .CreateSection {
-        padding: 40px 15px 60px 15px;
+        padding: 0px 15px 30px 15px;
         display: block;
     }
 
