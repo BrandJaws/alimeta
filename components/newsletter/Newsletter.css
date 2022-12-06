@@ -120,7 +120,7 @@ form {
     align-items: flex-start;
     margin-top: 35px;
     margin-bottom: 30px;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -149,11 +149,12 @@ form div{
     background: #8500e2;
     border: none;
     color: #fff;
-    padding: 20px 40px;
-    margin-top: 15px;
+    padding: 33px 50px;
+    margin-top: 0;
     font-weight: bold;
     font-size: 24px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .btn-submit:hover{
@@ -223,5 +224,7 @@ form div{
         font-weight: bold;
         font-size: 16px;
         cursor: pointer;
+        margin-left: 0;
+
     }
 }
