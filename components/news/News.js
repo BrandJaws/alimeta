@@ -34,13 +34,13 @@ function News() {
                         </div>
                     </div>
                     <div className='videoList desktop-only'>
-                        <div className='videoGroup'>
+                        <div className='videoGroup' data-aos="fade-up">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                        <div className='videoGroup'>
+                        <div className='videoGroup' data-aos="fade-up">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                        <div className='videoGroup'>
+                        <div className='videoGroup' data-aos="fade-up">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
