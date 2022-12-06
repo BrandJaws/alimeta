@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Welcome from '../components/welcome/Welcome'
+// import Welcome from '../components/welcome/Welcome'
 import Banner from '../components/banner/Banner'
 import Started from '../components/started/Started'
 import Create from '../components/create/Create'
