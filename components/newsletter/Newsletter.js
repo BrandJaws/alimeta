@@ -14,9 +14,10 @@ function Newsletter() {
                     </div>
                     <div className='max-width-1000'>
                         <form>
-                            <input type="text" className="form-control" placeholder='Enter your email address'></input>
+                            <div><input type="text" className="form-control" placeholder='Enter your email address'></input></div>
+                            <div><input type="submit" className='btn-submit' value="SUBMIT"></input></div>
                         </form>
-                        <p>By signing up you agree to receive communications via email.<br />For more information please refer to our Privacy Policy.</p>
+                        <p>By signing up you agree to receive communications via email.</p>
                         <div className='desktop-only'>
                             <Image src={Signature} alt="Logo" />
                         </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
-import FooterLogo from "../../public/images/footer-logo.png";
+// import FooterLogo from "../../public/images/footer-logo.png";
 import WhatsApp from "../../public/images/whatsapp.png";
 import Email from "../../public/images/email.png";
 import Phone from "../../public/images/phone-icon.png";
+import AniLogo from "../../public/images/animated-logo.gif";
 
 function Footer() {
 
@@ -41,7 +42,7 @@ function Footer() {
                     </div>
                     <div className='footer-right'>
                         <div className='LogoFooter'>
-                            <Image src={FooterLogo} alt="FooterLogo" />
+                            <Image src={AniLogo} alt="FooterLogo" />
                         </div>
                         {/* <div className='footerLinks'>
                             <ul>

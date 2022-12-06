@@ -54,6 +54,10 @@
     display: none;
 }
 
+.Started h2 br{
+    display: none;
+}
+
 @media(max-width:1400px) {
     .container {
         max-width: 90%;
@@ -124,5 +128,9 @@
 
     .Started h1{
         margin: 20px 0px 20px;
+    }
+
+    .Started h2 br{
+        display: block;
     }
 }

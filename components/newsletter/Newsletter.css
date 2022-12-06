@@ -117,9 +117,15 @@
 form {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 35px;
     margin-bottom: 30px;
+    flex-direction: column;
+    width: 100%;
+}
+
+form div{
+    width: 100%;
 }
 
 .submitBtn {
@@ -138,6 +144,25 @@ form {
     z-index: 2;
 }
 
+.btn-submit {
+    display: block;
+    background: #8500e2;
+    border: none;
+    color: #fff;
+    padding: 20px 40px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background: #760bc1;
+}
+
+.btn-submit{
+    display: block;
+}
 
 @media(max-width: 991px){
     .Newsletter{
@@ -186,5 +211,17 @@ form {
 
     .headSubs img{
         max-width: 250px !important;
+    }
+
+    .btn-submit {
+        display: block;
+        background: #8500e2;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
     }
 }

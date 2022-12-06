@@ -29,8 +29,7 @@ function Started() {
             <section className='Started' id='Started'>
                 <div className=''>
                     <div className='text-center'>
-                        
-                        <h2>Gain Popularity. Achieve Growth. Go Global.</h2>
+                        <h2>Gain Popularity.<br />Achieve Growth.<br />Go Global.</h2>
                         <h1 id='expandable' className='desktop-only'>
                             {/* Get Starrrrred! */}
                             <Image src={HeadingTxt} alt="headingTxt" />
