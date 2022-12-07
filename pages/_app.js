@@ -14,12 +14,15 @@ import '../components/modal/Modal.css'
 import "slick-carousel/slick/slick.css";
 import "aos/dist/aos.css";
 import Layout from '../components/Layout'
+import { HubspotProvider } from 'next-hubspot';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <HubspotProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </HubspotProvider>
   )
 }
 
