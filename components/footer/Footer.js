@@ -18,7 +18,7 @@ function Footer() {
                         <p><b>GET IN TOUCH:</b></p>
                         <ul className='footer-social'>
                             <li>
-                                <Link href='/'>
+                                <Link href='whatsapp://send?phone=+91 8825128683'>
                                     <Image src={WhatsApp} alt="FooterLogo" />
                                 </Link>
                             </li>
@@ -28,7 +28,7 @@ function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='tel:+91 8825128683'>
                                     <Image src={Phone} alt="FooterLogo" />
                                 </Link>
                             </li>
