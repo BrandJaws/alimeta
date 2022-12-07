@@ -59,3 +59,9 @@
     top: 95px;
     cursor: pointer;
 }
+
+@media(max-width: 767px){
+    .modal {
+        height: auto;
+    }
+}
