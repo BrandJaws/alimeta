@@ -23,7 +23,7 @@
     font-family: 'Akzidenz-Grotesk BQ Extended';
 }
 
-.headSubs{
+.headSubs {
     max-width: 500px;
 }
 
@@ -35,7 +35,7 @@
     margin-bottom: 20px;
 }
 
-.form-control{
+.form-control {
     width: 100%;
     border: none;
     background-color: #8500e2;
@@ -45,29 +45,33 @@
     font-weight: bold;
 }
 
-.max-width-1000{
+.max-width-1000 {
     max-width: 1000px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #fff;
-  }
+    opacity: 1;
+    /* Firefox */
+}
 
-.width-adjust{
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
+.width-adjust {
     width: 330px;
     height: 32px;
 }
 
-.max-width-1000 p{
+.max-width-1000 p {
     font-size: 11px;
     color: #000;
     margin-bottom: 60px;
@@ -118,13 +122,60 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 45px;
+    margin-bottom: 10px;
     flex-direction: row;
     width: 100%;
+    position: relative;
 }
 
-form div{
+.hs_email label {
+    position: absolute;
+    top: -25px;
+}
+
+.hs-error-msgs label {
+    position: static;
+}
+
+.hs_error_rollup {
+    display: none;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    background-color: #8500e2;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form [type="submit"] {
+    display: block;
+    background: #8500e2;
+    border: none;
+    color: #fff;
+    padding: 33px 50px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.hs-error-msgs {
+    list-style: none;
+}
+
+.hs-error-msgs li {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+form div {
     width: 100%;
 }
 
@@ -157,11 +208,11 @@ form div{
     margin-left: 10px;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background: #760bc1;
 }
 
-.btn-submit{
+.btn-submit {
     display: block;
 }
 
@@ -173,52 +224,63 @@ input {
 
 }
 
-@media(max-width: 991px){
-    .Newsletter{
+@media(max-width: 991px) {
+    .Newsletter {
         padding: 40px 0px;
     }
-    .Newsletter h2{
+
+    .Newsletter h2 {
         font-size: 42px;
     }
-    form{
+
+    form {
         flex-direction: column;
     }
-    .formControl{
+
+    .formControl {
         margin-right: 0px;
     }
-    .submitBtn{
+
+    .submitBtn {
         margin-top: 20px;
     }
-    .Newsletter p{
+
+    .Newsletter p {
         font-size: 16px;
     }
 }
 
 
-@media(max-width: 767px){
-    .Newsletter{
+@media(max-width: 767px) {
+    .Newsletter {
         padding: 40px 0px;
     }
-    .Newsletter h2{
+
+    .Newsletter h2 {
         font-size: 42px;
     }
-    form{
+
+    form {
         flex-direction: column;
     }
-    .formControl{
+
+    .formControl {
         margin-right: 0px;
     }
-    .submitBtn{
+
+    .submitBtn {
         margin-top: 20px;
     }
-    .Newsletter p{
+
+    .Newsletter p {
         font-size: 16px;
     }
-    .desktop-only{
+
+    .desktop-only {
         display: none !important;
     }
 
-    .headSubs img{
+    .headSubs img {
         max-width: 250px !important;
     }
 
@@ -235,4 +297,21 @@ input {
         margin-left: 0;
 
     }
-}
+
+    .input input {
+        padding: 10px;
+    }
+
+    form [type="submit"] {
+        display: block;
+        background: #8500e2;
+        border: none;
+        color: #fff;
+        padding: 12px 20px 10px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 0;
+    }  
+} 
