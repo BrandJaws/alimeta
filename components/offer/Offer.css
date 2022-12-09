@@ -1,5 +1,5 @@
 .Offer {
-    background: url(../../public/images/offer-bg.jpg);
+    background: url(../../public/images/offer-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0px 20px 0px;
@@ -8,7 +8,7 @@
 }
 
 .offer-text {
-    background-image: url(../../public/images/offer-text.png);
+    background-image: url(../../public/images/offer-text.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

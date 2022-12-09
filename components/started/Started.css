@@ -1,5 +1,5 @@
 .Started {
-    background-image: url(../../public/images/started-background.jpg);
+    background-image: url(../../public/images/started-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0px 40px;
@@ -29,7 +29,7 @@
 .Started h1 {
     margin: 50px 50px 20px;
     font-size: 20px;
-    background: url(../../public/images/texture.jpg);
+    /* background: url(../../public/images/texture.jpg); */
     background-size: cover;
     -webkit-background-clip: text;
     background-clip:text; 

@@ -7,7 +7,7 @@ nav.navbar {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: transparent !important;
-    background-image: url(../../public/images/header-bg.jpg);
+    background-image: url(../../public/images/header-bg.webp);
     background-repeat: repeat-x;
     background-size: cover;
     box-shadow: 0 4px 10px rgb(0 0 0 / 45%);
