@@ -32,10 +32,10 @@ function Started() {
                         <h2>Gain Popularity.<br />Achieve Growth.<br />Go Global.</h2>
                         <h1 id='expandable' className='desktop-only'>
                             {/* Get Starrrrred! */}
-                            <Image src={HeadingTxt} alt="headingTxt" />
+                            <Image className="lazyload" src={HeadingTxt} alt="headingTxt" />
                         </h1>
                         <h1 className='mobile-only'>
-                            <Image src={HeadingTxt} alt="headingTxt" />
+                            <Image className="lazyload" src={HeadingTxt} alt="headingTxt" />
                         </h1>
                     </div>
                 </div>

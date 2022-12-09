@@ -12,7 +12,7 @@ function Modal({ setShow, show, videoPath  }) {
         <>
             <div className='overlay'></div>
             <section className='modalBox'>
-                <button onClick={() => setShow(false)} className='closePopup'><Image src={CloseIcon} alt="CloseIcon" /></button>
+                <button onClick={() => setShow(false)} className='closePopup'><Image className="lazyload" src={CloseIcon} alt="CloseIcon" /></button>
                 <div className='modal'>
                     <video className='Bannervideo' controls autoPlay={show} muted>
                         <source src={videoPath} type="video/mp4" />

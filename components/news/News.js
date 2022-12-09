@@ -27,7 +27,7 @@ function News() {
                 <div className='container'>
                     <div className='newsHeader'>
                         <div className='mobile-size-fix'>
-                            <Image src={Heading} alt="Play" />
+                            <Image className="lazyload" src={Heading} alt="Play" />
                         </div>
                         <div>
                             <h3>Get your daily dose of what&apos;s up and coming in the creator world.</h3>
@@ -35,25 +35,25 @@ function News() {
                     </div>
                     <div className='videoList desktop-only'>
                         <div className='videoGroup' data-aos="fade-up">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className='videoGroup' data-aos="fade-up">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className='videoGroup' data-aos="fade-up">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className='mobile-only mobileS'>
                         <Slider {...settings}>
                             <div>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/uOd8VG3vWYk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/BCOjopku3bk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="lazyload" width="100%" height="315" src="https://www.youtube.com/embed/qJ-EF09srsE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         </Slider>
                     </div>

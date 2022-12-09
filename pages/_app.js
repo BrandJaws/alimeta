@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "aos/dist/aos.css";
 import Layout from '../components/Layout'
 import { HubspotProvider } from 'next-hubspot';
+import 'lazysizes';
 
 function MyApp({ Component, pageProps }) {
   return (

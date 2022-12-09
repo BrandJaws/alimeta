@@ -10,7 +10,7 @@ function Offer() {
                     <div className='offer-text'>
                         <div className='text-center'>
                             <h2>WE&apos;LL TAKE CARE OF EVERYTHING ELSE.</h2>
-                            <Image src={Line} alt="Line" />
+                            <Image src={Line} className="lazyload" alt="Line" />
                         </div>
                     </div>
                 </div>

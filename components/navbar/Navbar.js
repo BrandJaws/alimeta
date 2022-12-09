@@ -17,7 +17,7 @@ function Navbar() {
                 <div className='navWrapp'>
                     <div className='Logo'>
                         <Link href='/'>
-                            <a><Image src={Logo} alt="Logo" height={33} width={200} /></a>
+                            <a><Image src={Logo} class="lazyload" alt="Logo" height={33} width={200} /></a>
                         </Link>
                         {/* <Link href='/'>
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
