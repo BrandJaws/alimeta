@@ -19,17 +19,17 @@ function Footer() {
                         <ul className='footer-social'>
                             <li>
                                 <Link href='whatsapp://send?phone=+91 8825128683'>
-                                    <Image data-src={WhatsApp} className="lazyload" alt="FooterLogo" />
+                                    <Image src={WhatsApp} className="lazyload" alt="FooterLogo" />
                                 </Link>
                             </li>
                             <li>
                                 <Link href='mailto:collaborations@animeta.ai'>
-                                    <Image data-src={Email} className="lazyload" alt="FooterLogo" />
+                                    <Image src={Email} className="lazyload" alt="FooterLogo" />
                                 </Link>
                             </li>
                             <li>
                                 <Link href='tel:+91 8825128683'>
-                                    <Image data-src={Phone} className="lazyload" alt="FooterLogo" />
+                                    <Image src={Phone} className="lazyload" alt="FooterLogo" />
                                 </Link>
                             </li>
                         </ul>
