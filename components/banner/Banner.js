@@ -1,3 +1,4 @@
+import Poster from "../../public/images/poster.jpg";
 if (typeof window !== 'undefined') {
     var elem = document.getElementById("myvideo");
 }
@@ -15,7 +16,7 @@ function openFullscreen() {
 function Banner() {
     return (
         <div className='BannerSection' onClick={openFullscreen}>
-            <video className='Bannervideo' id="myvideo" autoPlay loop muted playsInline>
+            <video className='Bannervideo' id="myvideo"  poster={Poster} autoPlay loop muted playsInline>
                 <source src="https://orla.ae/assets/video/banner_video_updated.mp4" type="video/mp4" />
             </video>
         </div>
