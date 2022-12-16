@@ -42,7 +42,7 @@ function Footer() {
                     </div>
                     <div className='footer-right'>
                         <div className='LogoFooter'>
-                            <div className='gifLogo'></div>
+                            {/* <div className='gifLogo'></div> */}
                         </div>
                         {/* <div className='footerLinks'>
                             <ul>
