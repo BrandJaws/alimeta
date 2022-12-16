@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
-import Logo from "../../public/images/logo.png";
+// import Logo from "https://d3e066o7tnnbih.cloudfront.net/logo.png";
 // import MenuIcon from "../../public/images/menuIcon.png";
 // import CloseIcon from "../../public/images/close-icon.png";
 
@@ -17,7 +17,10 @@ function Navbar() {
                 <div className='navWrapp'>
                     <div className='Logo'>
                         <Link href='/'>
-                            <a><Image src={Logo} class="lazyload" alt="Logo" height={33} width={200} /></a>
+                            <a>
+                                <img src="https://d3e066o7tnnbih.cloudfront.net/logo.png" className="lazyload" alt="Logo" height={33} width={200} />
+                                {/* <Image src="https://d3e066o7tnnbih.cloudfront.net/logo.png" class="lazyload" alt="Logo" height={33} width={200} /> */}
+                            </a>
                         </Link>
                         {/* <Link href='/'>
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
