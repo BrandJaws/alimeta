@@ -16,8 +16,11 @@ function openFullscreen() {
 function Banner() {
     return (
         <div className='BannerSection' onClick={openFullscreen}>
-            <video className='Bannervideo' id="myvideo"  poster="https://animeta.ai/images/poster.jpg" autoPlay loop muted playsInline>
+            <video className='Bannervideo desktop-only' id="myvideo"  poster="https://animeta.ai/images/poster.jpg" autoPlay loop muted playsInline>
                 <source src="http://69.16.254.149/~pixlddx/videos/banner_video_updated.mp4" type="video/mp4" />
+            </video>
+            <video className='Bannervideo mobile-only' id="myvideo"  poster="https://animeta.ai/images/poster.jpg" autoPlay loop muted playsInline>
+                <source src="http://69.16.254.149/~pixlddx/videos/mobile-banner-video.mp4" type="video/mp4" />
             </video>
         </div>
     )

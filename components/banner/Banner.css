@@ -50,9 +50,19 @@ video{
     object-fit: cover;
 }
 
+.mobile-only{
+    display: none;
+}
+
 
 @media(max-width: 991px){
     video{
         object-fit: fill;
+    }
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: block;
     }
 }
