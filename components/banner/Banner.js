@@ -20,7 +20,7 @@ function Banner() {
             <video className='Bannervideo desktop-only' id="myvideo"  poster="https://animeta.ai/images/poster.jpg" autoPlay loop muted playsInline>
                 <source src="https://d3e066o7tnnbih.cloudfront.net/banner_video_updated.mp4" type="video/mp4" />
             </video>
-            <video className='Bannervideo mobile-only' id="myvideo"  poster="https://animeta.ai/images/poster.jpg" autoPlay loop muted playsInline>
+            <video className='Bannervideo mobile-only' id="myvideo"  poster="https://animeta.ai/images/cover-mobile.jpg" autoPlay loop muted playsInline>
                 <source src="https://d3e066o7tnnbih.cloudfront.net/mobile-banner-video.mp4" type="video/mp4" />
             </video>
         </div>
