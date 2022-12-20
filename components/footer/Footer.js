@@ -18,9 +18,7 @@ function Footer() {
                         <p><b>GET IN TOUCH:</b></p>
                         <ul className='footer-social'>
                             <li>
-                                <Link href='whatsapp://send?phone=+91 8825128683'>
-                                    <Image src={WhatsApp} className="lazyload" alt="FooterLogo" />
-                                </Link>
+                                <a aria-label="Chat on WhatsApp" href="https://wa.me/918825128683"> <Image src={WhatsApp} className="lazyload" alt="FooterLogo" /></a>
                             </li>
                             <li>
                                 <Link href='mailto:collaborations@animeta.ai'>
