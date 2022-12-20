@@ -145,6 +145,14 @@
     margin-top: 50px;
 }
 
+.floating-icon{
+    cursor: pointer;
+}
+
+.floating-icon img{
+    width: 60px !important;
+}
+
 .socialIcons ul {
     list-style: none;
     margin: 0px;
@@ -192,6 +200,13 @@
     background-position: center;
     width: 100%;
     height: 400px;
+}
+
+.floating-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 9999;
 }
 
 

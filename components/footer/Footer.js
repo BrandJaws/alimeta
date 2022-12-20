@@ -5,7 +5,7 @@ import Image from "next/image";
 import WhatsApp from "../../public/images/whatsapp.png";
 import Email from "../../public/images/email.png";
 import Phone from "../../public/images/phone-icon.png";
-import AniLogo from "../../public/images/animated-logo.gif";
+import WhatsAppGreen from "../../public/images/whatspp-green.svg";
 
 function Footer() {
 
@@ -104,6 +104,11 @@ function Footer() {
                     </div>
                 </div>
             </section>
+            <div className='floating-icon'>
+                <Link href='whatsapp://send?phone=+91 8825128683'>
+                    <Image src={WhatsAppGreen} className="lazyload" alt="FooterLogo" />
+                </Link>
+            </div>
         </>
     )
 }

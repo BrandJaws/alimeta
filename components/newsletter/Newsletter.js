@@ -24,7 +24,7 @@ function Newsletter() {
                 <div className='container'>
                     <div className='headSubs'>
                         <Image src={Heading} className="lazyload" alt="Logo" />
-                        <h4>Share your details and be the first to know how to go big, with AniMeta.</h4>
+                        <h4>Get started on your creator journey, Call us now!</h4>
                     </div>
                     <div className='max-width-1000'> 
                         <HubspotForm 
