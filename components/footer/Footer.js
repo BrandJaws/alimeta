@@ -11,7 +11,7 @@ function Footer() {
 
     return (
         <>
-            <section className='Footer'>
+            <section className='Footer' id="footer">
                 <div className='container flex'>
                     <div className='footer-left'>
                         <h3>YOUR TIME IS NOW!</h3>
