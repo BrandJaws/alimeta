@@ -18,7 +18,7 @@ function Footer() {
                         <p><b>GET IN TOUCH:</b></p>
                         <ul className='footer-social'>
                             <li>
-                                <a aria-label="Chat on WhatsApp" href="https://wa.me/918825128683"> <Image src={WhatsApp} className="lazyload" alt="FooterLogo" /></a>
+                                <a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/message/2DKLEI6J6B73J1?autoload=1&app_absent=0"> <Image src={WhatsApp} className="lazyload" alt="FooterLogo" /></a>
                             </li>
                             <li>
                                 <Link href='mailto:collaborations@animeta.ai'>
@@ -103,7 +103,7 @@ function Footer() {
                 </div>
             </section>
             <div className='floating-icon'>
-                <a aria-label="Chat on WhatsApp" href="https://wa.me/918825128683"> <Image src={WhatsAppGreen} className="lazyload" alt="FooterLogo" /></a>
+                <a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/message/2DKLEI6J6B73J1?autoload=1&app_absent=0"> <Image src={WhatsAppGreen} className="lazyload" alt="FooterLogo" /></a>
             </div>
         </>
     )
