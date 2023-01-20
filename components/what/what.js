@@ -10,7 +10,7 @@ function What() {
                 <div className='container'>
                     <div className='text-center'>
                         <Image src={Heading}  className="lazyload" width={900} alt="Heading" />
-                        <p>We offer <span>Financial Investment, Data Analytics & Business Intelligence, Content Strategy & Creative Technology, Brand, PR & Social Media Expertise</span> to our creator partners, which will ensure that they Gain Popularity & Achieve Growth.</p>
+                        <p>We offer <span>Financial Investment, Data Analytics & Business Intelligence, Content Strategy & Creative Supervision, Brand, PR & Social Media Expertise</span> in addition with <span>data driven, result oriented & authentic brand campaigns</span> to our Creator Partners.</p>
                     </div>
                 </div>
             </section>

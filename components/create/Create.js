@@ -31,9 +31,9 @@ function Create() {
         <>
             <section className='CreateSection'>
                 <div className='wording'>
-                <p className='desktop-only'>AniMeta is a Singapore based creator tech company focused on creating & nurturing digital creators by helping them grow their communities & maximise their earnings across multiple social media platforms & brand integrations.</p>
+                <p className='desktop-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p>
                 </div>
-                <p className='mobile-only'>AniMeta is a Singapore based creator tech company focused on creating & nurturing digital creators by helping them grow their communities & maximise their earnings across multiple social media platforms & brand integrations.</p>
+                <p className='mobile-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p>
             </section>
         </>
     )
