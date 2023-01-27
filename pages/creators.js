@@ -113,9 +113,9 @@ export default function Creator() {
                     <h2>Founding Investors</h2>
                 </div>
                 <div className='team-wrapp'>
-                    {founding.map((founding) => {
+                    {founding.map((founding, index) => {
                         return (
-                            <div className='member-box' onClick={() => {
+                            <div key={index} className='member-box' onClick={() => {
                                 setTeamData(founding)
                                 setShow(true)
                             }}>
@@ -136,9 +136,9 @@ export default function Creator() {
                         setFounderData(Founder)
                         setShow(true)
                     }}>
-                        {Founder.map((founder) => {
+                        {Founder.map((founder, index) => {
                             return (
-                                <div className='member-box' onClick={() => {
+                                <div key={index} className='member-box' onClick={() => {
                                     setTeamData(founder)
                                     setShow(true)
                                 }}>
@@ -156,9 +156,9 @@ export default function Creator() {
                     <h2>Management Team</h2>
                 </div>
                 <div className='team-wrapp'>
-                    {managementTeam.map((team) => {
+                    {managementTeam.map((team, index) => {
                         return (
-                            <div className='member-box' onClick={() => {
+                            <div key={index} className='member-box' onClick={() => {
                                 setTeamData(team)
                                 setShow(true)
                             }}>
