@@ -26,30 +26,30 @@ function Navbar() {
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
                         </Link> */}
                     </div>
-                    {/* <div className='NavItems' id='NavItems'>
+                    { <div className='NavItems' id='NavItems'>
                         <ul>
-                            <li>
+                            {/* <li>
                                 <Link href='/'>
                                     <a>ABOUT</a>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
-                                <Link href='/'>
+                                <Link href='/creators' passHref>
                                     <a>CREATORS</a>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href='/'>
                                     <a>BRAND</a>
                                 </Link>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                                 <Link href='/'>
                                     <a>CONTACT</a>
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
-                    </div> */}
+                    </div>}
                 </div>
             </nav>
         </>

@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/creator.css'
 import '../components/welcome/Welcome.css'
 import '../components/banner/Banner.css'
 import '../components/navbar/Navbar.css'
