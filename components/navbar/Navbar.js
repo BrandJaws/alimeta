@@ -33,11 +33,11 @@ function Navbar() {
                                     <a>ABOUT</a>
                                 </Link>
                             </li> */}
-                            <li>
+                            {/* <li>
                                 <Link href='/creators' passHref>
                                     <a>CREATORS</a>
                                 </Link>
-                            </li>
+                            </li> */}
                             {/* <li>
                                 <Link href='/'>
                                     <a>BRAND</a>
