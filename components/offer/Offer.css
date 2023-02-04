@@ -1,11 +1,10 @@
 .Offer {
-    background: url(../../public/images/offer-bg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 0px 20px 0px;
+    background-color: #000;
+    padding: 120px 0px 100px 0px;
     position: relative;
     z-index: 2;
 }
+
 
 .offer-text {
     background-image: url(../../public/images/offer-text.webp);
@@ -16,37 +15,61 @@
     background-position: center top -45px;
 }
 
-.Offer h2 {
-    font-size: 45px;
-    color: #ffa5f3;
-    margin: 0px;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-family: 'FatFrank';
-    margin-top: 185px;
-    margin-bottom: 20px;
+.section-title-layout h2 {
+    font-size: 136px;
+    color: #f00;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.Offer p {
-    font-size: 18px;
-    color: #fff;
-    margin: 0px auto;
-    font-family: 'Akzidenz-Grotesk BQ Extended';
-    max-width: 910px;
-    line-height: 28px;
-    margin-top: 25px;
+.Offer .section-title-layout h2 {
+    font-size: 175px;
+    line-height: 129px;
 }
+
+.section-title-layout h2 span {
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+.section-discription p {
+    font-size: 43px;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    max-width: 390px;
+    line-height: 52px;
+    margin: 0;
+}
+
+.create-me {
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    justify-content: space-evenly;
+}
+
+.what-p p {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 610px;
+}
+
 
 
 @media(max-width: 1400px) {
-    .Offer h2 {
+    /* .Offer h2 {
         font-size: 56px;
     }
 
     .Offer p {
         font-size: 17px;
         line-height: 25px;
-    }
+    } */
 }
 
 @media(max-width: 991px) {
@@ -82,13 +105,54 @@
         font-size: 14px;
     }
 
-    .offer-text{
+    .offer-text {
         padding: 1px 0px;
         background-position: center top 0px;
         background-size: contain;
     }
 
-    .Offer h2{
+    .Offer h2 {
         margin-top: 80px;
     }
+
+    .create-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title-layout h2 {
+        font-size: 72px;
+        line-height: 70px;
+    }
+
+    .section-discription p {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .diagram {
+        padding: 30px 30px 30px;
+        width: 100%;
+    }
+
+    .section-content {
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    .Offer .section-title-layout h2 {
+        font-size: 72px;
+        line-height: 52px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .CreateSection {
+        padding: 0;
+    }
+
+    .Offer {
+        padding: 40px 0px 30px 0px;
+    }
+    
 }

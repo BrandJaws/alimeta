@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
-// import Logo from "https://d3e066o7tnnbih.cloudfront.net/logo.png";
+import Logo from "../../public/images/logo.svg";
 // import MenuIcon from "../../public/images/menuIcon.png";
 // import CloseIcon from "../../public/images/close-icon.png";
 
@@ -18,7 +18,8 @@ function Navbar() {
                     <div className='Logo'>
                         <Link href='/'>
                             <a>
-                                <img src="https://d3e066o7tnnbih.cloudfront.net/logo.png" className="lazyload" alt="Logo" height={33} width={200} />
+                                <Image src={Logo} className="lazyload" alt="Logo" height={33} width={200} />
+                                {/* <img src={Logo} className="lazyload" alt="Logo" /> */}
                                 {/* <Image src="https://d3e066o7tnnbih.cloudfront.net/logo.png" class="lazyload" alt="Logo" height={33} width={200} /> */}
                             </a>
                         </Link>
@@ -26,7 +27,7 @@ function Navbar() {
                             <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
                         </Link> */}
                     </div>
-                    { <div className='NavItems' id='NavItems'>
+                    {<div className='NavItems' id='NavItems'>
                         <ul>
                             {/* <li>
                                 <Link href='/'>
@@ -51,6 +52,7 @@ function Navbar() {
                         </ul>
                     </div>}
                 </div>
+                <div className='shadow-nav'></div>
             </nav>
         </>
     )

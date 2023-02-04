@@ -13,7 +13,7 @@
 
 .HeroScreen{
     position: relative;
-    cursor: url(../../public/images/Asset2.svg), auto;
+    /* cursor: url(../../public/images/Asset2.svg), auto; */
     height: calc(100vh - 81px);
     margin-top: 81px;
 }

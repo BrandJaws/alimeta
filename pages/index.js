@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Welcome from '../components/welcome/Welcome'
+import Welcome from '../components/welcome/Welcome'
 import Banner from '../components/banner/Banner'
 import Started from '../components/started/Started'
 import Create from '../components/create/Create'
@@ -62,7 +62,7 @@ export default function Home() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
         {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
       </Head>
-      {/* <Welcome /> */}
+      <Welcome />
       <section className='HeroScreen'>
         <Banner />
       </section>

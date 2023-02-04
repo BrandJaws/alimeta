@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
-// import FooterLogo from "../../public/images/footer-logo.png";
+import FooterLogo from "../../public/images/footer-logo.png";
 import WhatsApp from "../../public/images/whatsapp.png";
 import Email from "../../public/images/email.png";
 import Phone from "../../public/images/phone-icon.png";
@@ -14,7 +14,7 @@ function Footer() {
             <section className='Footer' id="footer">
                 <div className='container flex'>
                     <div className='footer-left'>
-                        <h3>YOUR TIME IS NOW!</h3>
+                        <h3>YOUR <br /> TIME <span>IS NOW!</span></h3>
                         <p><b>GET IN TOUCH:</b></p>
                         <ul className='footer-social'>
                             <li>
@@ -40,7 +40,8 @@ function Footer() {
                     </div>
                     <div className='footer-right'>
                         <div className='LogoFooter'>
-                            <div className='gifLogo'></div>
+                            {/* <div className='gifLogo'></div> */}
+                            <Image src={FooterLogo} className="lazyload" alt="FooterLogo" />
                         </div>
                         {/* <div className='footerLinks'>
                             <ul>

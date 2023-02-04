@@ -1,23 +1,27 @@
 .News {
-    padding: 70px 0px;
-    background: url(../../public/images/hot-bg.webp);
+    padding: 120px 0px 100px;
+    /* background: url(../../public/images/hot-bg.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #fff;
     position: relative;
     z-index: 2;
 }
 
 .newsHeader h2 {
-    font-size: 57px;
-    margin: 0px;
-    background: url(../../public/images/heading-overllay.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -820px 0px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: normal;
-    text-transform: uppercase;
+    font-size: 136px;
+    color: #000;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.newsHeader h2 span{
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
 }
 
 .newsHeader h3 {
@@ -32,8 +36,9 @@
 .newsHeader {
     margin: 0px 0px 100px 0px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    gap: 20px;
 }
 
 .videoGroup h4 {
@@ -45,28 +50,9 @@
     margin-bottom: 15px;
 }
 
-.videoGroup p {
-    font-size: 16px;
-    color: #fff;
-    font-family: 'Gotham Book';
-}
-
-.bottom-heading h5 {
-    font-size: 32px;
-    color: #fea5ff;
-    margin: 0px;
-    text-transform: uppercase;
-}
-
-.newsHeader div {
-    width: 50%;
-}
-
-.newsHeader p {
-    color: #fff;
-    font-family: 'Akzidenz-Grotesk BQ Extended';
-    max-width: 445px;
-    line-height: 26px;
+.newsHeader p{
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .videoList {
@@ -159,6 +145,16 @@
     color: #fff;
     font-family: 'Akzidenz-Grotesk';
     display: block;
+}
+
+.bottom-heading h5{
+    font-size: 43px;
+    color: #000;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 52px;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 @media(max-width: 1100px) {
@@ -329,4 +325,16 @@
         max-width: 250px !important;
         margin: 0 auto !important;
     }
+
+    .newsHeader h2 {
+        font-size: 112px;
+        text-align: left;
+        line-height: 81px;
+    }
+
+    .bottom-heading h5 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
 }

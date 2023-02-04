@@ -1,15 +1,16 @@
 .Started {
-    background-image: url(../../public/images/started-background.webp);
+    /* background-image: url(../../public/images/started-background.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 0px 40px;
+    background-size: cover; */
+    background-color: #000;
+    padding: 120px 0px 100px;
     overflow: hidden;
     position: relative;
     z-index: 2;
 }
 
 .container {
-    max-width: 1370px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 

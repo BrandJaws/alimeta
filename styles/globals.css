@@ -1,8 +1,9 @@
 html,
 body {
-  padding: 0 0 240px 0;
+  padding: 0 0 280px 0;
   margin: 0;
-  font-family: 'Gotham';
+  /* font-family: 'Gotham'; */
+  font-family: 'Roboto';
 }
 
 @font-face {
@@ -157,6 +158,42 @@ body {
       url('../public/fonts/FatFrank-Heavy.woff') format('woff'),
       url('../public/fonts/FatFrank-Heavy.svg#FatFrank-Heavy') format('svg');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../public/fonts/RobotoCondensed-Light.eot');
+  src: url('../public/fonts/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/RobotoCondensed-Light.woff2') format('woff2'),
+      url('../public/fonts/RobotoCondensed-Light.woff') format('woff'),
+      url('../public/fonts/RobotoCondensed-Light.svg#RobotoCondensed-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../public/fonts/RobotoCondensed-Bold.eot');
+  src: url('../public/fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+      url('../public/fonts/RobotoCondensed-Bold.woff') format('woff'),
+      url('../public/fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Light.eot');
+  src: url('../public/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/Roboto-Light.woff2') format('woff2'),
+      url('../public/fonts/Roboto-Light.woff') format('woff'),
+      url('../public/fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }

@@ -8,9 +8,13 @@ function What() {
         <>
             <section className='what'>
                 <div className='container'>
-                    <div className='text-center'>
-                        <Image src={Heading}  className="lazyload" width={900} alt="Heading" />
-                        <p>We offer <span>Financial Investment, Data Analytics & Business Intelligence, Content Strategy & Creative Supervision, Brand, PR & Social Media Expertise</span> in addition with <span>data driven, result oriented & authentic brand campaigns</span> to our Creator Partners.</p>
+                    <div className='create-me direction-change'>
+                        <div className='section-title-layout color-block'>
+                            <h2>WHAT <span>DO WE TAKE CARE OF?</span></h2>
+                        </div>
+                        <div className='section-discription what-p color-block'>
+                            <p>We offer financial investment, data analytics & business intelligence, content strategy & creative supervision, brand, PR & social media expertise in addition to data driven, result oriented & authentic brand campaigns to our creator partners.</p>
+                        </div>
                     </div>
                 </div>
             </section>

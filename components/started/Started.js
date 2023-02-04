@@ -27,16 +27,16 @@ function Started() {
         <>
             {/* <button className='NextSection test' onClick={(e) => scrollToSection(e)}><Image src={Down} alt="Down" /></button> */}
             <section className='Started' id='Started'>
-                <div className=''>
-                    <div className='text-center'>
-                        <h2>Gain Popularity.<br />Achieve Growth.<br />Go Global.</h2>
-                        <h1 id='expandable' className='desktop-only'>
-                            {/* Get Starrrrred! */}
-                            <Image className="lazyload" src={HeadingTxt} alt="headingTxt" />
-                        </h1>
-                        <h1 className='mobile-only'>
-                            <Image className="lazyload" src={HeadingTxt} alt="headingTxt" />
-                        </h1>
+                <div className='container'>
+                    <div className='create-me'>
+                        <div className='section-title-layout'>
+                            <h2>GET <span>STARRRED!</span></h2>
+                        </div>
+                        <div className='section-discription'>
+                        <p>• GAIN POPULARITY.</p>
+                        <p>• ACHIEVE GROWTH.</p>
+                        <p>• GO GLOBAL.</p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,13 +1,17 @@
 .CreateSection {
-    padding: 70px 70px 70px;
-    background-color: transparent;
+    /* padding: 70px 70px 70px; */
+    /* background-color: transparent;
     background-image: url(../../public/images/CreateSection.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: block;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -28,18 +32,6 @@
     font-size: 33px;
     text-transform: uppercase;
     margin: 20px 0px;
-}
-
-.CreateSection p {
-    max-width: 780px;
-    font-size: 25px;
-    font-family: 'Gotham';
-    /* margin: 0 auto; */
-    line-height: normal;
-    text-align: center;
-    color: #000;
-    font-weight: 500;
-    margin-left: -100px;
 }
 
 .flex {
@@ -212,6 +204,34 @@
     display: none;
 }
 
+.diagram{
+    width: 60%;
+    background-color: #FF0000;
+    float: left;
+    height: auto;
+    padding: 120px 240px 100px;
+}
+
+.section-content {
+    width: 40%;
+    float: left;
+    padding: 90px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content p {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    max-width: 100%;
+    font-weight: 300;
+    text-align: left;
+    line-height: 35px;
+}
+
 @media(max-width: 1600px){
     .CreateSection p{
         padding: 0 55px;
@@ -228,9 +248,35 @@
         margin: 0px 0px 20px;
     }
 
+    .section-content{
+        padding: 90px 35px;
+    }
+
+    .section-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .diagram {
+        padding: 120px 190px 100px;
+    }
+
     .CreateSection p {
-        max-width: 610px;
-        font-size: 25px;
+        padding: 0;
+    }
+
+    .Offer .section-title-layout h2 {
+        font-size: 136px;
+        line-height: 100px;
+    }
+
+    .Offer p {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .section-title-layout h2{
+        font-size: 115px;
     }
 }
 

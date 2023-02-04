@@ -1,6 +1,5 @@
 .Footer {
     padding: 50px 0px 35px 0px;
-    border-bottom: 11px solid #7f38f8;
     position: fixed;
     left: 0;
     right: 0;
@@ -98,9 +97,16 @@
 
 .footer-left h3 {
     color: #000;
-    font-size: 60px;
-    font-family: 'FatFrank';
-    margin-bottom: 25px;
+    font-size: 90px;
+    margin-bottom: 45px;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 66px;
+}
+
+.footer-left h3 span {
+    font-weight: bold;
+    display: block;
 }
 
 .footer-left p b {
@@ -111,6 +117,7 @@
 
 .footer-left p {
     font-size: 18px;
+    color: #000;
 }
 
 .footerLinks ul {
@@ -145,11 +152,11 @@
     margin-top: 50px;
 }
 
-.floating-icon{
+.floating-icon {
     cursor: pointer;
 }
 
-.floating-icon img{
+.floating-icon img {
     width: 60px !important;
 }
 
@@ -178,23 +185,23 @@
     background-color: #eee;
 }
 
-.footer-left p a:hover{
+.footer-left p a:hover {
     color: #8500e2;
 }
 
-.footer-social{
+.footer-social {
     padding: 0px;
     margin: 0px 0px 20px 0px;
     list-style: none;
 }
 
-.footer-social li{
+.footer-social li {
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
 }
 
-.gifLogo{
+.gifLogo {
     background: url(https://d3e066o7tnnbih.cloudfront.net/animated-logo.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -348,56 +355,69 @@
         font-size: 35px;
     }
 
-    
+
 
     .form-control {
         padding: 16px;
         font-size: 20px;
     }
 
-    .headSubs h4{
+    .headSubs h4 {
         font-size: 16px;
     }
 
-    .Newsletter p{
-        font-size: 10px;
-        margin-bottom: 0px;
-    }
-    
-    form{
+    form {
         margin-bottom: 15px;
     }
 
-    .BannerSection{
+    .BannerSection {
         height: 40vh;
     }
 
-    nav.navbar{
+    nav.navbar {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
     }
 
-    .HeroScreen{
+    .HeroScreen {
         margin-top: 59px;
     }
 
-    .BannerSection video{
+    .BannerSection video {
         height: auto;
     }
 
-    .BannerSection{
+    .BannerSection {
         height: auto;
     }
 
-    .what p{
+    .what p {
         font-size: 18px;
         margin: 10px auto 0 auto;
     }
 
+
     .what {
         height: auto;
-        padding: 30px 20px;
+        padding: 30px 0px;
     }
-      
+
+    .what .section-discription p {
+        line-height: 32px;
+    }
+
+    .footer-left h3 {
+        font-size: 85px;
+        text-align: left;
+        margin-top: 35px;
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-right {
+        display: none;
+    }
 
 }

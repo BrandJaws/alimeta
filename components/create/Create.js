@@ -1,7 +1,7 @@
 import React from 'react'
 // import Link from 'next/link'
-// import Image from "next/image";
-// import Star from "../../public/images/star-image.png";
+import Image from "next/image";
+import Wheel from "../../public/images/wheel.png";
 // import StarIcon from "../../public/images/button-star.png";
 // import Youtube from "../../public/images/youtubeIcon.png";
 // import Ticktok from "../../public/images/ticktok.png";
@@ -30,10 +30,16 @@ function Create() {
     return (
         <>
             <section className='CreateSection'>
-                <div className='wording'>
+                <div className='diagram'>
+                    <Image src={Wheel} className="lazyload" alt="FooterLogo" />
+                </div>
+                <div className='section-content'>
+                    <p>Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform.</p>
+                </div>
+                {/* <div className='wording'>
                 <p className='desktop-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p>
                 </div>
-                <p className='mobile-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p>
+                <p className='mobile-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p> */}
             </section>
         </>
     )

@@ -4,13 +4,10 @@ nav.navbar {
     text-transform: uppercase;
     font-weight: 600;
     line-height: .5;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    background-color: transparent !important;
-    background-image: url(../../public/images/header-bg.webp);
+    background-color: #fff !important;
+    /* background-image: url(../../public/images/header-bg.webp);
     background-repeat: repeat-x;
-    background-size: cover;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 45%);
+    background-size: cover; */
     z-index: 1;
     max-width: 100%;
     margin: 0 auto;
@@ -25,6 +22,20 @@ nav.navbar {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+
+.shadow-nav {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    box-shadow: 0 29px 12px rgb(0 0 0 / 22%);
+    max-width: 1550px;
+    height: 24px;
+    border-radius: 82%;
+    z-index: -1;
+    margin: 0 auto;
 }
 
 .NavLoad .navbar.sticky {
@@ -46,9 +57,12 @@ nav.navbar {
     padding: 0 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1106px;
+    justify-content: center;
+    /* max-width: 1106px; */
     margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #fff !important;
 }
 
 .NavItems a {
@@ -243,4 +257,25 @@ nav.navbar {
         align-items: center;
         justify-content: center;
     }
+    .shadow-nav {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 20px;
+        box-shadow: 0 29px 12px rgb(0 0 0 / 22%);
+        max-width: 1550px;
+        height: 14px;
+        border-radius: 82%;
+        z-index: -1;
+        margin: 0 auto;
+    }
+    .navWrapp {
+        padding: 0 15px 15px;
+    }
+    nav.navbar {
+        padding-top: 0.8rem;
+        padding-bottom: 0;
+    }
+    
 }

@@ -23,8 +23,9 @@ function Newsletter() {
             <section className='Newsletter'>
                 <div className='container'>
                     <div className='headSubs'>
-                        <Image src={Heading} className="lazyload" alt="Logo" />
-                        <h4>Get started on your creator journey, Call us now!</h4>
+                        <h2>SUBSCRIBE TO <span>GO GLOBAL.</span></h2>
+                        <p>Get started on your creaTive journey,</p>
+                        <p>Call us now!</p>
                     </div>
                     <div className='max-width-1000'> 
                         <HubspotForm 
@@ -32,11 +33,12 @@ function Newsletter() {
                             portalId="23140983"
                             formId='87dfc11d-6610-4a0f-a5a0-09db919fec0f'
                         />  
-                        <p>By signing up you agree to receive communications via email.</p>
-                        <div className='desktop-only'>
+                        
+                        {/* <div className='desktop-only'>
                             <Image src={Signature} className="lazyload" alt="Logo" />
-                        </div>
+                        </div> */}
                     </div>
+                    <div className='info'><p>By signing up you agree to receive communications via email.</p></div>
                 </div>
             </section>
         </>

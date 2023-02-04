@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image";
-import Heading from "../../public/images/hot-heading.png";
-import Blog1 from "../../public/images/blog-1.jpg";
-import Blog2 from "../../public/images/blog-2.jpg";
-import Blog3 from "../../public/images/blog-3.jpg";
+// import Heading from "../../public/images/hot-heading.png";
+// import Blog1 from "../../public/images/blog-1.jpg";
+// import Blog2 from "../../public/images/blog-2.jpg";
+// import Blog3 from "../../public/images/blog-3.jpg";
 import Slider from "react-slick";
 
 
@@ -27,10 +27,10 @@ function News() {
                 <div className='container'>
                     <div className='newsHeader'>
                         <div className='mobile-size-fix'>
-                            <Image className="lazyload" src={Heading} alt="Play" />
+                            <h2>WHAT’S <span>HOT!</span></h2>
                         </div>
-                        <div>
-                            <h3>Get your daily dose of what&apos;s up and coming in the creator world.</h3>
+                        <div className='section-discription color-block'>
+                            <p>GET YOUR DAILY DOSE OF WHAT&apos;S UP AND COMING IN THE CONTENT CREATION WORLD.</p>
                         </div>
                     </div>
                     <div className='videoList desktop-only'>
