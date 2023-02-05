@@ -11,9 +11,9 @@ import Newsletter from '../components/newsletter/Newsletter'
 
 export default function Home() {
 
-  if (typeof window !== "undefined") {
-    AOS.init();
-  }
+  // if (typeof window !== "undefined") {
+  //   AOS.init();
+  // }
 
   if (typeof window !== 'undefined') {
 
