@@ -12,7 +12,7 @@ const Welcome = () => {
     return (
         <>
             <section className="Splash">
-                <video className='Bannervideo desktop-only' id="myvideo" autoPlay muted playsInline>
+                <video className='Bannervideo' id="myvideo" autoPlay muted playsInline>
                     <source src="https://orla.ae/assets/video/preloader.mp4" type="video/mp4" />
                 </video>
             </section>

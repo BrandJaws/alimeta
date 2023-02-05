@@ -120,6 +120,19 @@ section.Splash h1 span:nth-child(9) {
         align-items: flex-end;
         justify-content: center;
     }
+
+    section.Splash {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.Splash video {
+        object-fit: contain;
+        width: 250%;
+        margin-left: -45%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -131,5 +144,18 @@ section.Splash h1 span:nth-child(9) {
         display: flex;
         align-items: flex-end;
         justify-content: center;
+    }
+
+    section.Splash {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.Splash video {
+        object-fit: contain;
+        width: 250%;
+        margin-left: -45%;
     }
 }
