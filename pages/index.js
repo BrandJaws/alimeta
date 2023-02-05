@@ -8,47 +8,51 @@ import What from '../components/what/what'
 import Persons from '../components/persons/Persons'
 import News from '../components/news/News'
 import Newsletter from '../components/newsletter/Newsletter'
+import { useEffect } from 'react'
 
 export default function Home() {
 
   // if (typeof window !== "undefined") {
   //   AOS.init();
   // }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
 
-  if (typeof window !== 'undefined') {
+      // Spalsh Gone
 
-    // Spalsh Gone
+      setTimeout(function () {
+        var body = document.body;
+        body.classList.add("SplashGone");
+      }, 10000);
 
-    setTimeout(function () {
-      var body = document.body;
-      body.classList.add("SplashGone");
-    }, 4500);
+      // Navbar Loaded
 
-    // Navbar Loaded
-
-    setTimeout(function () {
-      var body = document.body;
-      body.classList.add("NavLoad");
-    }, 5500);
+      setTimeout(function () {
+        var body = document.body;
+        body.classList.add("NavLoad");
+      }, 10000);
 
 
 
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function () { myFunction() };
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () { myFunction() };
 
-    // Get the header
-    var header = document.getElementById("navbar");
+      // Get the header
+      var header = document.getElementById("navbar");
 
-    // Get the offset position of the navbar
-    var sticky = header?.offsetTop;
+      // Get the offset position of the navbar
+      var sticky = header?.offsetTop;
 
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header?.classList.add("sticky");
-      } else {
-        header?.classList.remove("sticky");
-      }
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      myFunction(sticky, header);
+    }
+  }, [])
+
+  function myFunction(sticky, header) {
+    if (typeof window !== 'undefined' && window.pageYOffset > sticky) {
+      header?.classList.add("sticky");
+    } else {
+      header?.classList.remove("sticky");
     }
   }
 
