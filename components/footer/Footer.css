@@ -202,7 +202,7 @@
 }
 
 .gifLogo {
-    background: url(https://d3e066o7tnnbih.cloudfront.net/animated-logo.gif);
+    background: url(../../public/images/animated-logo.gif);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -291,6 +291,10 @@
     .getTouch {
         float: none;
         margin-right: 0px;
+    }
+    .footer-right {
+        display: block;
+        margin-top: 25px;
     }
 
 }
@@ -417,7 +421,7 @@
     }
 
     .footer-right {
-        display: none;
+        margin-top: 25px;
     }
 
 }
