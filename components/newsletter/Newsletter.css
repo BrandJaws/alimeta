@@ -356,4 +356,12 @@ input {
         margin-bottom: 0px;
         line-height: 34px;
     }
+
+    .Newsletter .info p{
+        font-size: 18px;
+    }
+
+    .footer-left p {
+        font-size: 20px;
+    }
 }
