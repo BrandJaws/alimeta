@@ -23,14 +23,14 @@ export default function Home() {
       setTimeout(function () {
         var body = document.body;
         body.classList.add("SplashGone");
-      }, 10000);
+      }, 5000);
 
       // Navbar Loaded
 
       setTimeout(function () {
         var body = document.body;
         body.classList.add("NavLoad");
-      }, 10000);
+      }, 5500);
 
 
 
