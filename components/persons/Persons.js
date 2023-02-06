@@ -43,7 +43,7 @@ function Persons() {
                 <div onClick={() => setUrl("https://d3e066o7tnnbih.cloudfront.net/fashion-lifestyle.mp4")} className="category"><Image className="lazyload" src={p5} alt="p5" /> <h2>Fashion</h2></div>
             </section>
             <section className='person-content desktop-only'>
-                <h2 data-aos="fade-right">Shaping the future of the creator economy</h2>
+                <h2>Shaping the future of the creator economy</h2>
             </section>
             <section className='Persons desktop-only'>
                 <div onClick={() => setUrl("https://d3e066o7tnnbih.cloudfront.net/new_food_beverage.mp4")} className="category"><Image className="lazyload" src={p6} alt="p6" /> <h2>Food</h2></div>
