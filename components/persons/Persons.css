@@ -97,6 +97,11 @@
     padding: 14px 10px;
 }
 
+.headindvideo h3{
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
 @media(max-width: 1750px){
     .person-content h2{
         font-size: 52px;
@@ -152,7 +157,7 @@
     }
 
     .headindvideo h3 {
-        font-size: 25px;
+        font-size: 32px;
         color: #fff;
         text-align: left;
         padding: 14px 10px;

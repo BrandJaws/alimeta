@@ -46,6 +46,9 @@
         margin-bottom: 20px;
         line-height: 45px;
     }
-    
+    .what .section-discription p{
+        font-family: 'Roboto';
+        font-weight: 300;
+    }
     
 }
