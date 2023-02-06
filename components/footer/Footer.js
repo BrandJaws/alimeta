@@ -44,7 +44,7 @@ function Footer() {
                             {/* <Image src={FooterLogo} className="lazyload" alt="FooterLogo" /> */}
                             <video className='FooterVideo' autoPlay loop muted playsInline>
                                 {/* <source src="https://d3e066o7tnnbih.cloudfront.net/mobile-banner-video.mp4" type="video/mp4" /> */}
-                                <source src="https://orla.ae/assets/video/animated-footer-logo.mp4" type="video/mp4" />
+                                <source src="https://d3e066o7tnnbih.cloudfront.net/animated-footer-logo.mp4" type="video/mp4" />
                             </video>
                         </div>
                         {/* <div className='footerLinks'>

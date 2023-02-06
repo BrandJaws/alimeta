@@ -325,13 +325,15 @@
     }
 
     .section-title-layout h2 {
-        font-size: 72px;
-        line-height: 70px;
+        font-size: 56px;
+        line-height: 41px;
     }
+    
 
     .section-discription p {
-        font-size: 32px;
+        font-size: 29px;
         line-height: 42px;
+        text-align: left;
     }
 
     .diagram {
@@ -345,8 +347,8 @@
     }
 
     .Offer .section-title-layout h2 {
-        font-size: 72px;
-        line-height: 52px;
+        font-size: 56px;
+        line-height: 42px;
         margin-bottom: 25px;
         margin-top: 0;
     }
