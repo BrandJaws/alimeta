@@ -22,7 +22,7 @@ function Banner() {
             </video>
             {/* poster="https://animeta.ai/images/cover-mobile.jpg" */}
             <video className='Bannervideo mobile-only'  poster="https://animeta.ai/images/cover-mobile.jpg"  autoPlay loop muted playsInline>
-                <source src="https://orla.ae/assets/video/vertical.mp4" />
+                <source src="https://orla.ae/assets/video/mobile-video.mp4" />
             </video>
         </div>
     )
