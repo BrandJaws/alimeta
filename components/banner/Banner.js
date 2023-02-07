@@ -21,7 +21,7 @@ function Banner() {
                 {/* <source src="https://orla.ae/assets/video/banner_video_updated.mp4" type="video/mp4" /> */}
             </video>
             <video className='Bannervideo mobile-only' poster="https://animeta.ai/images/cover-mobile.jpg" autoPlay loop muted playsInline>
-                <source src="https://orla.ae/assets/video/mobile-banner-video.mp4" />
+                <source src="https://orla.ae/assets/video/mobi-video.mp4" />
             </video>
         </div>
     )
