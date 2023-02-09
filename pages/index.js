@@ -60,39 +60,52 @@ export default function Home() {
     <>
       <Head>
         <title>ANIMETA</title>
-        <meta name="image" content="https://animeta.ai/og-image.png" />
+        {/* <meta name="image" content="https://animeta.ai/og-image.png" />
         <meta property="og:image" itemprop="image" content="https://animeta.ai/og-image.png"></meta>
         <meta property="og:title" content="ANIMETA" />
         <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
         <meta name="title" content="ANIMETA" />
-        <meta name="description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." /> */}
 
-        <link rel="icon" href="https://animeta.ai/og-image.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="https://animeta.ai/og-image.png" />
-        <meta name="msapplication-TileImage" content="https://animeta.ai/og-image.png" />
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
-        {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
-      </Head>
-      <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
+        <meta name="msapplication-TileImage" content="/og-image.png" />
+        <meta property="og:site_name" content="ANIMETA" />
+        <meta property="og:title" content="ANIMETA" />
+        <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:url" content="https://animeta.ai/" />
 
-      <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-        <link itemprop="url" href="https://animeta.ai/og-image.png" />
-      </span>
-      <Welcome />
-      <section className='HeroScreen'>
-        <Banner />
-      </section>
-      <Started />
-      <Create />
-      <Offer />
-      <What />
-      <Persons />
-      <News />
-      <Newsletter />
-      {/* <Modal /> */}
-    </>
-  )
+
+
+            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="https://animeta.ai/og-image.png" sizes="192x192" />
+            <link rel="apple-touch-icon" href="https://animeta.ai/og-image.png" />
+            <meta name="msapplication-TileImage" content="https://animeta.ai/og-image.png" />
+            {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script> */}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
+            {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
+          </Head>
+          <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
+
+          <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+            <link itemprop="url" href="https://animeta.ai/og-image.png" />
+          </span>
+          <Welcome />
+          <section className='HeroScreen'>
+            <Banner />
+          </section>
+          <Started />
+          <Create />
+          <Offer />
+          <What />
+          <Persons />
+          <News />
+          <Newsletter />
+          {/* <Modal /> */}
+        </>
+        )
 }
