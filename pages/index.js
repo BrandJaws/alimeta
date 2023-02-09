@@ -60,11 +60,12 @@ export default function Home() {
     <>
       <Head>
         <title>ANIMETA</title>
-        <meta name="image" content="https://animeta.ai/favicon.ico" />
+        <meta name="image" content="https://animeta.ai/og-image.png" />
+        <meta property="og:image" content="https://animeta.ai/og-image.png"></meta>
+        <meta property="og:title" content="ANIMETA" />
+        <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
         <meta name="title" content="ANIMETA" />
         <meta name="description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
-        <meta name="image:width" content="1200" />
-        <meta name="image:height" content="630" />
         <link rel="icon" href="/favicon.ico" />
         <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
