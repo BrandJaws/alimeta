@@ -61,6 +61,11 @@ export default function Home() {
       <Head>
         <title>ANIMETA</title>
         <meta name="description" content="ANIMETA" />
+        <meta property="og:image" content="favicon.ico" />
+        <meta property="og:title" content="ANIMETA" />
+        <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <link rel="icon" href="/favicon.ico" />
         <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
