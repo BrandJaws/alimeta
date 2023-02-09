@@ -67,27 +67,32 @@ export default function Home() {
         <meta name="title" content="ANIMETA" />
         <meta name="description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="https://animeta.ai/og-image.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://animeta.ai/og-image.png" />
+        <meta name="msapplication-TileImage" content="https://animeta.ai/og-image.png" />
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
         {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
       </Head>
       <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
 
-        <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-          <link itemprop="url" href="https://animeta.ai/og-image.png" />
-        </span>
-        <Welcome />
-        <section className='HeroScreen'>
-          <Banner />
-        </section>
-        <Started />
-        <Create />
-        <Offer />
-        <What />
-        <Persons />
-        <News />
-        <Newsletter />
-        {/* <Modal /> */}
-      </>
-      )
+      <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="https://animeta.ai/og-image.png" />
+      </span>
+      <Welcome />
+      <section className='HeroScreen'>
+        <Banner />
+      </section>
+      <Started />
+      <Create />
+      <Offer />
+      <What />
+      <Persons />
+      <News />
+      <Newsletter />
+      {/* <Modal /> */}
+    </>
+  )
 }
