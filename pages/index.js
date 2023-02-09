@@ -60,14 +60,6 @@ export default function Home() {
     <>
       <Head>
         <title>ANIMETA</title>
-        {/* <meta name="image" content="https://animeta.ai/og-image.png" />
-        <meta property="og:image" itemprop="image" content="https://animeta.ai/og-image.png"></meta>
-        <meta property="og:title" content="ANIMETA" />
-        <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
-        <meta name="title" content="ANIMETA" />
-        <meta name="description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." /> */}
-
-
         <meta name="msapplication-TileImage" content="/og-image.png" />
         <meta property="og:site_name" content="ANIMETA" />
         <meta property="og:title" content="ANIMETA" />
