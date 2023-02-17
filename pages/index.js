@@ -61,10 +61,14 @@ export default function Home() {
       <Head>
         <title>ANIMETA</title>
         <meta name="msapplication-TileImage" content="/og-image.png" />
-        <meta property="og:site_name" content="ANIMETA" />
-        <meta property="og:title" content="ANIMETA" />
-        <meta property="og:description" content="Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform." />
+        <meta property="og:site_name" content="AI Powered Creator Tech Company | Animeta" />
+        <meta property="og:title" content="AI Powered Creator Tech Company | Animeta" />
+        <meta property="og:description" content="Animeta is the World's first Social Media Influencer collaboration platform for Digital Creators, TikTok stars, & everyone else - powered by AIJoin the revolution of influencers that make money with digital creator tech, empower the creator economy, and get famous faster." />
         <meta property="og:image" content="/og-image.png" />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="language" content="English"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+        <meta name="keywords" content="Creator Economy, Influencer collaboration, Animeta, Influencer Marketing, Social Media Influencer, Digital Creator, Social Commerce"></meta>
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
