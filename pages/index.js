@@ -59,7 +59,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ANIMETA</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+        <title>AI Powered Creator Tech Company | Animeta</title>
         <meta name="msapplication-TileImage" content="/og-image.png" />
         <meta property="og:site_name" content="AI Powered Creator Tech Company | Animeta" />
         <meta property="og:title" content="AI Powered Creator Tech Company | Animeta" />
@@ -67,7 +68,7 @@ export default function Home() {
         <meta property="og:image" content="/og-image.png" />
         <meta name="robots" content="index, follow"></meta>
         <meta name="language" content="English"></meta>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+        
         <meta name="keywords" content="Creator Economy, Influencer collaboration, Animeta, Influencer Marketing, Social Media Influencer, Digital Creator, Social Commerce"></meta>
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
