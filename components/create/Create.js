@@ -34,7 +34,7 @@ function Create() {
                     <Image src={Wheel} className="lazyload" alt="FooterLogo" />
                 </div>
                 <div className='section-content'>
-                    <p>Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Self-service Creator Tech platform.</p>
+                    <p>Animeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary Animeta™ AI-based Creator Tech platform.</p>
                 </div>
                 {/* <div className='wording'>
                 <p className='desktop-only'>AniMeta is a Singapore based Creator Tech company focused on creating & nurturing digital creators by helping them grow their communities & maximize their earnings across multiple social media platforms & customized brand solutions through the proprietary AniMeta™ AI-based Self-Service Creator Tech platform.</p>
