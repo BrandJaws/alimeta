@@ -68,7 +68,7 @@ export default function Home() {
         <meta property="og:image" content="/og-image.png" />
         <meta name="robots" content="index, follow"></meta>
         <meta name="language" content="English"></meta>
-        
+
         <meta name="keywords" content="Creator Economy, Influencer collaboration, Animeta, Influencer Marketing, Social Media Influencer, Digital Creator, Social Commerce"></meta>
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
@@ -84,6 +84,7 @@ export default function Home() {
             <meta name="msapplication-TileImage" content="https://animeta.ai/og-image.png" />
             {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script> */}
             <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></script>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9081900158205152" crossorigin="anonymous"></script>
             {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
           </Head>
           <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
