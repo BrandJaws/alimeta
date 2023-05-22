@@ -18,6 +18,7 @@ import blogImg19 from "../public/images/blog-19.jpg";
 import blogImg23 from "../public/images/blog-23.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import moment from "moment/moment";
 const blogs = [
     {
         img: blogImg1,
@@ -345,7 +346,7 @@ const blogs = [
     },
 ];
 
-export default function Blog() {
+export default function News() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState("All Topic");
   const [updatedBlogs, setUpdatedBlogs] = useState(blogs);
@@ -358,6 +359,13 @@ export default function Blog() {
         let filterBlogs = blogs.filter((item) => item.category === activeTab);
         setUpdatedBlogs(filterBlogs);
     } else {
+        console.log(blogs, "news blogs");
+        // blogs = blogs.filter((item, index) => moment(item.date).format(""))
+        blogs.sort(function(a,b){
+            // Turn your strings into dates, and then subtract them
+            // to get a value that is either negative, positive, or zero.
+            return new Date(b.date) - new Date(a.date);
+        });
         setUpdatedBlogs(blogs);
     }
   }, [activeTab]);
@@ -368,15 +376,15 @@ export default function Blog() {
           http-equiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
-        <title>Blog | Animeta</title>
+        <title>News | Animeta</title>
         <meta name="msapplication-TileImage" content="/og-image.png" />
         <meta
           property="og:site_name"
-          content="Blog | Animeta"
+          content="News | Animeta"
         />
         <meta
           property="og:title"
-          content="Blog | Animeta"
+          content="News | Animeta"
         />
         <meta
           property="og:description"
