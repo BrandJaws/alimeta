@@ -266,9 +266,10 @@ const blogs = [
     img: blogImg8,
     headlines:
       "Lakhan Rawat ने क्यों कहा Neetu Bisht को अपना Lucky Charm ? कब और कैसे मिले Lakhan और Neetu ?",
-    portal: "Youtube",
+    portal: "N/A",
     date: "29 Mar 2023",
-    link: "https://www.youtube.com/watch?v=WXXy_7p6I6Q",
+    // https://www.youtube.com/watch?v=WXXy_7p6I6Q
+    link: "#",
     category: "Creator PR",
     description: "",
   },
@@ -276,9 +277,10 @@ const blogs = [
     img: blogImg8,
     headlines:
       "इस क्रिकेटर ने क्रिकेट से कम और दूसरी चीज़ों से कमाया नाम और पैसा",
-    portal: "Youtube",
+    portal: "N/A",
     date: "25 Mar 2023",
-    link: "https://www.youtube.com/watch?v=vjNvhrKYPF8",
+    // https://www.youtube.com/watch?v=vjNvhrKYPF8
+    link: "#",
     category: "Creator PR",
     description: "",
   },
@@ -295,9 +297,10 @@ const blogs = [
     img: blogImg8,
     headlines:
       "Exclusive Interview With Lakhan Arjun Rawat & Neetu Bisht | @LakhneetVlogs | Uncut | Rapid Fire |",
-    portal: "Youtube",
+    portal: "N/A",
     date: "25 Mar 2023",
-    link: "https://www.youtube.com/watch?v=d4tQO3m71ns",
+    // https://www.youtube.com/watch?v=d4tQO3m71ns
+    link: "#",
     category: "Creator PR",
     description: "",
   },
@@ -450,8 +453,6 @@ export default function News() {
           name="msapplication-TileImage"
           content="https://animeta.ai/og-image.png"
         />
-        {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script> */}
-        {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
       </Head>
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
@@ -497,41 +498,45 @@ export default function News() {
             {updatedBlogs.map((item, index) => {
               return (
                 <div key={index} className="single-blog-item">
-                  <Link
-                    href={item.link}
-                    legacyBehavior
-                    className="cursor-pointer"
-                  >
-                    <a target="_blank">
-                      <Image
-                        src={item.img}
-                        alt={item.headlines.split(" ").join("-")}
-                      />
-                    </a>
-                  </Link>
-                  <div className="blog-content">
-                    <div className="blog-info">
-                      <h3>{item.portal}</h3>
-                      <p>
-                        {item.date} - <span>{item.category}</span>
-                      </p>
-                    </div>
+                  <div className="blog-card">
                     <Link
                       href={item.link}
                       legacyBehavior
                       className="cursor-pointer"
                     >
                       <a target="_blank">
-                        <h2
-                          className="blog-title"
-                          dangerouslySetInnerHTML={{ __html: item.headlines }}
+                        <Image
+                          src={item.img}
+                          alt={item.headlines.split(" ").join("-")}
                         />
                       </a>
                     </Link>
-                    <div
-                      className="blog-description"
-                      dangerouslySetInnerHTML={{ __html: item.description }}
-                    />
+                    <div className="blog-content">
+                      <div className="blog-info">
+                        <h3>{item.portal}</h3>
+                        <p>
+                          {item.date} - <span>{item.category}</span>
+                        </p>
+                      </div>
+                      <Link
+                        href={item.link}
+                        legacyBehavior
+                        className="cursor-pointer"
+                      >
+                        <a target="_blank">
+                          <h2
+                            className="blog-title"
+                            dangerouslySetInnerHTML={{ __html: item.headlines }}
+                          />
+                        </a>
+                      </Link>
+                      {item.description && (
+                        <div
+                          className="blog-description"
+                          dangerouslySetInnerHTML={{ __html: item.description }}
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
               );

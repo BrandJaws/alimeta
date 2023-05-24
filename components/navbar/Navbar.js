@@ -1,58 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from "next/image";
 import Logo from "../../public/images/logo.svg";
-// import MenuIcon from "../../public/images/menuIcon.png";
-// import CloseIcon from "../../public/images/close-icon.png";
+import { RxHamburgerMenu } from "react-icons/rx";
+import MenuIcon from "../../public/images/menuIcon.png";
+import CloseIcon from "../../public/images/close-icon.png";
+import { useRouter } from 'next/router';
 
 function Navbar() {
-
+    const [isMenuShow, setIsMenuShow] = useState(false);
+    const router = useRouter();
     const handleClick = () => {
-        document.body.classList.toggle('MenuOpened');
+        setIsMenuShow(!isMenuShow);
     };
+    useEffect(() => {
+        console.log("testestset", router);
+        if (isMenuShow) {
+            setIsMenuShow(false);
+        }
+    }, router);
 
     return (
         <>
-            <nav className='navbar' id='navbar'>
+            <nav className='navbar container' id='navbar'>
                 <div className='navWrapp'>
+                    <div></div>
                     <div className='Logo'>
                         <Link href='/'>
                             <a>
                                 <Image src={Logo} className="lazyload" alt="Logo" height={33} width={200} />
-                                {/* <img src={Logo} className="lazyload" alt="Logo" /> */}
-                                {/* <Image src="https://d3e066o7tnnbih.cloudfront.net/logo.png" class="lazyload" alt="Logo" height={33} width={200} /> */}
                             </a>
                         </Link>
-                        {/* <Link href='/'>
-                            <a className='MenuToggler' onClick={handleClick}><div className='MenuImage'><Image src={MenuIcon} alt="MenuImage" /></div><div className='closeImage'><Image src={CloseIcon}  alt="CloseIcon" /></div></a>
-                        </Link> */}
+                        <button type='button' className='MenuToggler' onClick={handleClick}>
+                            <RxHamburgerMenu className='MenuImage' />
+                        </button>
                     </div>
-                    {<div className='NavItems' id='NavItems'>
-                        <ul>
-                            {/* <li>
-                                <Link href='/'>
-                                    <a>ABOUT</a>
-                                </Link>
-                            </li> */}
-                            {/* <li>
-                                <Link href='/creators' passHref>
-                                    <a>CREATORS</a>
-                                </Link>
-                            </li> */}
-                            {/* <li>
-                                <Link href='/'>
-                                    <a>BRAND</a>
-                                </Link>
-                            </li> */}
-                            {/* <li>
-                                <Link href='/'>
-                                    <a>CONTACT</a>
-                                </Link>
-                            </li> */}
-                        </ul>
-                    </div>}
+                    <ul className='desktop-menu'>
+                        <li>
+                            <Link href='/news' legacyBehavior>
+                                <a>News</a>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className='shadow-nav'></div>
+                {isMenuShow && (<div className='NavItems'>
+                        <ul>
+                            <li>
+                                <Link href='/news' legacyBehavior>
+                                    <a>News</a>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>)}
             </nav>
         </>
     )
