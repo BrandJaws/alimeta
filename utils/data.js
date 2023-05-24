@@ -1,7 +1,7 @@
 export const blogCategories = [
     {
-        name: "All Topic",
-        slug: "All Topic"
+        name: "All Topics",
+        slug: "All Topics"
     },
     {
         name: "Corporate PR",

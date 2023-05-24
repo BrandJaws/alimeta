@@ -393,7 +393,7 @@ const blogs = [
 
 export default function News() {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState("All Topic");
+  const [activeTab, setActiveTab] = useState("All Topics");
   const [updatedBlogs, setUpdatedBlogs] = useState(
     blogs.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
@@ -403,7 +403,7 @@ export default function News() {
     setActiveTab(slug);
   };
   useEffect(() => {
-    if (activeTab !== "All Topic") {
+    if (activeTab !== "All Topics") {
       let filterBlogs = blogs.filter((item) => item.category === activeTab);
       setUpdatedBlogs(filterBlogs);
     } else {
