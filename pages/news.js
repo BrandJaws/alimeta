@@ -16,11 +16,70 @@ import blogImg17 from "../public/images/blog-17.webp";
 import blogImg18 from "../public/images/blog-18.png";
 import blogImg19 from "../public/images/blog-19.jpg";
 import blogImg23 from "../public/images/blog-23.jpg";
+import blogImg24 from "../public/images/blog-24.png";
+// import blogImg25 from "../public/images/2-0-1304105013-whatsapp-0_1679589704670_1682271113229.avif";
+import blogImg26 from "../public/images/Content-Creation-with-Artificial-Intelligence-by-Gaurav-Thakur.webp";
+import blogImg27 from "../public/images/1683715471_Q96nwX_BW_Car.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import moment from "moment/moment";
 import Script from "next/script";
 const blogs = [
+  {
+    img: blogImg6,
+    headlines:
+      "Newly launched AI-powered creator tech venture to focus on creator economy",
+    portal: "India TV",
+    date: "09 Feb 2023",
+    link: "https://www.indiatvnews.com/business/news/newly-launched-ai-powered-creator-tech-venture-animeta-to-focus-on-creator-economy-artificial-intelligence-india-2023-02-09-845800",
+    category: "Corporate PR",
+    description:
+      "As many sectors around the world took a nosedive due to Covid restrictions and Russia-Ukraine war, the creator economy showed picked up pace",
+  },
+  {
+    img: blogImg16,
+    headlines:
+      "Animeta strengthens leadership with key hires from Google Meta and Viacom",
+    portal: "E4M",
+    date: "13 Mar 2023",
+    link: "https://www.exchange4media.com/people-movement-news/animeta-strengthens-leadership-with-key-hires-from-google-meta-and-viacom-125657.html",
+    category: "Corporate PR",
+    description:
+      "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, today announced several strategic hires",
+  },
+  {
+    img: blogImg24,
+    headlines:
+      "Here’s How Animeta Is Helping Indian Content Creators Crack The Monetisation Code",
+    portal: "Inc42",
+    date: "21 Mar 2023",
+    link: "https://inc42.com/startups/heres-how-animeta-is-helping-indian-content-creators-crack-the-monetisation-code/?login=1",
+    category: "Corporate PR",
+    description:
+      "Animeta help creators grow their communities and maximise their earnings across multiple social media platforms.",
+  },
+  {
+    img: blogImg19,
+    headlines:
+      "Animeta onboards its first set of creators",
+    portal: "Economic times",
+    date: "13 Mar 2023",
+    link: "https://economictimes.indiatimes.com/tech/startups/ai-powered-creator-tech-company-animeta-onboards-its-first-set-of-creator-partners/articleshow/98613227.cms",
+    category: "Corporate PR",
+    description:
+      "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
+  },
+  {
+    img: blogImg3,
+    headlines:
+      "Over 1 million Indian social media creators to earn $500 per month in the next three years: Report",
+    portal: "LiveMint",
+    date: "23 Apr 2023",
+    link: "https://www.livemint.com/news/india/over-1-million-indian-social-media-creators-to-earn-500-per-month-in-the-next-three-years-report/amp-11682270973943.html",
+    category: "Corporate PR",
+    description:
+      "New Delhi: India is leading the digital content creation wave with 1 million creators in the country estimated to have at least 100,000 subscribers or followers in three years",
+  },
   {
     img: blogImg1,
     headlines:
@@ -71,17 +130,6 @@ const blogs = [
     category: "Corporate PR",
     description:
       "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
-  },
-  {
-    img: blogImg6,
-    headlines:
-      "Newly launched AI-powered creator tech venture to focus on creator economy",
-    portal: "India TV",
-    date: "09 Feb 2023",
-    link: "https://www.indiatvnews.com/business/news/newly-launched-ai-powered-creator-tech-venture-animeta-to-focus-on-creator-economy-artificial-intelligence-india-2023-02-09-845800",
-    category: "Corporate PR",
-    description:
-      "As many sectors around the world took a nosedive due to Covid restrictions and Russia-Ukraine war, the creator economy showed picked up pace",
   },
   {
     img: blogImg1,
@@ -178,17 +226,6 @@ const blogs = [
       "Singapore-based creator tech company Animeta, launched by former Cosmos-Maya CEO Anish Mehta has announced several strategic hires",
   },
   {
-    img: blogImg16,
-    headlines:
-      "Animeta strengthens leadership with key hires from Google Meta and Viacom",
-    portal: "E4M",
-    date: "13 Mar 2023",
-    link: "https://www.exchange4media.com/people-movement-news/animeta-strengthens-leadership-with-key-hires-from-google-meta-and-viacom-125657.html",
-    category: "Corporate PR",
-    description:
-      "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, today announced several strategic hires",
-  },
-  {
     img: blogImg17,
     headlines: "Animeta onboards first set of creators",
     portal: "Mint",
@@ -261,6 +298,58 @@ const blogs = [
     category: "Corporate PR",
     description:
       "Over 10 lakh Indian digital content creators on social media are likely to earn more than $500 (a little over Rs 41,000) a month each in the next three years, a report revealed on Friday.",
+  },
+  {
+    img: blogImg19,
+    headlines:
+      "Animeta signs SIT to their starmaker program",
+    portal: "Indian Television",
+    date: "29 May 2023",
+    // https://www.youtube.com/watch?v=WXXy_7p6I6Q
+    link: "https://www.indiantelevision.com/mam/marketing/mam/animeta-signs-sit-to-their-starmaker-program-230529",
+    category: "Creator PR",
+    description: "Mumbai: Long before seeking trends to make videos on social media was a thing, Mohit Hussein and Chhavi Mittal, the founders of SIT – or ‘Shitty Ideas Trending’, already identified the immense power of providing relatable entertainment.",
+  },
+  {
+    img: blogImg1,
+    headlines:
+      "ONE MILLION INDIAN SOCIAL MEDIA CREATORS TO EARN OVER $500 MONTHLY WITHIN THREE YEARS: ANIMETA REPORT",
+    portal: "Outlook",
+    date: "22 Apr 2023",
+    // https://www.youtube.com/watch?v=WXXy_7p6I6Q
+    link: "https://startup.outlookindia.com/sector/saas/one-million-indian-social-media-creators-to-earn-over-500-monthly-within-three-years-animeta-report-news-8210",
+    category: "Creator PR",
+    description: "It has claimed in a statement that the creator economy has been a topic of interest for the entire world and there are many statistics that are often discussed. While every creator is a creator out of passion, a large chunk creates content as a hobby.",
+  },
+  {
+    img: blogImg8,
+    headlines: "Rahul Vaidya sings Mehndi rach gayi for Lakhneet Wedding",
+    portal: "Times Of India",
+    date: "14 Apr 2023",
+    link: "https://timesofindia.indiatimes.com/entertainment/punjabi/music/rahul-vaidya-sings-mehndi-rach-gayi-for-lakhneet-wedding/articleshow/99489595.cms?from=mdr",
+    category: "Creator PR",
+    description:
+      "Playback singer Rahul Vaidya has lent his voice to the original song, 'Mehndi Rach Gayi' for the wedding of the internet sensations Lakhan Rawat and Neetu Bisht Rawat also known as the 'Lakhneet Wedding'",
+  },
+  {
+    img: blogImg26,
+    headlines: "The Evolution of Content Creation In The Age Of Artificial Intelligence",
+    portal: "TechieXpert",
+    date: "22 May 2023",
+    link: "https://www.techiexpert.com/the-evolution-of-content-creation-in-the-age-of-artificial-intelligence/",
+    category: "Creator PR",
+    description:
+      "As the world becomes increasingly digital, businesses are turning to technology to help them create content more efficiently.",
+  },
+  {
+    img: blogImg27,
+    headlines: "Role Of Automotive Influencers In Shaping The Future Of The Industry",
+    portal: "Autoworld",
+    date: "10 May 2023",
+    link: "https://bwautoworld.businessworld.in/article/Role-Of-Automotive-Influencers-In-Shaping-The-Future-Of-The-Industry/10-05-2023-476042/",
+    category: "Creator PR",
+    description:
+      "There is a marked shift in content consumption across the globe and India leads this change with the most number of users (thanks to heavy mobile internet penetration in the smallest of towns",
   },
   {
     img: blogImg8,
@@ -379,26 +468,12 @@ const blogs = [
     description:
       "Animeta, the AI-powered creator tech company, has announced the first set of its Animeta exclusive creators",
   },
-  {
-    img: blogImg8,
-    headlines: "Rahul Vaidya sings Mehndi rach gayi for Lakhneet Wedding",
-    portal: "Times Of India",
-    date: "14 Apr 2023",
-    link: "https://timesofindia.indiatimes.com/entertainment/punjabi/music/rahul-vaidya-sings-mehndi-rach-gayi-for-lakhneet-wedding/articleshow/99489595.cms?from=mdr",
-    category: "Creator PR",
-    description:
-      "Playback singer Rahul Vaidya has lent his voice to the original song, 'Mehndi Rach Gayi' for the wedding of the internet sensations Lakhan Rawat and Neetu Bisht Rawat also known as the 'Lakhneet Wedding'",
-  },
 ];
 
 export default function News() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState("All Topics");
-  const [updatedBlogs, setUpdatedBlogs] = useState(
-    blogs.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    })
-  );
+  const [updatedBlogs, setUpdatedBlogs] = useState(blogs);
   const handleFilterBlog = (slug) => {
     setActiveTab(slug);
   };
@@ -407,9 +482,9 @@ export default function News() {
       let filterBlogs = blogs.filter((item) => item.category === activeTab);
       setUpdatedBlogs(filterBlogs);
     } else {
-      blogs.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
-      });
+      // blogs.sort(function (a, b) {
+      //   return new Date(b.date) - new Date(a.date);
+      // });
       setUpdatedBlogs(blogs);
     }
   }, [activeTab]);
