@@ -26,7 +26,7 @@ function Navbar() {
                 <div className='navWrapp'>
                     <div></div>
                     <div className='Logo'>
-                        <Link href='/'>
+                        <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
                             <a>
                                 <Image src={Logo} className="lazyload" alt="Logo" height={33} width={200} />
                             </a>
@@ -37,8 +37,13 @@ function Navbar() {
                     </div>
                     <ul className='desktop-menu'>
                         <li>
+                            <Link href='/people' legacyBehavior>
+                                <a className={`${router.asPath === "/people" ? 'active' : ''}`}>People</a>
+                            </Link>
+                        </li>
+                        <li>
                             <Link href='/news' legacyBehavior>
-                                <a>News</a>
+                                <a className={`${router.asPath === "/news" ? 'active' : ''}`}>News</a>
                             </Link>
                         </li>
                     </ul>
@@ -47,8 +52,13 @@ function Navbar() {
                 {isMenuShow && (<div className='NavItems'>
                         <ul>
                             <li>
+                                <Link href='/people' legacyBehavior>
+                                    <a className={`${router.asPath === "/people" ? 'active' : ''}`}>People</a>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href='/news' legacyBehavior>
-                                    <a>News</a>
+                                    <a className={`${router.asPath === "/news" ? 'active' : ''}`}>News</a>
                                 </Link>
                             </li>
                         </ul>
