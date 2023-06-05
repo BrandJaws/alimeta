@@ -65,8 +65,13 @@ nav.navbar {
     background-color: #fff !important;
 }
 .navWrapp div:first-child {
-    width: 100px;
+    width: 215px;
 }
+
+.desktop-menu li a.active {
+    color: #f00;
+}
+
 .NavItems a, .desktop-menu a {
     color: black;
     padding: 0 26px;
@@ -98,6 +103,9 @@ nav.navbar {
 
 .NavItems ul li:last-child a{
     padding-right: 0px;
+}
+.NavItems ul li a.active {
+    color: #f00;
 }
 
 .MenuImage {
