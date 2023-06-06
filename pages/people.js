@@ -71,7 +71,7 @@ export default function People() {
                 <div className="container">
                     <div className="people-hero-section">
                         <h1>MEET THE <span>PEOPLE</span></h1>
-                        <p><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p>
+                        <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p>
                     </div>
                 </div>
             </section>

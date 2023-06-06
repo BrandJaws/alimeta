@@ -17,7 +17,6 @@ import blogImg18 from "../public/images/blog-18.png";
 import blogImg19 from "../public/images/blog-19.jpg";
 import blogImg23 from "../public/images/blog-23.jpg";
 import blogImg24 from "../public/images/blog-24.png";
-// import blogImg25 from "../public/images/2-0-1304105013-whatsapp-0_1679589704670_1682271113229.avif";
 import blogImg26 from "../public/images/Content-Creation-with-Artificial-Intelligence-by-Gaurav-Thakur.webp";
 import blogImg27 from "../public/images/1683715471_Q96nwX_BW_Car.jpg";
 import Image from "next/image";
@@ -28,18 +27,18 @@ const blogs = [
   {
     img: blogImg6,
     headlines:
-      "Newly launched AI-powered creator tech venture to focus on creator economy",
+      "Newly launched AI-powered<br /> creator tech venture <br />to focus on creator economy",
     portal: "India TV",
     date: "09 Feb 2023",
     link: "https://www.indiatvnews.com/business/news/newly-launched-ai-powered-creator-tech-venture-animeta-to-focus-on-creator-economy-artificial-intelligence-india-2023-02-09-845800",
     category: "Corporate PR",
     description:
-      "As many sectors around the world took a nosedive due to Covid restrictions and Russia-Ukraine war, the creator economy showed picked up pace",
+      "As many sectors around the world took a nosedive due <br />to Covid restrictions and Russia-Ukraine war, the <br />creator economy showed picked up pace",
   },
   {
     img: blogImg16,
     headlines:
-      "Animeta strengthens leadership with key hires from Google Meta and Viacom",
+      "Animeta strengthens <br />leadership with key <br />hires from Google, <br />Meta and Viacom",
     portal: "E4M",
     date: "13 Mar 2023",
     link: "https://www.exchange4media.com/people-movement-news/animeta-strengthens-leadership-with-key-hires-from-google-meta-and-viacom-125657.html",
@@ -50,7 +49,7 @@ const blogs = [
   {
     img: blogImg24,
     headlines:
-      "Here’s How Animeta Is Helping Indian Content Creators Crack The Monetisation Code",
+      "Here’s How Animeta <br />Is Helping Indian Content <br />Creators Crack The <br />Monetisation Code",
     portal: "Inc42",
     date: "21 Mar 2023",
     link: "https://inc42.com/startups/heres-how-animeta-is-helping-indian-content-creators-crack-the-monetisation-code/?login=1",
@@ -134,7 +133,7 @@ const blogs = [
   {
     img: blogImg1,
     headlines:
-      "Anish Mehta announces the launch of ‘Animeta’; an AI-based self-service creator tech platform",
+      "Anish Mehta announces the launch of <br />Animeta, an AI-based self-service creator tech platform",
     portal: "Event Faqs",
     date: "09 Feb 2023",
     link: "https://www.eventfaqs.com/news/ef-18915/anish-mehta-announces-the-launch-of-animeta-an-ai-based-self-service-creator-tech-platform",
@@ -547,11 +546,9 @@ export default function News() {
       >
         <link itemProp="url" href="https://animeta.ai/og-image.png" />
       </span>
-      <section className="container">
-        <div className="blog-section">
-          <div className="header">
-            <h2>Latest News</h2>
-          </div>
+      <section className="blog-section blog-page">
+        <div className="header container">
+          {/* <h2>Latest News</h2> */}
           <ul className="blog-categories-tab">
             {blogCategories.map((category, index) => {
               return (
@@ -564,58 +561,285 @@ export default function News() {
                   }`}
                   onClick={() => handleFilterBlog(category.slug)}
                 >
-                  <p>{category.name}</p>
+                  <p className="bg-white"><mark>{category.name}</mark></p>
                 </li>
               );
             })}
           </ul>
-          <div className="blog-items">
-            {updatedBlogs.map((item, index) => {
-              return (
-                <div key={index} className="single-blog-item">
-                  <div className="blog-card">
-                    <Link
-                      href={item.link}
-                      legacyBehavior
-                      className="cursor-pointer"
-                    >
-                      <a target="_blank">
-                        <Image
-                          src={item.img}
-                          alt={item.headlines.split(" ").join("-")}
-                        />
-                      </a>
-                    </Link>
-                    <div className="blog-content">
-                      <div className="blog-info">
-                        <h3>{item.portal}</h3>
-                        <p>
-                          {item.date} - <span>{item.category}</span>
-                        </p>
-                      </div>
-                      <Link
-                        href={item.link}
-                        legacyBehavior
-                        className="cursor-pointer"
-                      >
-                        <a target="_blank">
-                          <h2
-                            className="blog-title"
-                            dangerouslySetInnerHTML={{ __html: item.headlines }}
-                          />
-                        </a>
-                      </Link>
-                      {item.description && (
-                        <div
-                          className="blog-description"
-                          dangerouslySetInnerHTML={{ __html: item.description }}
-                        />
-                      )}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+        </div>
+        <div className="featured-items">
+          <div className="left-side w-60">
+            <div className="news-card px-80px py-80px bg-black h-full bground-black">
+              <Link
+                href={updatedBlogs[0].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank">
+                  <h2
+                    className="blog-title text-white text-uppercase"
+                    dangerouslySetInnerHTML={{ __html: updatedBlogs[0].headlines }}
+                  />
+                </a>
+              </Link>
+              {updatedBlogs[0].description && (
+                <div
+                  className="blog-description text-white bg-black"
+                  dangerouslySetInnerHTML={{ __html: `<mark>${updatedBlogs[0].description}</mark>` }}
+                />
+              )}
+              <Link
+                href={updatedBlogs[0].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank" className="news-link bground-red text-white">
+                  Read More
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="right-side w-40">
+            <div className="news-card px-50px py-50px bg-black h-full-half bground-grey">
+              <Link
+                href={updatedBlogs[1].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank">
+                  <h2
+                    className="blog-title text-white bg-grey text-uppercase"
+                    dangerouslySetInnerHTML={{ __html: `<mark>${updatedBlogs[1].headlines}</mark>` }}
+                  />
+                </a>
+              </Link>
+              <Link
+                href={updatedBlogs[1].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank" className="news-link bground-black text-white">
+                  Read More
+                </a>
+              </Link>
+            </div>
+            <div className="news-card px-50px py-50px bg-black h-full-half bground-red">
+              <Link
+                href={updatedBlogs[2].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank">
+                  <h2
+                    className="blog-title text-white bg-red text-uppercase"
+                    dangerouslySetInnerHTML={{ __html: updatedBlogs[2].headlines }}
+                  />
+                </a>
+              </Link>
+              <Link
+                href={updatedBlogs[2].link}
+                legacyBehavior
+                className="cursor-pointer"
+              >
+                <a target="_blank" className="news-link bground-black text-white">
+                  Read More
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="blog-sale-items container">
+          <div className="news-card px-30px py-30px bground-red">
+            <Link
+              href={updatedBlogs[3].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[3].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[4].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[4].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-red">
+            <Link
+              href={updatedBlogs[5].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[5].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[6].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[6].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card-large px-30px py-30px bg-black bground-black">
+            <Link
+              href={updatedBlogs[7].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-uppercase"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[7].headlines }}
+                />
+              </a>
+            </Link>
+            {updatedBlogs[7].description && (
+              <div
+                className="blog-description text-white bg-black"
+                dangerouslySetInnerHTML={{ __html: `<mark>${updatedBlogs[7].description}</mark>` }}
+              />
+            )}
+            <Link
+              href={updatedBlogs[7].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank" className="news-link bground-red text-white">
+                Read More
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[8].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[8].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[9].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[9].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card-full px-50px py-50px bg-black h-full-half bground-red">
+            <Link
+              href={updatedBlogs[10].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white bg-red text-uppercase text-center"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[10].headlines }}
+                />
+              </a>
+            </Link>
+            <Link
+              href={updatedBlogs[10].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank" className="news-link bground-black text-white">
+                Read More
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-red">
+            <Link
+              href={updatedBlogs[11].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[11].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[12].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[12].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-red">
+            <Link
+              href={updatedBlogs[13].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[13].headlines }}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className="news-card px-30px py-30px bground-black">
+            <Link
+              href={updatedBlogs[14].link}
+              legacyBehavior
+              className="cursor-pointer"
+            >
+              <a target="_blank">
+                <h2
+                  className="blog-title text-white text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: updatedBlogs[14].headlines }}
+                />
+              </a>
+            </Link>
           </div>
         </div>
       </section>
