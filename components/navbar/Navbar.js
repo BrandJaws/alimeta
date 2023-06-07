@@ -24,18 +24,18 @@ function Navbar() {
         <>
             <nav className='navbar container' id='navbar'>
                 <div className='navWrapp'>
-                    <div></div>
+                    {/* <div></div> */}
                     <div className='Logo'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
                             <a>
                                 <Image src={Logo} className="lazyload" alt="Logo" height={33} width={200} />
                             </a>
                         </Link>
-                        <button type='button' className='MenuToggler' onClick={handleClick}>
+                        {/* <button type='button' className='MenuToggler' onClick={handleClick}>
                             <RxHamburgerMenu className='MenuImage' />
-                        </button>
+                        </button> */}
                     </div>
-                    <ul className='desktop-menu'>
+                    {/* <ul className='desktop-menu'>
                         <li>
                             <Link href='/people' legacyBehavior>
                                 <a className={`${router.asPath === "/people" ? 'active' : ''}`}>People</a>
@@ -46,10 +46,10 @@ function Navbar() {
                                 <a className={`${router.asPath === "/news" ? 'active' : ''}`}>News</a>
                             </Link>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className='shadow-nav'></div>
-                {isMenuShow && (<div className='NavItems'>
+                {/* {isMenuShow && (<div className='NavItems'>
                         <ul>
                             <li>
                                 <Link href='/people' legacyBehavior>
@@ -62,7 +62,7 @@ function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                    </div>)}
+                    </div>)} */}
             </nav>
         </>
     )
