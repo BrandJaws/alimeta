@@ -26,7 +26,7 @@ function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href='tel:+91 8825128683'>
+                                <Link href='tel:+918104266277'>
                                     <Image src={Phone} className="lazyload" alt="FooterLogo" />
                                 </Link>
                             </li>
