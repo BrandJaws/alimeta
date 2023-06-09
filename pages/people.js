@@ -6,6 +6,12 @@ import icon1 from "../public/images/icon-1.png";
 import icon2 from "../public/images/icon-2.png";
 import icon3 from "../public/images/icon-3.png";
 import icon4 from "../public/images/icon-4.png";
+import founderTeam1 from "../public/images/founder-team-1.png";
+import founderTeam2 from "../public/images/founder-team-2.png";
+import founderTeam3 from "../public/images/founder-team-3.png";
+import managementTeam1 from "../public/images/management-team-1.png";
+import managementTeam2 from "../public/images/management-team-2.png";
+import managementTeam3 from "../public/images/management-team-3.png";
 
 export default function People() {
     return (
@@ -111,81 +117,89 @@ export default function People() {
                     </div>
                 </div>
             </section>
-            <section className="people-page-icons-section">
-                <div className="icons-section container">
-                    <div className="icon-box">
-                        <div className="icon">
-                            <Image src={icon1} alt="icon meta 1" />
-                        </div>
-                        <div className="icon-box-info">
-                            <div className="title">
-                                <h1>FOUNDER</h1>
+            <section className="people-page-icons-section container">
+                <div className="team-section">
+                    <h1 className="team-heading"><mark>Founding Team</mark></h1>
+                    <div className="icons-section">
+                        <div className="icon-box">
+                            {/* <div className="icon"> */}
+                                <Image src={founderTeam1} alt="icon meta 1" />
+                            {/* </div> */}
+                            <div className="icon-box-info">
+                                <div className="title">
+                                    <h1>FOUNDER</h1>
+                                </div>
+                                <div className="designation">
+                                    <p>Anish Mehta</p>
+                                </div>
                             </div>
-                            <div className="designation">
-                                <p>Anish Mehta</p>
+                        </div>
+                        <div className="icon-box bg-black">
+                            {/* <div className="icon"> */}
+                                <Image src={founderTeam2} alt="icon meta 4" />
+                            {/* </div> */}
+                            <div className="icon-box-info">
+                                <div className="title">
+                                    <h1>FOUNDING INVESTOR</h1>
+                                </div>
+                                <div className="designation">
+                                    <p>Rajesh Kamat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="icon-box">
+                            {/* <div className="icon"> */}
+                                <Image src={founderTeam3} alt="icon meta 1" />
+                            {/* </div> */}
+                            <div className="icon-box-info">
+                                <div className="title">
+                                    <h1>FOUNDING INVESTOR</h1>
+                                </div>
+                                <div className="designation">
+                                    <p>Sameer Manchanda</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="icon-box bg-black">
-                        <div className="icon">
-                            <Image src={icon4} alt="icon meta 4" />
-                        </div>
-                        <div className="icon-box-info">
-                            <div className="title">
-                                <h1>FOUNDING INVESTOR</h1>
-                            </div>
-                            <div className="designation">
-                                <p>Rajesh Kamat &<br />Sameer Manchanda</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="icon-box">
-                        <div className="icon">
-                            <Image src={icon1} alt="icon meta 1" />
-                        </div>
-                        <div className="icon-box-info">
-                            <div className="title">
-                                <h1>CEO</h1>
+                </div>
+                <div className="team-section">
+                    <h1 className="team-heading"><mark>Management Team</mark></h1>
+                    <div className="icons-section">
+                        <div className="icon-box">
+                            {/* <div className="icon"> */}
+                                <Image src={managementTeam1} alt="icon meta 2" />
+                            {/* </div> */}
+                            <div className="icon-box-info"><div className="title">
+                                <h1>CHIEF EXECUTIVE <br />OFFICER</h1>
                             </div>
                             <div className="designation">
                                 <p>Devdatta Potnis</p>
+                            </div></div>
+                        </div>
+                        <div className="icon-box bg-black">
+                            {/* <div className="icon"> */}
+                                <Image src={managementTeam2} alt="icon meta 3" />
+                            {/* </div> */}
+                            <div className="icon-box-info">
+                                <div className="title">
+                                    <h1>CHIEF PRODUCT OFFICER<br />& DATA SCIENTIST</h1>
+                                </div>
+                                <div className="designation">
+                                    <p>Krishna Desai</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="icon-box">
-                        <div className="icon">
-                            <Image src={icon2} alt="icon meta 2" />
-                        </div>
-                        <div className="icon-box-info"><div className="title">
-                            <h1>CHIEF PRODUCT OFFICER<br />& DATA SCIENTIST</h1>
-                        </div>
-                        <div className="designation">
-                            <p>Krishna Desai</p>
-                        </div></div>
-                    </div>
-                    <div className="icon-box bg-black">
-                        <div className="icon">
-                            <Image src={icon3} alt="icon meta 3" />
-                        </div>
-                        <div className="icon-box-info">
-                            <div className="title">
-                                <h1>CHIEF OPERATING<br />OFFICER</h1>
-                            </div>
-                            <div className="designation">
-                                <p>Vipasha Joshi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="icon-box">
-                        <div className="icon">
-                            <Image src={icon2} alt="icon meta 1" />
-                        </div>
-                        <div className="icon-box-info">
-                            <div className="title">
-                                <h1>SVP - BRANDED CONTENT<br />& CREATOR STRATEGY</h1>
-                            </div>
-                            <div className="designation">
-                                <p>Biswamitra Ray</p>
+                        <div className="icon-box">
+                            {/* <div className="icon"> */}
+                                <Image src={managementTeam3} alt="icon meta 1" />
+                            {/* </div> */}
+                            <div className="icon-box-info">
+                                <div className="title">
+                                    <h1>SVP - BRANDED CONTENT<br />& CREATOR STRATEGY</h1>
+                                </div>
+                                <div className="designation">
+                                    <p>Biswamitra Ray</p>
+                                </div>
                             </div>
                         </div>
                     </div>
