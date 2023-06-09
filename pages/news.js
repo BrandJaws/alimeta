@@ -2,30 +2,30 @@ import Head from "next/head";
 import { blogCategories } from "../utils/data";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import blogImg1 from "../public/images/blog-1.png";
-import blogImg2 from "../public/images/blog-2.png";
-import blogImg3 from "../public/images/blog-3.png";
-import blogImg4 from "../public/images/blog-4.webp";
-import blogImg5 from "../public/images/blog-5.png";
-import blogImg6 from "../public/images/blog-6.jpg";
-import blogImg8 from "../public/images/blog-8.jpg";
-import blogImg10 from "../public/images/blog-10.webp";
-import blogImg11 from "../public/images/blog-11.webp";
-import blogImg16 from "../public/images/blog-16.webp";
-import blogImg17 from "../public/images/blog-17.webp";
-import blogImg18 from "../public/images/blog-18.png";
-import blogImg19 from "../public/images/blog-19.jpg";
-import blogImg23 from "../public/images/blog-23.jpg";
-import blogImg24 from "../public/images/blog-24.png";
-import blogImg26 from "../public/images/Content-Creation-with-Artificial-Intelligence-by-Gaurav-Thakur.webp";
-import blogImg27 from "../public/images/1683715471_Q96nwX_BW_Car.jpg";
+// import blogImg1 from "../public/images/blog-1.png";
+// import blogImg2 from "../public/images/blog-2.png";
+// import blogImg3 from "../public/images/blog-3.png";
+// import blogImg4 from "../public/images/blog-4.webp";
+// import blogImg5 from "../public/images/blog-5.png";
+// import blogImg6 from "../public/images/blog-6.jpg";
+// import blogImg8 from "../public/images/blog-8.jpg";
+// import blogImg10 from "../public/images/blog-10.webp";
+// import blogImg11 from "../public/images/blog-11.webp";
+// import blogImg16 from "../public/images/blog-16.webp";
+// import blogImg17 from "../public/images/blog-17.webp";
+// import blogImg18 from "../public/images/blog-18.png";
+// import blogImg19 from "../public/images/blog-19.jpg";
+// import blogImg23 from "../public/images/blog-23.jpg";
+// import blogImg24 from "../public/images/blog-24.png";
+// import blogImg26 from "../public/images/Content-Creation-with-Artificial-Intelligence-by-Gaurav-Thakur.webp";
+// import blogImg27 from "../public/images/1683715471_Q96nwX_BW_Car.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import moment from "moment/moment";
 import Script from "next/script";
 const blogs = [
   {
-    img: blogImg6,
+    img: "/images/blog-6.jpg",
     headlines:
       "Newly launched AI-powered<br /> creator tech venture <br />to focus on creator economy",
     portal: "India TV",
@@ -36,7 +36,7 @@ const blogs = [
       "As many sectors around the world took a nosedive due <br />to Covid restrictions and Russia-Ukraine war, the <br />creator economy showed picked up pace",
   },
   {
-    img: blogImg16,
+    img: "/images/blog-16.webp",
     headlines:
       "Animeta strengthens <br />leadership with key <br />hires from Google, <br />Meta and Viacom",
     portal: "E4M",
@@ -47,7 +47,7 @@ const blogs = [
       "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, today announced several strategic hires",
   },
   {
-    img: blogImg24,
+    img: "/images/blog-24.png",
     headlines:
       "Here’s How Animeta <br />Is Helping Indian Content <br />Creators Crack The <br />Monetisation Code",
     portal: "Inc42",
@@ -58,7 +58,7 @@ const blogs = [
       "Animeta help creators grow their communities and maximise their earnings across multiple social media platforms.",
   },
   {
-    img: blogImg19,
+    img: "/images/blog-19.jpg",
     headlines:
       "Animeta onboards its first set of creators",
     portal: "Economic times",
@@ -69,7 +69,7 @@ const blogs = [
       "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
   },
   {
-    img: blogImg3,
+    img: "/images/blog-3.png",
     headlines:
       "Over 1 million Indian social media creators to earn $500 per month in the next three years: Report",
     portal: "LiveMint",
@@ -80,7 +80,7 @@ const blogs = [
       "New Delhi: India is leading the digital content creation wave with 1 million creators in the country estimated to have at least 100,000 subscribers or followers in three years",
   },
   {
-    img: blogImg1,
+    img: "/images/blog-1.png",
     headlines:
       "AI-based platform Animeta launched, to focus on creator economy",
     portal: "The Economic Times",
@@ -91,7 +91,7 @@ const blogs = [
       "Former CEO of animation studio Cosmos-Maya, Anish Mehta, on Wednesday launched his new venture, Animeta",
   },
   {
-    img: blogImg2,
+    img: "/images/blog-2.png",
     headlines: "Creator Tech Firm Animeta Taps Media Execs",
     portal: "VC Circle",
     date: "08 Feb 2023",
@@ -101,7 +101,7 @@ const blogs = [
       "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
   },
   {
-    img: blogImg3,
+    img: "/images/blog-3.png",
     headlines: "Animeta launched to reshape the future of BACE",
     portal: "Adgully",
     date: "08 Feb 2023",
@@ -111,7 +111,7 @@ const blogs = [
       "Anish Mehta, the former CEO of leading Asian animation studio  Cosmos-Maya, today announced the launch of his new venture, Animeta",
   },
   {
-    img: blogImg4,
+    img: "/images/blog-4.webp",
     headlines: "Top media execs back creator tech co Animeta",
     portal: "Mint",
     date: "08 Feb 2023",
@@ -121,7 +121,7 @@ const blogs = [
       "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
   },
   {
-    img: blogImg5,
+    img: "/images/blog-5.png",
     headlines: "Creator Tech Firm Animeta Taps Media Execs",
     portal: "VC Circle",
     date: "08 Feb 2023",
@@ -131,7 +131,7 @@ const blogs = [
       "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
   },
   {
-    img: blogImg1,
+    img: "/images/blog-1.png",
     headlines:
       "Anish Mehta announces the launch of <br />Animeta, an AI-based self-service creator tech platform",
     portal: "Event Faqs",
@@ -142,7 +142,7 @@ const blogs = [
       "Anish Mehta, the former CEO of Asian animation studio Cosmos-Maya, announced the launch of his new venture, Animeta",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "Indian Animation Boss Anish Mehta Launches AI-Powered Creator Platform",
     portal: "Asia Pacific News",
@@ -153,7 +153,7 @@ const blogs = [
       "Anish Mehta, the former CEO of leading Asian animation studio Cosmos-Maya, has announced the launch of Animeta",
   },
   {
-    img: blogImg10,
+    img: "/images/blog-10.webp",
     headlines: "Animeta names Devdatta Potnis as chief executive officer",
     portal: "Financial Express",
     date: "15 Feb 2023",
@@ -163,7 +163,7 @@ const blogs = [
       "Animeta, an AI-powered tech creator, has named Devdatta Potnis as its chief executive officer. The tech platform, which was launched recently",
   },
   {
-    img: blogImg10,
+    img: "/images/blog-10.webp",
     headlines: "AI creator company Animeta appoints Devdatta Potnis as CEO",
     portal: "Exchange4media",
     date: "15 Feb 2023",
@@ -173,7 +173,7 @@ const blogs = [
       "AI-powered tech creator company Animeta has appointed Devdatta Potnis as the Chief Executive Officer. This key appointment follows the recent launch of the AI-powered self-service creator tech platform",
   },
   {
-    img: blogImg11,
+    img: "/images/blog-11.webp",
     headlines: "Tech creator company Animeta appoints Devdatta Potnis as CEO",
     portal: "Mint",
     date: "17 Feb 2023",
@@ -183,7 +183,7 @@ const blogs = [
       "Artificial Intelligence (AI)-powered tech creator company, Animeta has appointed Devdatta Potnis as its chief executive officer. This follows the recent launch of the AI-powered self-service creator tech platform",
   },
   {
-    img: blogImg16,
+    img: "/images/blog-16.webp",
     headlines: "Tech creator company Animeta announces strategic hires",
     portal: "Mint",
     date: "01 Mar 2023",
@@ -193,7 +193,7 @@ const blogs = [
       "Singapore-based creator tech company Animeta, launched by former Cosmos-Maya CEO Anish Mehta has announced several strategic hires",
   },
   {
-    img: blogImg16,
+    img: "/images/blog-16.webp",
     headlines:
       "Animeta taps talent from Google, Meta, Viacom & WarnerMedia for leadership roles",
     portal: "The Economic Times",
@@ -204,7 +204,7 @@ const blogs = [
       "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, on Wednesday announced several strategic hires",
   },
   {
-    img: blogImg16,
+    img: "/images/blog-16.webp",
     headlines:
       "Animeta appoints Vipasha Joshi, Krishna Desai and Biswamitra Ray",
     portal: "Campaign India",
@@ -215,7 +215,7 @@ const blogs = [
       "Animeta has announced the appointment of Vipasha Joshi as chief operating officer, Krishna Desai as chief product officer and  Biswamitra ‘Vishu’ Ray as vice president -  branded content and creator projects",
   },
   {
-    img: blogImg16,
+    img: "/images/blog-16.webp",
     headlines: "Tech creator company Animeta announces strategic hires",
     portal: "Live Mint",
     date: "01 Mar 2023",
@@ -225,7 +225,7 @@ const blogs = [
       "Singapore-based creator tech company Animeta, launched by former Cosmos-Maya CEO Anish Mehta has announced several strategic hires",
   },
   {
-    img: blogImg17,
+    img: "/images/blog-17.webp",
     headlines: "Animeta onboards first set of creators",
     portal: "Mint",
     date: "13 Mar 2023",
@@ -235,7 +235,7 @@ const blogs = [
       "Tech creator company Animeta has onboarded its first set of creator partners with a total monthly viewership of 1 billion plus and a cumulative subscriber base of over 50 million",
   },
   {
-    img: blogImg18,
+    img: "/images/blog-18.png",
     headlines: "MarTech Interview with Anish Mehta, Founder at Animeta",
     portal: "MarTech",
     date: "16 Mar 2023",
@@ -245,7 +245,7 @@ const blogs = [
       "Anish Mehta, Founder at Animeta chats about the burgeoning creator economy and what’s to be expected from this segment:",
   },
   {
-    img: blogImg19,
+    img: "/images/blog-19.png",
     headlines:
       "Animeta onboards its first set of exclusive creator partners with a total monthly viewership of 1 Billion",
     portal: "Indian Television",
@@ -256,7 +256,7 @@ const blogs = [
       "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "5 Content Creators making a difference in varied content genres",
     portal: "Outlook",
@@ -267,7 +267,7 @@ const blogs = [
       "5 Content Creators making a difference in varied content genres",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "International Content Creators Day 2023 Celebrating the Craft of digital content creation",
     portal: "News 18",
@@ -278,7 +278,7 @@ const blogs = [
       "International Creators Day is a celebration of creativity and innovation that takes place on April 23rd every year",
   },
   {
-    img: blogImg3,
+    img: "/images/blog-3.png",
     headlines:
       "Over 1m Indian creators to cross $500/ month in next 3 years Animeta",
     portal: "Adgully",
@@ -289,7 +289,7 @@ const blogs = [
       "From passive addiction to being a hobby to a passion to a full-fledged profession, digital content creation has come a long way world over, and like other fronts, India is leading this trend too.",
   },
   {
-    img: blogImg23,
+    img: "/images/blog-23.jpg",
     headlines: "10 lakh content creators to earn INR 40k each month",
     portal: "Hans India",
     date: "23 Apr 2023",
@@ -299,7 +299,7 @@ const blogs = [
       "Over 10 lakh Indian digital content creators on social media are likely to earn more than $500 (a little over Rs 41,000) a month each in the next three years, a report revealed on Friday.",
   },
   {
-    img: blogImg19,
+    img: "/images/blog-19.jpg",
     headlines:
       "Animeta signs SIT to their starmaker program",
     portal: "Indian Television",
@@ -310,7 +310,7 @@ const blogs = [
     description: "Mumbai: Long before seeking trends to make videos on social media was a thing, Mohit Hussein and Chhavi Mittal, the founders of SIT – or ‘Shitty Ideas Trending’, already identified the immense power of providing relatable entertainment.",
   },
   {
-    img: blogImg1,
+    img: "/images/blog-1.png",
     headlines:
       "ONE MILLION INDIAN SOCIAL MEDIA CREATORS TO EARN OVER $500 MONTHLY WITHIN THREE YEARS: ANIMETA REPORT",
     portal: "Outlook",
@@ -321,7 +321,7 @@ const blogs = [
     description: "It has claimed in a statement that the creator economy has been a topic of interest for the entire world and there are many statistics that are often discussed. While every creator is a creator out of passion, a large chunk creates content as a hobby.",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "Rahul Vaidya sings Mehndi rach gayi for Lakhneet Wedding",
     portal: "Times Of India",
     date: "14 Apr 2023",
@@ -331,7 +331,7 @@ const blogs = [
       "Playback singer Rahul Vaidya has lent his voice to the original song, 'Mehndi Rach Gayi' for the wedding of the internet sensations Lakhan Rawat and Neetu Bisht Rawat also known as the 'Lakhneet Wedding'",
   },
   {
-    img: blogImg26,
+    img: "/images/Content-Creation-with-Artificial-Intelligence-by-Gaurav-Thakur.webp",
     headlines: "The Evolution of Content Creation In The Age Of Artificial Intelligence",
     portal: "TechieXpert",
     date: "22 May 2023",
@@ -341,7 +341,7 @@ const blogs = [
       "As the world becomes increasingly digital, businesses are turning to technology to help them create content more efficiently.",
   },
   {
-    img: blogImg27,
+    img: "/images/1683715471_Q96nwX_BW_Car.jpg",
     headlines: "Role Of Automotive Influencers In Shaping The Future Of The Industry",
     portal: "Autoworld",
     date: "10 May 2023",
@@ -351,7 +351,7 @@ const blogs = [
       "There is a marked shift in content consumption across the globe and India leads this change with the most number of users (thanks to heavy mobile internet penetration in the smallest of towns",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "Lakhan Rawat ने क्यों कहा Neetu Bisht को अपना Lucky Charm ? कब और कैसे मिले Lakhan और Neetu ?",
     portal: "N/A",
@@ -362,7 +362,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "इस क्रिकेटर ने क्रिकेट से कम और दूसरी चीज़ों से कमाया नाम और पैसा",
     portal: "N/A",
@@ -373,7 +373,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "NewsX: Studio visit",
     portal: "N/A",
     date: "N/A",
@@ -382,7 +382,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "Exclusive Interview With Lakhan Arjun Rawat & Neetu Bisht | @LakhneetVlogs | Uncut | Rapid Fire |",
     portal: "N/A",
@@ -393,7 +393,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "2- Story on all 5 creators of Animeta",
     portal: "N/A",
     date: "N/A",
@@ -402,7 +402,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines:
       "5 Content Creators making a difference in varied content genres",
     portal: "Outlook",
@@ -412,7 +412,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "3- Vandana Goswami: Ahmedabad coverage attached below.",
     portal: "N/A",
     date: "N/A",
@@ -421,7 +421,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "4- Orange Tree Entertainment: Sangli coverage attached below.",
     portal: "N/A",
     date: "N/A",
@@ -430,7 +430,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "Online coverage- https://dainikvasantsager.com/?p=1064",
     portal: "Dainikvasantsager",
     date: "21 Apr 2023",
@@ -439,7 +439,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "5- News18: Story on International creators day",
     portal: "N/A",
     date: "N/A",
@@ -448,7 +448,7 @@ const blogs = [
     description: "",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "Animeta onboards first set of exclusive creator partners",
     portal: "News 18",
     date: "13 Mar 2023",
@@ -458,7 +458,7 @@ const blogs = [
       "Animeta, the AI-powered creator tech company, has announced the first set of its Animeta exclusive creators",
   },
   {
-    img: blogImg8,
+    img: "/images/blog-8.jpg",
     headlines: "Animeta onboards first set of exclusive creator partners",
     portal: "Buzz In Content",
     date: "13 Mar 2023",
@@ -569,7 +569,13 @@ export default function News() {
         </div>
         <div className="featured-items">
           <div className="left-side w-60">
-            <div className="news-card px-80px py-80px bg-black h-full bground-black">
+            <div style={{ 
+              backgroundImage: `url(${updatedBlogs[0].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }}
+              className="news-card px-80px py-80px bg-black h-full bground-black">
               <Link
                 href={updatedBlogs[0].link}
                 legacyBehavior
@@ -600,7 +606,12 @@ export default function News() {
             </div>
           </div>
           <div className="right-side w-40">
-            <div className="news-card px-50px py-50px bg-black h-full-half bground-grey">
+            <div style={{ 
+              backgroundImage: `url(${updatedBlogs[1].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-50px py-50px bg-black h-full-half bground-grey">
               <Link
                 href={updatedBlogs[1].link}
                 legacyBehavior
@@ -623,7 +634,12 @@ export default function News() {
                 </a>
               </Link>
             </div>
-            <div className="news-card px-50px py-50px bg-black h-full-half bground-red">
+            <div style={{ 
+              backgroundImage: `url(${updatedBlogs[2].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-50px py-50px bg-black h-full-half bground-red">
               <Link
                 href={updatedBlogs[2].link}
                 legacyBehavior
@@ -649,7 +665,12 @@ export default function News() {
           </div>
         </div>
         <div className="blog-sale-items container">
-          <div className="news-card px-30px py-30px bground-red">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[3].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-red">
             <Link
               href={updatedBlogs[3].link}
               legacyBehavior
@@ -663,7 +684,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[4].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[4].link}
               legacyBehavior
@@ -677,7 +703,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-red">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[5].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-red">
             <Link
               href={updatedBlogs[5].link}
               legacyBehavior
@@ -691,7 +722,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[6].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[6].link}
               legacyBehavior
@@ -705,7 +741,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card-large px-30px py-30px bg-black bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[7].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card-large px-30px py-30px bg-black bground-black">
             <Link
               href={updatedBlogs[7].link}
               legacyBehavior
@@ -734,7 +775,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[8].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[8].link}
               legacyBehavior
@@ -748,7 +794,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[9].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[9].link}
               legacyBehavior
@@ -762,7 +813,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card-full px-50px py-50px bg-black h-full-half bground-red">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[10].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card-full px-50px py-50px bg-black h-full-half bground-red">
             <Link
               href={updatedBlogs[10].link}
               legacyBehavior
@@ -785,7 +841,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-red">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[11].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-red">
             <Link
               href={updatedBlogs[11].link}
               legacyBehavior
@@ -799,7 +860,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[12].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[12].link}
               legacyBehavior
@@ -813,7 +879,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-red">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[13].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-red">
             <Link
               href={updatedBlogs[13].link}
               legacyBehavior
@@ -827,7 +898,12 @@ export default function News() {
               </a>
             </Link>
           </div>
-          <div className="news-card px-30px py-30px bground-black">
+          <div style={{ 
+              backgroundImage: `url(${updatedBlogs[14].img})`, 
+              backgroundPosition: 'center center', 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover',
+              boxShadow: 'inset 0px 0px 2000px 1000px rgba(0, 0, 0, 0.4)' }} className="news-card px-30px py-30px bground-black">
             <Link
               href={updatedBlogs[14].link}
               legacyBehavior

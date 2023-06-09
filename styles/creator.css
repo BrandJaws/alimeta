@@ -308,14 +308,15 @@
     padding: 0 20px;
     font-size: 30px;
   }
-
 .icons-section {
-    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
+}
+.team-section {
+    padding: 100px 0;
     border-bottom: 1px solid #eee;
 }
 .icons-section .icon-box.bg-black .icon {
@@ -347,6 +348,18 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 30px;
+}
+.team-heading {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+.team-heading mark {
+    background-color: #facbcc;
+    color: #F00;
 }
 .icon-box .title h1 {
     font-size: 28px;
@@ -578,6 +591,11 @@
     .blog-title br {
         display: none;
     }
+    .team-heading {
+        font-size: 28px;
+        line-height: 36px;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -616,6 +634,14 @@
     }
     .featured-items {
         min-height: 100%;
+    }
+    .team-heading {
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+    .team-section {
+        padding: 70px 0;
     }
 }
 
@@ -718,6 +744,14 @@
         margin-bottom: 10px;
     }
 
+    .team-heading {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 0px;
+    }
+    .team-section {
+        padding: 40px 0;
+    }
 }
 
 
