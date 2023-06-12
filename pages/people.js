@@ -6,9 +6,10 @@ import icon1 from "../public/images/icon-1.png";
 import icon2 from "../public/images/icon-2.png";
 import icon3 from "../public/images/icon-3.png";
 import icon4 from "../public/images/icon-4.png";
-import founderTeam1 from "../public/images/founder-team-1.png";
-import founderTeam2 from "../public/images/founder-team-2.png";
-import founderTeam3 from "../public/images/founder-team-3.png";
+// import founderTeam1 from "../public/images/founder-team-1.png";
+import founderTeam1 from "../public/images/Anish-Mehta-min.png";
+import founderTeam2 from "../public/images/Rajesh-Kamat-min.jpg";
+import founderTeam3 from "../public/images/Sameer-Manchanda.jpg";
 import managementTeam1 from "../public/images/management-team-1.png";
 import managementTeam2 from "../public/images/management-team-2.png";
 import managementTeam3 from "../public/images/management-team-3.png";
@@ -76,12 +77,12 @@ export default function People() {
             <section className="people-page-header">
                 <div className="container">
                     <div className="people-hero-section">
-                        <h1>MEET THE <span>PEOPLE</span></h1>
-                        <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p>
+                        <h1>MEET THE <span>TEAM</span></h1>
+                        {/* <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p> */}
                     </div>
                 </div>
             </section>
-            <section className="people-page-marquee">
+            {/* <section className="people-page-marquee">
                 <div className="marquee-section">
                     <div className="marquee-item">
                         <Image src={dotImg} alt="dot img" />
@@ -116,15 +117,15 @@ export default function People() {
                         <span>PEOPLE</span>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="people-page-icons-section container">
                 <div className="team-section">
                     <h1 className="team-heading"><mark>Founding Team</mark></h1>
                     <div className="icons-section">
                         <div className="icon-box">
-                            {/* <div className="icon"> */}
+                            <div className="icon">
                                 <Image src={founderTeam1} alt="icon meta 1" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info">
                                 <div className="title">
                                     <h1>FOUNDER</h1>
@@ -134,10 +135,10 @@ export default function People() {
                                 </div>
                             </div>
                         </div>
-                        <div className="icon-box bg-black">
-                            {/* <div className="icon"> */}
+                        <div className="icon-box">
+                            <div className="icon">
                                 <Image src={founderTeam2} alt="icon meta 4" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info">
                                 <div className="title">
                                     <h1>FOUNDING INVESTOR</h1>
@@ -148,9 +149,9 @@ export default function People() {
                             </div>
                         </div>
                         <div className="icon-box">
-                            {/* <div className="icon"> */}
+                            <div className="icon">
                                 <Image src={founderTeam3} alt="icon meta 1" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info">
                                 <div className="title">
                                     <h1>FOUNDING INVESTOR</h1>
