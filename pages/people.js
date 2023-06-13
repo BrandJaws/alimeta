@@ -120,7 +120,7 @@ export default function People() {
             </section> */}
             <section className="people-page-icons-section container">
                 <div className="team-section">
-                    <h1 className="team-heading"><mark>Founding Team</mark></h1>
+                    <h1 className="team-heading">Founding Team</h1>
                     <div className="icons-section">
                         <div className="icon-box">
                             <div className="icon">
@@ -164,7 +164,7 @@ export default function People() {
                     </div>
                 </div>
                 <div className="team-section">
-                    <h1 className="team-heading"><mark>Management Team</mark></h1>
+                    <h1 className="team-heading">Management Team</h1>
                     <div className="icons-section">
                         <div className="icon-box">
                             {/* <div className="icon"> */}

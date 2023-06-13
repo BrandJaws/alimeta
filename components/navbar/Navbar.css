@@ -31,7 +31,7 @@ nav.navbar {
     right: 0px;
     bottom: 20px;
     box-shadow: 0 29px 12px rgb(0 0 0 / 22%);
-    max-width: 1550px;
+    max-width: 100%;
     height: 24px;
     border-radius: 82%;
     z-index: -1;
@@ -110,6 +110,9 @@ nav.navbar {
 
 .MenuImage {
     font-size: 24px;
+    color: #000;
+    stroke: #000;
+    fill: #000;
 }
 .MenuToggler {
     background-color: transparent;
@@ -145,11 +148,11 @@ nav.navbar {
         max-width: 100%;
     }
 
-    .navWrapp {
+    /* .navWrapp { */
         /* padding: 1.5rem 15px;
         align-items: flex-start;
         flex-direction: column; */
-    }
+    /* } */
     .desktop-menu {
         display: block;
     }
