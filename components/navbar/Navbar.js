@@ -18,7 +18,7 @@ function Navbar() {
         if (isMenuShow) {
             setIsMenuShow(false);
         }
-    }, router);
+    }, [router]);
 
     return (
         <>
