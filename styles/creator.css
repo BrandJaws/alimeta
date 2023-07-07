@@ -331,10 +331,18 @@
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     border: 1px solid #eee;
 }
-.icons-section .icon-box .icon img {
+.icons-section .icon-box .icon span {
     width: 300px !important;
     height: 300px !important;
     object-fit: cover;
+}
+.icons-section .icon-box .icon img {
+    /* width: 300px !important;
+    height: 300px !important;
+    object-fit: cover; */
+    object-fit: scale-down;
+    transform: scale(1);
+    border-radius: 50%;
 }
 .icons-section .icon-box {
     width: 30%;
@@ -756,6 +764,10 @@
     }
 }
 
-
+.blog-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 

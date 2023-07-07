@@ -579,7 +579,7 @@ export default function News() {
                       legacyBehavior
                       className="cursor-pointer"
                     >
-                      <a target="_blank">
+                      <a target="_blank" className="blog-img">
                         <Image
                           src={item.img}
                           alt={item.headlines.split(" ").join("-")}
@@ -605,12 +605,21 @@ export default function News() {
                           />
                         </a>
                       </Link>
-                      {item.description && (
+                      <Link
+                        href={item.link}
+                        legacyBehavior
+                        className="cursor-pointer"
+                      >
+                        <a target="_blank">
+                          Read More
+                        </a>
+                      </Link>
+                      {/* {item.description && (
                         <div
                           className="blog-description"
                           dangerouslySetInnerHTML={{ __html: item.description }}
                         />
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
