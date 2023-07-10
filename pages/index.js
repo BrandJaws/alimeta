@@ -1,14 +1,13 @@
 import Head from "next/head";
-import Welcome from "../components/welcome/Welcome";
-import Banner from "../components/banner/Banner";
-import Started from "../components/started/Started";
-import Create from "../components/create/Create";
-import Offer from "../components/offer/Offer";
-import What from "../components/what/what";
-import Persons from "../components/persons/Persons";
-import News from "../components/news/News";
-import Newsletter from "../components/newsletter/Newsletter";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import Header from "../components/new-home/Header/Header";
+import HeroSection from "../components/new-home/HeroSection/HeroSection";
+import CTAButtonsSection from "../components/new-home/CTAButtonsSection/CTAButtonsSection";
+import AnimetaBrandStarSection from "../components/new-home/AnimetaBrandStarSection/AnimetaBrandStarSection";
+import ANISection from "../components/new-home/ANISection/ANISection";
+import AnimetaStarMakerSection from "../components/new-home/AnimetaStarMakerSection/AnimetaStarMakerSection";
+import ImagesSection from "../components/new-home/ImagesSection/ImagesSection";
+import SubscribeSection from "../components/new-home/SubscribeSection/SubscribeSection";
 
 export default function Home() {
   // if (typeof window !== "undefined") {
@@ -121,18 +120,14 @@ export default function Home() {
       >
         <link itemprop="url" href="https://animeta.ai/og-image.png" />
       </span>
-      <Welcome />
-      <section className="HeroScreen">
-        <Banner />
-      </section>
-      <Started />
-      <Create />
-      <Offer />
-      <What />
-      <Persons />
-      <News />
-      <Newsletter />
-      {/* <Modal /> */}
+      <Header />
+      <HeroSection />
+      <CTAButtonsSection />
+      <AnimetaBrandStarSection />
+      <ANISection />
+      <AnimetaStarMakerSection />
+      <ImagesSection />
+      <SubscribeSection />
     </>
   );
 }
