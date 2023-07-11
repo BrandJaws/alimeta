@@ -79,7 +79,7 @@ export default function People() {
             {/* <Welcome /> */}
             <Header />
             <section className="people-page-header">
-                <div className="container">
+                <div className="container mx-auto">
                     <div className="people-hero-section">
                         <h1>MEET THE <span>TEAM</span></h1>
                         {/* <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p> */}
@@ -122,7 +122,7 @@ export default function People() {
                     </div>
                 </div>
             </section> */}
-            <section className="people-page-icons-section container">
+            <section className="people-page-icons-section container mx-auto">
                 <div className="team-section">
                     <h1 className="team-heading">Founding Team</h1>
                     <div className="icons-section">

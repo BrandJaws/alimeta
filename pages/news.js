@@ -551,7 +551,7 @@ export default function News() {
       </span>
       {/* <Welcome /> */}
       <Header />
-      <section className="container">
+      <section className="container mx-auto">
         <div className="blog-section">
           <div className="header">
             <h2>Latest News</h2>

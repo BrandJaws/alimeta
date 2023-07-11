@@ -267,7 +267,7 @@ body {
 }
 
 .navbar li a {
-  @apply leading-[44px]
+  @apply leading-[44px] w-full h-full block;
 }
 .navbar li a.active {
   @apply text-[#f00];
