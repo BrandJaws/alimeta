@@ -4,15 +4,16 @@ import Image from "next/image";
 import Logo from "../../../public/images/v2/Logo-W.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useRouter } from 'next/router';
+import useWindowSize from '../../../hooks/useWindowSize';
 
 const  Header = () => {
     const [isMenuShow, setIsMenuShow] = useState(false);
+    const isScreen = useWindowSize();
     const router = useRouter();
     const handleClick = () => {
         setIsMenuShow(!isMenuShow);
     };
     useEffect(() => {
-        console.log("testestset", router);
         if (isMenuShow) {
             setIsMenuShow(false);
         }
@@ -20,19 +21,19 @@ const  Header = () => {
 
     return (
         <header>
-            <nav className='fixed top-0 left-0 right-0 p-6 bg-black'>
+            <nav className='fixed top-0 left-0 right-0 p-6 bg-black z-[999]'>
                 <div className='container mx-auto flex flex-row justify-between h-full'>
-                    <div>
+                    <div className='flex flex-row justify-between items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
                             <a className='inline-flex'>
-                                <Image src={Logo} fill={true} loading='lazy' alt='logo' width={200} height={43} />
+                                <Image src={Logo} fill={true} loading='lazy' alt='logo' width={isScreen.width < 767 ? 160 : 200} height={isScreen.width < 767 ? 34 : 43} />
                             </a>
                         </Link>
                         <button type='button' className='md:block lg:hidden' onClick={handleClick}>
-                            <RxHamburgerMenu className='MenuImage' />
+                            <RxHamburgerMenu className='text-white text-2xl' />
                         </button>
                     </div>
-                    <ul className='md:hidden lg:flex flex-row gap-16 text-2xl uppercase'>
+                    <ul className='navbar lg:flex md:hidden sm:hidden xs:hidden flex-row gap-16 text-2xl uppercase'>
                         <li className='inline-flex'>
                             <Link href='/people' legacyBehavior>
                                 <a className={`${router.asPath === "/people" ? 'active' : ''} text-white`}>People</a>
@@ -44,8 +45,8 @@ const  Header = () => {
                             </Link>
                         </li>
                     </ul>
-                    {isMenuShow && (<div>
-                        <ul>
+                    {isMenuShow && (
+                        <ul className='navbar bg-white absolute left-0 right-0 top-[91px] p-6 flex flex-col gap-4'>
                             <li>
                                 <Link href='/people' legacyBehavior>
                                     <a className={`${router.asPath === "/people" ? 'active' : ''}`}>People</a>
@@ -57,7 +58,7 @@ const  Header = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </div>)}
+                    )}
                 </div>
             </nav>
         </header>

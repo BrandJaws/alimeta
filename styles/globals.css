@@ -5,9 +5,9 @@
 html,
 body {
   /* padding: 0 0 280px 0; */
-  /* margin: 0; */
+  margin: 0;
   /* font-family: 'Gotham'; */
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto';
 }
 
 @font-face {
@@ -204,18 +204,18 @@ body {
 
 .section-title {
   @apply 
-  lg:text-[4rem] 
-  lg:leading-[3.5rem] 
+  lg:text-[5rem] 
+  lg:leading-[4.5rem] 
   uppercase 
   md:text-[2.5rem] 
   md:leading-[2rem] 
-  sm:text-[24px] 
-  sm:leading-[24px]
-  font-[300];
+  sm:text-[2rem] 
+  sm:leading-[2rem] xs:text-[2rem] xs:leading-[2rem]
+  font-[200] font-robotoCondensed;
 }
 
 .section-title span {
-  @apply font-[600];
+  @apply font-[600] font-robotoCondensed;
 }
 
 .section-description p {
@@ -226,6 +226,10 @@ body {
   height: calc(100vh - 100px);
 }
 
+.hero-img {
+  @apply xl:max-w-4xl lg:max-w-lg md:max-w-full xl:absolute xl:top-[91px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md;
+}
+
 .cta-section-title {
   @apply 
   lg:text-[4rem] 
@@ -233,13 +237,13 @@ body {
   uppercase 
   md:text-[2rem] 
   md:leading-[2rem] 
-  sm:text-[26px] 
-  sm:leading-[26px]
-  font-[300];
+  sm:text-[2rem] 
+  sm:leading-[2rem] xs:text-[2rem] leading-[2rem]
+  font-[300] font-robotoCondensed;
 }
 
 .cta-section-title span {
-  @apply font-[600] lg:text-[3.5rem] lg:leading-[3.5rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[26px] sm:leading-[26px];
+  @apply font-[600] font-robotoCondensed lg:text-[3.5rem] lg:leading-[3.5rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem];
 }
 
 .theme-btn-primary {
@@ -247,13 +251,59 @@ body {
 }
 
 .section-padding {
-  @apply lg:py-[130px] md:py-[100px] sm:py-[70px];
+  @apply lg:py-[130px] md:py-[100px] sm:py-[70px] xs:py-[50px];
 }
 
 .brand-star-title {
-  @apply lg:text-[4rem] lg:leading-[4rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[26px] sm:leading-[26px] font-[300];
+  @apply lg:text-[4rem] lg:leading-[4rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem] font-[300] font-robotoCondensed;
 }
 
 .brand-star-title span {
-  @apply font-[600] lg:text-[3.8rem] lg:leading-[3.8rem] uppercase md:text-[2.2rem] md:leading-[2.2rem] sm:text-[26px] sm:leading-[26px];
+  @apply font-[600] lg:text-[3.8rem] lg:leading-[3.8rem] uppercase md:text-[2.2rem] md:leading-[2.2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem] font-robotoCondensed;
 }
+
+.hs-form-87dfc11d-6610-4a0f-a5a0-09db919fec0f_1048a833-6383-4042-add9-84645d2461d5 .hs-form-field label:not(.hs-error-msg) {
+  @apply !hidden;
+}
+
+.navbar li a {
+  @apply leading-[44px]
+}
+.navbar li a.active {
+  @apply text-[#f00];
+}
+
+.gallery{
+  position: relative;
+}
+
+.slick-prev{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 99;
+  border: none;
+  font-size: 0px;
+  background-image: url(../public/images/back-angle.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.slick-next{
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  z-index: 99;
+  border: none;
+  font-size: 0px;
+  background-image: url(../public/images/next-angle.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 28px;
+  background-color: transparent;
+}
+

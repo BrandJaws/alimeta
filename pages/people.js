@@ -13,6 +13,8 @@ import founderTeam3 from "../public/images/team-2.jpg";
 import managementTeam1 from "../public/images/management-team-1.png";
 import managementTeam2 from "../public/images/management-team-2.png";
 import managementTeam3 from "../public/images/management-team-3.png";
+import Welcome from "../components/welcome/Welcome";
+import Header from "../components/new-home/Header/Header";
 
 export default function People() {
     return (
@@ -74,6 +76,8 @@ export default function People() {
             >
                 <link itemProp="url" href="https://animeta.ai/og-image.png" />
             </span>
+            {/* <Welcome /> */}
+            <Header />
             <section className="people-page-header">
                 <div className="container">
                     <div className="people-hero-section">
@@ -177,7 +181,7 @@ export default function People() {
                                 <p>Devdatta Potnis</p>
                             </div></div>
                         </div>
-                        <div className="icon-box bg-black">
+                        <div className="icon-box">
                             {/* <div className="icon"> */}
                                 <Image src={managementTeam2} alt="icon meta 3" />
                             {/* </div> */}

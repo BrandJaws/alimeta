@@ -1,11 +1,11 @@
 .Footer {
-    /* padding: 50px 0px 35px 0px; */
-    /* position: static; */
-    /* left: 0;
+    padding: 50px 0px 35px 0px;
+    position: static;
+    left: 0;
     right: 0;
-    bottom: 0; */
-    /* z-index: 1; */
-    display: none;
+    bottom: 0;
+    z-index: 1;
+    /* display: none; */
 }
 
 .footer-left h2 span {
@@ -413,12 +413,12 @@
 
     .footer-left h3 {
         font-size: 85px;
-        text-align: left;
+        text-align: center;
         margin-top: 35px;
     }
 
     .footer-left {
-        text-align: left;
+        text-align: center;
     }
 
     .footer-right {

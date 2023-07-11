@@ -24,6 +24,8 @@ import Image from "next/image";
 import Link from "next/link";
 import moment from "moment/moment";
 import Script from "next/script";
+import Welcome from "../components/welcome/Welcome";
+import Header from "../components/new-home/Header/Header";
 // const blogs = [
   // {
   //   img: blogImg6,
@@ -547,6 +549,8 @@ export default function News() {
       >
         <link itemProp="url" href="https://animeta.ai/og-image.png" />
       </span>
+      {/* <Welcome /> */}
+      <Header />
       <section className="container">
         <div className="blog-section">
           <div className="header">

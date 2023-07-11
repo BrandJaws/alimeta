@@ -11,8 +11,8 @@ function Footer() {
 
     return (
         <>
-            {/* <section className='Footer' id="footer">
-                <div className='container flex'>
+            <section className='Footer' id="footer">
+                <div className='container mx-auto flex'>
                     <div className='footer-left'>
                         <h3>YOUR <br /> TIME <span>IS NOW!</span></h3>
                         <p><b>GET IN TOUCH:</b></p>
@@ -49,7 +49,7 @@ function Footer() {
             </section>
             <div className='floating-icon'>
                 <a aria-label="Chat on WhatsApp" href="https://wa.me/918104266277"> <Image src={WhatsAppGreen} className="lazyload" alt="FooterLogo" /></a>
-            </div> */}
+            </div>
         </>
     )
 }
