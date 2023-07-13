@@ -28,7 +28,7 @@ const AnimetaBrandStarSection = () => {
               <h3>Influencer Marketing Platform</h3>
               <p>
                 Animeta Brandstar is a first of its kind tech-data enabled
-                influencer marketing a, that enables brands to discover and
+                influencer marketing, that enables brands to discover and
                 execute campaigns, with the most relevant creators, in an
                 advanced dataintuitive way; with a strong focus on ROI &
                 performance metrics.
