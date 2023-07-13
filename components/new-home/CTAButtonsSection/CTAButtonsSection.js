@@ -2,20 +2,51 @@ import React from "react";
 
 const CTAButtonsSection = () => {
     return (
-        <div className="bg-[#f00] section-padding">
-            <section className="container mx-auto">
-                <div className='lg:p-6 md:p-3 h-full flex flex-col justify-center'>
-                    <h2 className='cta-section-title text-white text-center'>Products for the <br className='sm:hidden md:block' /><span>Creator Economy</span></h2>
+        <section className="ctaButtonSection">
+            <div className="container mx-auto">
+                
+                <div className="columns-3">
+                    <div className="card ctaBox bg-[#f6f6f6]">
+                        <div className="imageBox">
+                            <picture>
+                                <img src="/images/v3/animetaBrandStar.svg" alt="Brand Star" className='object-contain' />
+                            </picture>
+                        </div>
+                        <div className="ctaContentBox">
+                            <h5>Influencer Marketing Platform</h5>
+                            <a href="#animetaBrandStar" className='ctaButtons'>More info</a>
+                        </div>
+                    </div>
+                    <div className="card ctaBox bg-black text-white">
+                        <div className="imageBox">
+                            <picture>
+                                <img src="/images/v3/aniAiCreatorBuddy.svg" alt="Brand Star" className='object-contain' />
+                            </picture>
+                        </div>
+                        <div className="ctaContentBox">
+                            <h5 className='text-white'>AI-Powered Content Strategy App</h5>
+                            <a href="#aniAiCreatorBuddy" className='ctaButtons'>More info</a>
+                        </div>
+                    </div>
+                    <div className="card ctaBox bg-[#f6f6f6]">
+                        <div className="imageBox">
+                            <picture>
+                                <img src="/images/v3/animetaCreatorPartnerships.svg" alt="Brand Star" className='object-contain' />
+                            </picture>
+                        </div>
+                        <div className="ctaContentBox">
+                            <h5>YOU CREATE, We take care of everything else!</h5>
+                            <a href="#animetaCreatorPartnerships" className='ctaButtons'>More info</a>
+                        </div>
+                    </div>
                 </div>
-                <br />
-                <br />
-                <div className="cta-buttons text-center">
-                    <button type="button" className="theme-btn-primary text-white hover:text-black bg-black hover:bg-white mb-3">Animeta™ Brandstar</button>
-                    <button type="button" className="theme-btn-primary text-white hover:text-black bg-black hover:bg-white mb-3">Ani, AI Creator Buddy</button>
-                    <button type="button" className="theme-btn-primary text-white hover:text-black bg-black hover:bg-white mb-3">Animeta™ Starmaker</button>
+                
+                <div className='flex flex-col justify-center'>
+                    <h2 className='section-sub-title text-center mt-12'>Our products for the creator economy</h2>
                 </div>
-            </section>
-        </div>
+                
+            </div>
+        </section>
     )
 }
 

@@ -115,11 +115,11 @@ export default function Home() {
       <Welcome />
       <HeroSection />
       <CTAButtonsSection />
-      <section>
+      {/* <section>
         <picture>
           <img src="/images/v2/Animeta-Homepage-images-section.png" alt="animeta homepage images section" />
         </picture>
-      </section>
+      </section> */}
       <AnimetaBrandStarSection />
       <ANISection />
       <AnimetaStarMakerSection />

@@ -1,21 +1,45 @@
 import React from "react";
 
 const AnimetaBrandStarSection = () => {
-    return (
-        <div className="bg-black section-padding">
-            <div className="container mx-auto">
-                <div className="section-content">
-                    <h2 className="brand-star-title text-[#f00] text-center">Animeta <span>Brandstar</span></h2>
-                    <br />
-                    <div className="section-description text-white text-center">
-                        <p>Animeta Brandstar is a first of its kind tech-data enabled influencer marketing <br className="xs:hidden sm:hidden md:block" /> 
-                        platform, that enables brands to discover and execute campaigns, with the most <br className="xs:hidden sm:hidden md:block" /> 
-                        relevant creators, in an advanced data-intuitive way.</p>
-                    </div>
-                </div>
+  return (
+    <section className="animetaContentSections" id="animetaBrandStar">
+      <div className="container mx-auto">
+        <div className="flex sectionContent">
+          <div className="imageBox w-3/6">
+            <picture>
+              <img
+                src="/images/v3/brandstar.png"
+                alt="Brand Star"
+                className="object-cover w-full h-full"
+              />
+            </picture>
+          </div>
+          <div className="contentBox w-3/6">
+            <div className="brandLogo">
+              <picture>
+                <img
+                  src="/images/v3/animetaBrandStar.svg"
+                  alt="Brand Star"
+                  className="object-contain"
+                />
+              </picture>
             </div>
+            <div className="sectionDescription">
+              <h3>Influencer Marketing Platform</h3>
+              <p>
+                Animeta Brandstar is a first of its kind tech-data enabled
+                influencer marketing a, that enables brands to discover and
+                execute campaigns, with the most relevant creators, in an
+                advanced dataintuitive way; with a strong focus on ROI &
+                performance metrics.
+              </p>
+              <p></p>
+            </div>
+          </div>
         </div>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
 export default AnimetaBrandStarSection;

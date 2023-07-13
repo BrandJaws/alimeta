@@ -21,7 +21,7 @@ const  Header = () => {
 
     return (
         <header>
-            <nav className='fixed top-0 left-0 right-0 p-6 bg-black z-[999]'>
+            <nav className='sticky top-0 left-0 right-0 p-6 bg-[#181617]/[0.87] z-[999]'>
                 <div className='container mx-auto flex flex-row justify-between h-full'>
                     <div className='flex flex-row justify-between items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
@@ -30,18 +30,18 @@ const  Header = () => {
                             </a>
                         </Link>
                         <button type='button' className='md:block lg:hidden' onClick={handleClick}>
-                            <RxHamburgerMenu className='text-white text-2xl' />
+                            <RxHamburgerMenu className='text-[#E6E7E8] text-2xl' />
                         </button>
                     </div>
                     <ul className='navbar lg:flex md:hidden sm:hidden xs:hidden flex-row gap-16 text-2xl uppercase'>
                         <li className='inline-flex'>
                             <Link href='/people' legacyBehavior>
-                                <a className={`${router.asPath === "/people" ? 'active' : ''} text-white`}>People</a>
+                                <a className={`${router.asPath === "/people" ? 'active' : ''} text-[#E6E7E8]`}>People</a>
                             </Link>
                         </li>
                         <li className='inline-flex'>
                             <Link href='/news' legacyBehavior>
-                                <a className={`${router.asPath === "/news" ? 'active' : ''} text-white`}>News</a>
+                                <a className={`${router.asPath === "/news" ? 'active' : ''} text-[#E6E7E8]`}>News</a>
                             </Link>
                         </li>
                     </ul>

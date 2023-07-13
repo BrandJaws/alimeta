@@ -2,19 +2,51 @@ import React from "react";
 
 const ANISection = () => {
     return (
-        <div className="bg-[#f00] section-padding">
-            <div className="container mx-auto">
-                <div className="section-content">
-                    <h2 className="brand-star-title text-white text-center !font-[600]">ANI</h2>
-                    <p className="text-white text-center">Your AI Creator Buddy</p>
-                    <br />
-                    <div className="section-description text-white text-center">
-                        <p>Ani is Animeta’s Creator content app that provides AI based content recommendation, video <br className="xs:hidden sm:hidden md:block" /> 
-                        ideas, trending content, channel growth & overall optimization to creators.</p>
-                    </div>
+        <section className="animetaContentSections mt-16" id="aniAiCreatorBuddy">
+        <div className="container mx-auto">
+          <div className="flex sectionContent bgBlack text-white">
+            
+            <div className="contentBox w-3/6">
+              <div className="brandLogo">
+                <picture>
+                  <img
+                    src="/images/v3/aniAiCreatorBuddy.svg"
+                    alt="Brand Star"
+                    className="object-contain"
+                  />
+                </picture>
+              </div>
+              <div className="sectionDescription">
+                <h3 className="textWhite">AI-Powered  <br /> Content Strategy App</h3>
+                <p className="textWhite">
+                Ani is Animeta’s Creator content app that provides AI based content recommendation, video ideas, trending content, channel growth & overall optimization to creators.
+                </p>
+                <div className="appButtons">
+                  <div className="imageBox">
+                      <picture>
+                          <img src="/images/v3/appStore.svg" alt="Brand Star" className='object-contain' />
+                      </picture>
+                  </div>
+                  <div className="imageBox">
+                      <picture>
+                          <img src="/images/v3/googlePlay.svg" alt="Brand Star" className='object-contain' />
+                      </picture>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div className="imageBox w-3/6">
+              <picture>
+                <img
+                  src="/images/v3/creatorBuddy.png"
+                  alt="Brand Star"
+                  className="object-cover w-full h-full"
+                />
+              </picture>
+            </div>
+          </div>
         </div>
+      </section>
     )
 }
 

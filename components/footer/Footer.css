@@ -1,5 +1,5 @@
 .Footer {
-    padding: 50px 0px 35px 0px;
+    padding: 100px 0px 50px 0px;
     position: static;
     left: 0;
     right: 0;
@@ -93,7 +93,7 @@
 .Footer .flex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .footer-left h3 {
@@ -133,7 +133,8 @@
 }
 
 .footer-right {
-    width: 420px;
+    width: auto;
+    text-transform:uppercase;
 }
 
 
@@ -192,13 +193,12 @@
 
 .footer-social {
     padding: 0px;
-    margin: 0px 0px 20px 0px;
     list-style: none;
 }
 
 .footer-social li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
     cursor: pointer;
 }
 

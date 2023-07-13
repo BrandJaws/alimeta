@@ -28,7 +28,8 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       },
       fontFamily: {
-        'robotoCondensed': 'Roboto Condensed'
+        'robotoCondensed': 'Roboto Condensed',
+        'roboto': 'Roboto',
       }
     },
   },
