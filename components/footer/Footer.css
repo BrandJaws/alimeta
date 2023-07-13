@@ -1,5 +1,5 @@
 .Footer {
-    padding: 100px 0px 50px 0px;
+    /* padding: 100px 0px 50px 0px; */
     position: static;
     left: 0;
     right: 0;
@@ -70,7 +70,7 @@
     z-index: -1;
 } */
 
-.footer-left {
+/* .footer-left {
     overflow: hidden;
 }
 
@@ -215,9 +215,9 @@
     right: 20px;
     bottom: 30px;
     z-index: 9999;
-}
+} */
 
-
+/* 
 @media(max-width: 1400px) {
     .footer-left h2 span {
         font-size: 60px;
@@ -335,10 +335,6 @@
         justify-content: center;
     }
 
-    .Footer {
-        padding: 0px 0px 25px 0px;
-    }
-
     .footerLinks {
         display: none;
     }
@@ -425,4 +421,4 @@
         margin-top: 25px;
     }
 
-}
+} */

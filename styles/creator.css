@@ -420,9 +420,9 @@
 .h-full {
   height: 100%;
 }
-.w-full {
+/* .w-full {
   width: 100%;
-}
+} */
 .h-full-half {
   height: 50%;
 }

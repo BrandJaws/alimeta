@@ -46,7 +46,7 @@ const  Header = () => {
                         </li>
                     </ul>
                     {isMenuShow && (
-                        <ul className='navbar bg-white absolute left-0 right-0 top-[91px] p-6 flex flex-col gap-4 border-b shadow-md'>
+                        <ul className='navbar bg-white absolute left-0 right-0 top-[80px] p-6 flex flex-col gap-4 border-b shadow-md'>
                             <li>
                                 <Link href='/people' legacyBehavior>
                                     <a className={`${router.asPath === "/people" ? 'active' : ''}`}>People</a>

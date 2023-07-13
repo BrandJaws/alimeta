@@ -33,17 +33,17 @@ function Persons() {
     slidesToScroll: 1,
   };
   return (
-    <section className="gallery desktop-only  mt-16">
+    <section className="gallery  mt-16">
       <div className="container mx-auto">
         <div className="galleryBox">
           <article>
-            <div className="galleryRow flex items-center">
-              <div className="w-1/2 text-center">
+            <div className="galleryRow flex flex-wrap items-center">
+              <div className="w-full sm:w-1/2 text-center">
                 <div className="galleryText">
                   <h2>calling all creators</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl("https://d3e066o7tnnbih.cloudfront.net/video8.mp4")
@@ -53,7 +53,7 @@ function Persons() {
                   <Image className="lazyload" src={p1} alt="p1" /> <h2>Pets</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -69,8 +69,8 @@ function Persons() {
             </div>
           </article>
           <article>
-            <div className="galleryRow flex items-center">
-              <div className="w-1/4">
+            <div className="galleryRow flex flex-wrap  items-center">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -82,7 +82,7 @@ function Persons() {
                   <Image className="lazyload" src={p3} alt="p3" /> <h2>DIY</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -95,7 +95,7 @@ function Persons() {
                   <h2>Family</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -108,7 +108,7 @@ function Persons() {
                   <h2>Fashion</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -123,8 +123,8 @@ function Persons() {
             </div>
           </article>
           <article>
-            <div className="galleryRow flex items-center">
-              <div className="w-1/4">
+            <div className="galleryRow flex flex-wrap  items-center">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -137,7 +137,7 @@ function Persons() {
                   <h2>gaming</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -150,7 +150,7 @@ function Persons() {
                   <h2>health</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -163,7 +163,7 @@ function Persons() {
                   <h2>Pranks</h2>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/2 sm:w-1/4">
                 <div
                   onClick={() =>
                     setUrl(
@@ -180,7 +180,7 @@ function Persons() {
           </article>
         </div>
       </div>
-      <section className="mobile-only headindvideo  mt-16">
+      {/* <section className="mt-16">
         <Slider {...settings}>
           <div>
             <div
@@ -297,7 +297,7 @@ function Persons() {
             </div>
           </div>
         </Slider>
-      </section>
+      </section> */}
       {show && <Modal show={show} setShow={setShow} videoPath={videoPath} />}
     </section>
   );

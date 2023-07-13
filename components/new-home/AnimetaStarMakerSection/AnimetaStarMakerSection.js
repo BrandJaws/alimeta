@@ -4,8 +4,8 @@ const AnimetaStarMakerSection = () => {
   return (
     <section className="animetaContentSections mt-16" id="animetaCreatorPartnerships">
       <div className="container mx-auto">
-        <div className="flex sectionContent">
-          <div className="imageBox w-3/6">
+        <div className="flex  flex-col sm:flex-row  sectionContent">
+          <div className="imageBox  w-full sm:w-3/6">
             <picture>
               <img
                 src="/images/v3/creatorPartnership.png"
@@ -14,7 +14,7 @@ const AnimetaStarMakerSection = () => {
               />
             </picture>
           </div>
-          <div className="contentBox w-3/6">
+          <div className="contentBox  w-full sm:w-3/6">
             <div className="brandLogo">
               <picture>
                 <img

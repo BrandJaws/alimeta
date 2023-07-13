@@ -6,8 +6,8 @@ const SubscribeSection = () => {
     // <Newsletter />
     <section className="aboutAnimeta mt-16">
       <div className="container mx-auto">
-        <div className="flex items-end sectionContent">
-          <div className="imageBox w-3/6">
+        <div className="flex  flex-col sm:flex-row items-end sectionContent">
+          <div className="imageBox  w-full sm:w-3/6">
             <picture>
               <img
                 src="/images/v3/aboutAnimeta.svg"
@@ -16,7 +16,7 @@ const SubscribeSection = () => {
               />
             </picture>
           </div>
-          <div className="contentBox w-3/6">
+          <div className="contentBox  w-full sm:w-3/6">
             <div className="sectionDescription pb-20">
               <h2>about animeta</h2>
               <p>

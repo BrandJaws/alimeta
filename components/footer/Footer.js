@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       <section className="Footer bg-black" id="footer">
-        <div className="container mx-auto flex">
+        <div className="container mx-auto flex flex-col sm:flex-row items-end justify-between">
           <div className="footer-left">
             <Image src={FooterLogo} className="lazyload" alt="FooterLogo" />
 
@@ -46,7 +46,7 @@ function Footer() {
                 </Link>
               </li>
             </ul>
-            <p className="text-right">
+            <p>
               ANIMETA PTE. LTD. <br />
               (202238585K)
               <br />

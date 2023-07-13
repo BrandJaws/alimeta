@@ -11,9 +11,7 @@ section.Splash {
     width: 100%;
     display:none;
 }
-.splash, .SplashGone section.Splash {
-    display: none;
-  }
+
 video {
     object-fit: cover;
     width: 100%;
@@ -134,7 +132,7 @@ section.Splash h1 span:nth-child(9) {
     section.Splash video {
         object-fit: contain;
         width: 250%;
-        margin-left: -45%;
+        margin-left: -1%;
     }
 }
 
@@ -159,6 +157,6 @@ section.Splash h1 span:nth-child(9) {
     section.Splash video {
         object-fit: contain;
         width: 250%;
-        margin-left: -45%;
+        margin-left: -1%;
     }
 }

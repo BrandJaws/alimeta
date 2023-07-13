@@ -4,8 +4,9 @@
     background-color: #fff;
     position: relative;
     z-index: 3;
+    cursor: pointer;
 }
-
+.category  {}
 .gallery{
     /* background-image: url(../../public/images/gallery-bg.webp);
     background-repeat: no-repeat;

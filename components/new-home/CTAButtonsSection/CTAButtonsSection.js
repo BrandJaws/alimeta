@@ -5,7 +5,7 @@ const CTAButtonsSection = () => {
         <section className="ctaButtonSection">
             <div className="container mx-auto">
                 
-                <div className="columns-3">
+                <div className="flex flex-col sm:flex-row gap-[20px]">
                     <div className="card ctaBox bg-[#f6f6f6]">
                         <div className="imageBox">
                             <picture>

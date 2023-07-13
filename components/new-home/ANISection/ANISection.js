@@ -4,9 +4,9 @@ const ANISection = () => {
     return (
         <section className="animetaContentSections mt-16" id="aniAiCreatorBuddy">
         <div className="container mx-auto">
-          <div className="flex sectionContent bgBlack text-white">
+          <div className="flex sectionContent  flex-col-reverse sm:flex-row bgBlack text-white">
             
-            <div className="contentBox w-3/6">
+            <div className="contentBox  w-full sm:w-3/6">
               <div className="brandLogo">
                 <picture>
                   <img
@@ -35,7 +35,7 @@ const ANISection = () => {
                 </div>
               </div>
             </div>
-            <div className="imageBox w-3/6">
+            <div className="imageBox  w-full sm:w-3/6">
               <picture>
                 <img
                   src="/images/v3/creatorBuddy.png"
