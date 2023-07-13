@@ -14,7 +14,7 @@
     background-size: cover; */
 }
 
-.Persons img {
+.category img {
     width: 100%;
     display: block;
     filter: grayscale(100%);
@@ -25,7 +25,7 @@
     transition: all .3s ease-in-out;
 }
 
-.Persons img:hover {
+.category img:hover {
     filter: grayscale(0%);
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
