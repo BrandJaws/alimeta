@@ -4,20 +4,17 @@
     background-color: #fff;
     position: relative;
     z-index: 3;
+    cursor: pointer;
 }
-
+.category  {}
 .gallery{
-    padding: 90px 60px;
     /* background-image: url(../../public/images/gallery-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
-    background-color: #f00;
-    position: relative;
-    z-index: 3;
 }
 
-.Persons img {
+.category img {
     width: 100%;
     display: block;
     filter: grayscale(100%);
@@ -28,7 +25,7 @@
     transition: all .3s ease-in-out;
 }
 
-.Persons img:hover {
+.category img:hover {
     filter: grayscale(0%);
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;

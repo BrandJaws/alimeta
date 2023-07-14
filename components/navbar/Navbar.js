@@ -22,7 +22,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='navbar' id='navbar'>
+            {/* <nav className='navbar' id='navbar'>
                 <div className='navWrapp'>
                     <div></div>
                     <div className='Logo'>
@@ -63,7 +63,7 @@ function Navbar() {
                             </li>
                         </ul>
                     </div>)}
-            </nav>
+            </nav> */}
         </>
     )
 }

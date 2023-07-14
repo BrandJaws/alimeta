@@ -1,14 +1,14 @@
 import Head from "next/head";
-import Welcome from "../components/welcome/Welcome";
-import Banner from "../components/banner/Banner";
-import Started from "../components/started/Started";
-import Create from "../components/create/Create";
-import Offer from "../components/offer/Offer";
-import What from "../components/what/what";
-import Persons from "../components/persons/Persons";
-import News from "../components/news/News";
-import Newsletter from "../components/newsletter/Newsletter";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import HeroSection from "../components/new-home/HeroSection/HeroSection";
+import CTAButtonsSection from "../components/new-home/CTAButtonsSection/CTAButtonsSection";
+import AnimetaBrandStarSection from "../components/new-home/AnimetaBrandStarSection/AnimetaBrandStarSection";
+import ANISection from "../components/new-home/ANISection/ANISection";
+import AnimetaStarMakerSection from "../components/new-home/AnimetaStarMakerSection/AnimetaStarMakerSection";
+import ImagesSection from "../components/new-home/ImagesSection/ImagesSection";
+import SubscribeSection from "../components/new-home/SubscribeSection/SubscribeSection";
+import Welcome from "../components/welcome/Welcome"
+import Script from "next/script";
 
 export default function Home() {
   // if (typeof window !== "undefined") {
@@ -100,18 +100,9 @@ export default function Home() {
           name="msapplication-TileImage"
           content="https://animeta.ai/og-image.png"
         />
-        {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' async></script> */}
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
-          async
-        ></script>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9081900158205152"
-          crossorigin="anonymous"
-        ></script>
-        {/* <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script> */}
       </Head>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></Script>
+      <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9081900158205152" async crossOrigin="anonymous"></Script>
       <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
 
       <span
@@ -122,17 +113,18 @@ export default function Home() {
         <link itemprop="url" href="https://animeta.ai/og-image.png" />
       </span>
       <Welcome />
-      <section className="HeroScreen">
-        <Banner />
-      </section>
-      <Started />
-      <Create />
-      <Offer />
-      <What />
-      <Persons />
-      <News />
-      <Newsletter />
-      {/* <Modal /> */}
+      <HeroSection />
+      <CTAButtonsSection />
+      {/* <section>
+        <picture>
+          <img src="/images/v2/Animeta-Homepage-images-section.png" alt="animeta homepage images section" />
+        </picture>
+      </section> */}
+      <AnimetaBrandStarSection />
+      <ANISection />
+      <AnimetaStarMakerSection />
+      <ImagesSection />
+      <SubscribeSection />
     </>
   );
 }

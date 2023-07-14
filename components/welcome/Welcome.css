@@ -9,6 +9,7 @@ section.Splash {
     bottom: 0;
     z-index: 99999999;
     width: 100%;
+    display:none;
 }
 
 video {
@@ -131,7 +132,7 @@ section.Splash h1 span:nth-child(9) {
     section.Splash video {
         object-fit: contain;
         width: 250%;
-        margin-left: -45%;
+        margin-left: -1%;
     }
 }
 
@@ -156,6 +157,6 @@ section.Splash h1 span:nth-child(9) {
     section.Splash video {
         object-fit: contain;
         width: 250%;
-        margin-left: -45%;
+        margin-left: -1%;
     }
 }

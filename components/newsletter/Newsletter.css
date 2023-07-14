@@ -6,7 +6,9 @@
     position: relative;
     z-index: 2;
 }
-
+.hubspot-form-wrapper iframe {
+    height: auto !important;
+}
 .Newsletter h2 {
     font-size: 57px;
     font-weight: normal;
@@ -137,10 +139,12 @@ form {
 .hs_email label {
     position: absolute;
     top: -25px;
+    display: none;
 }
 
 .hs-error-msgs label {
     position: static;
+    display: none;
 }
 
 .hs_error_rollup {
