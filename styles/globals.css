@@ -694,7 +694,7 @@ text-[#7b7b7b];
   @apply md:w-[94%];
 }
 .category {
-  @apply cursor-pointer
+  @apply cursor-pointer pointer-events-none
 }
 .category span {
   @apply !block;
