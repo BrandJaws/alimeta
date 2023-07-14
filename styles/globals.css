@@ -434,12 +434,9 @@ max-w-none */
 .ctaButtonSection .card.ctaBox .ctaContentBox h5 {
   @apply 
   
-  text-[13px]
-  leading-[17px]
+  text-[16px]
+  leading-[22px]
   
-  md:text-[13px]
-  md:leading-[17px]
-    
   text-[#7B7B7B];
 }
 .ctaButtonSection .card.ctaBox.bg-black .ctaContentBox h5 {
