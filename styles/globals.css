@@ -333,11 +333,11 @@ body {
   xl:text-[78px] 
   xl:leading-[70px]
 
-  lg:text-[76px] 
-  lg:leading-[70px]
+  lg:text-[62px] 
+  lg:leading-[56px]
   
-  md:text-[52px] 
-  md:leading-[46px]
+  md:text-[46px] 
+  md:leading-[40px]
   
   sm:text-[42px] 
   sm:leading-[42px]
@@ -362,10 +362,10 @@ body {
   xl:text-[40px] 
   xl:leading-[42px]
 
-  lg:text-[38px] 
-  lg:leading-[44px]
+  lg:text-[32px] 
+  lg:leading-[34px]
   
-  md:text-[28px] 
+  md:text-[26px] 
   md:leading-[28px]
   
   sm:text-[26px] 
@@ -445,7 +445,7 @@ max-w-none */
   @apply text-white;
 }
 .ctaButtonSection .card.ctaBox.bg-black .ctaContentBox .ctaButtons {
-@apply bg-white text-[#ED2127] hover:bg-[#ED2127] hover:text-white;
+  @apply bg-white text-[#ED2127] hover:bg-[#ED2127] hover:text-white;
 }
 .ctaButtonSection .card.ctaBox .ctaButtons {
   @apply text-[#F6F6F6]
@@ -478,11 +478,17 @@ max-w-none */
   py-6;
 }
 .animetaContentSections .sectionDescription h3 {
-  @apply lg:text-[40px]
-  lg:leading-[46px]
+  @apply 2xl:text-[40px]
+  2xl:leading-[46px]
 
-  sm:text-[28px]
-  sm:leading-[32px]
+  xl:text-[30px]
+  xl:leading-[32px]
+
+  lg:text-[26px]
+  lg:leading-[32px]
+
+  sm:text-[24px]
+  sm:leading-[30px]
 
   text-[18px]
   leading-[24px]
@@ -550,10 +556,18 @@ max-w-none */
 .section-description p {
   @apply lg:text-[22px] m-0 max-w-full font-[400] lg:leading-[28px];
 }
-
+.aboutAnimeta {
+  @apply overflow-hidden;
+}
 .aboutAnimeta h2 {
-  @apply lg:text-[96px]
-  lg:leading-[80px]
+  @apply 2xl:text-[96px]
+  2xl:leading-[80px]
+
+  xl:text-[80px]
+  xl:leading-[70px]
+
+  lg:text-[70px]
+  lg:leading-[62px]
 
   text-[64px]
   leading-[60px]
@@ -579,11 +593,11 @@ text-[#7b7b7b];
   @apply 2xl:text-[64px]
   2xl:leading-[70px]
  
-  lg:text-[46px]
-  lg:leading-[50px]
+  lg:text-[36px]
+  lg:leading-[40px]
 
-  sm:text-[32px]
-  sm:leading-[38px]
+  sm:text-[28px]
+  sm:leading-[32px]
   
   text-[28px]
   leading-[34px]
@@ -592,9 +606,10 @@ text-[#7b7b7b];
   font-robotoCondensed
   text-white
   uppercase
-  mb-12
+  sm:mb-12
+  mb-0
   mt-4
-  px-0 
+  px-4 
   
   lg:py-16
   md:py-10
@@ -602,10 +617,16 @@ text-[#7b7b7b];
   text-center
   
   sm:rounded-[46px]
-  rounded-[16px]
+  rounded-[0px]
   
-  shadow-xl overflow-hidden bg-[#ED2127];
+  shadow-xl 
+  overflow-hidden 
+  bg-[#ED2127]
+  
+  sm:ml-auto
+  sm:mr-auto;
 }
+
 .Footer {
   @apply sm:pt-[100px] pt-[50px] pb-[50px];
 }
@@ -617,8 +638,8 @@ text-[#7b7b7b];
   lg:text-[60px]
   lg:leading-[56px]
   
-  sm:text-[50px]
-  sm:leading-[46px]
+  sm:text-[42px]
+  sm:leading-[40px]
   
   text-[48px]
   leading-[50px]
@@ -629,7 +650,7 @@ text-[#7b7b7b];
   uppercase
   
   lg:mb-0
-  md:mb-0
+  sm:mb-0
   mb-16
 
   mt-8;
@@ -691,10 +712,10 @@ text-[#7b7b7b];
 }
 
 .container {
-  @apply md:w-[94%];
+  @apply w-full md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[94%];
 }
 .category {
-  @apply cursor-pointer pointer-events-none
+  @apply cursor-pointer pointer-events-none;
 }
 .category span {
   @apply !block;
@@ -712,10 +733,11 @@ text-[#7b7b7b];
   background: transparent;
   @apply bg-cover bg-center 
   
-  2xl:h-[90vh]
-  xl:h-[90vh]
+  2xl:h-[90%]
+  xl:h-[90%]
   lg:h-[auto]
-  md:min-h-[520px]
+  lg:min-h-[700px]
+  md:min-h-[580px]
   sm:min-h-[520px]
   h-[auto]
 
@@ -726,7 +748,7 @@ text-[#7b7b7b];
 }
 
 .hero-img {
-  @apply xl:max-w-4xl lg:max-w-lg md:max-w-full xl:absolute xl:top-[0px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md;
+  /* @apply xl:max-w-[700px] lg:max-w-lg md:max-w-full xl:absolute xl:top-[0px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md; */
 }
 
 .cta-section-title {

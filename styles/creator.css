@@ -803,6 +803,9 @@
     background-size: cover;
     background-position: center; */
   }
+  .simpleTextButtonContainer {
+    max-width:inherit;
+  }
 }
 .blog-img {
   display: flex;

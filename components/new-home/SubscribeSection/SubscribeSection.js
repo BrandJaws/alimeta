@@ -30,10 +30,15 @@ const SubscribeSection = () => {
             </div>
           </div>
         </div>
+        
+      </div>
+      <div className="container mx-auto simpleTextButtonContainer">
         <div className="simpleTextButton">
         shaping the future of the creator economy
         </div>
       </div>
+
+
     </section>
   );
 };
