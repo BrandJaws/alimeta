@@ -12,7 +12,9 @@ const SubscribeSection = () => {
               <img
                 src="/images/v3/creatorBuddy.png"
                 alt="Brand Star"
-                className="object-cover w-full h-full rounded-[46px]"
+                className="object-cover w-full h-full lg:rounded-[46px]
+                sm:rounded-[20px]
+                rounded-[16px] "
               />
             </picture>
           </div>
