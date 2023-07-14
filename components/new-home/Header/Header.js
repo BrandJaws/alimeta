@@ -21,7 +21,7 @@ const  Header = () => {
 
     return (
         <header>
-            <nav className='sticky top-0 left-0 right-0 py-6 bg-[#181617]/[0.87] z-[999]'>
+            <nav className='sticky top-0 left-0 right-0 py-6 bg-black z-[999]'>
                 <div className='container mx-auto flex flex-row justify-between h-full'>
                     <div className='flex flex-row justify-between items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
