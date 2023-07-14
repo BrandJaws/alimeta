@@ -166,7 +166,7 @@
 .blog-section .header {
   text-align: center;
   text-transform: uppercase;
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -275,7 +275,7 @@
   color: #fff;
 }
 .people-hero-section {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   text-align: center;
 }
 .people-page-header p {
@@ -324,7 +324,7 @@
 .icons-section .icon-box.bg-black .icon {
   background-color: #000;
 }
-.icons-section .icon-box .icon {
+/* .icons-section .icon-box .icon {
   border-radius: 50%;
   background-color: #fff;
   height: 300px !important;
@@ -332,10 +332,24 @@
   overflow: hidden;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border: 1px solid #eee;
-}
-.icons-section .icon-box .icon span {
+} */
+
+.icons-section .icon-box .icon {
+  border-radius: 50%;
   width: 300px !important;
   height: 300px !important;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+.icons-section .icon-box .icon img {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.icons-section .icon-box .icon span {
+  /* width: 300px !important;
+  height: 300px !important; */
   object-fit: cover;
 }
 .icons-section .icon-box .icon img {
@@ -356,9 +370,9 @@
   gap: 50px;
   margin-bottom: 30px;
 }
-.icons-section .icon-box:first-child .icon img {
+/* .icons-section .icon-box:first-child .icon img {
   transform: scale(1.6) translate(10px, 50px);
-}
+} */
 .team-heading {
   font-size: 36px;
   line-height: 40px;
@@ -584,10 +598,10 @@
     width: 33.3%;
     flex: 0 0 33.3%;
   }
-  .icons-section .icon-box {
+  /* .icons-section .icon-box {
     width: 33.3%;
     flex: 0 0 33.3%;
-  }
+  } */
   .blog-content {
     padding: 15px;
     gap: 20px;
@@ -605,6 +619,21 @@
     font-size: 28px;
     line-height: 36px;
     padding-bottom: 50px;
+  }
+  .icons-section .icon-box .icon {
+    width: 220px !important;
+    height: 220px !important;
+  }
+  .icons-section .icon-box .icon img {
+    width: 220px !important;
+    height: 220px !important;
+  }
+  .icon-box .title h1 {
+    font-size:20px;
+    line-height: 1.2;
+  }
+  .icon-box .designation p{
+    font-size:18px;
   }
 }
 
@@ -651,12 +680,22 @@
     line-height: 36px;
     padding-bottom: 30px;
   }
-  .team-section {
+  .team-section, .blog-section {
     padding: 70px 0;
   }
 }
 
 @media screen and (max-width: 767px) {
+
+  .blog-categories-tab {
+
+  }
+.blog-categories-tab li{
+  font-size:16px;
+  margin:0px;
+}
+
+
   .single-blog-item {
     width: 100%;
     flex: 0 0 100%;
@@ -691,9 +730,9 @@
     font-size: 22px;
     line-height: 30px;
   }
-  .people-hero-section {
+  /* .people-hero-section {
     padding-bottom: 10px;
-  }
+  } */
   .marquee-item {
     display: flex;
     align-items: center;
@@ -740,14 +779,7 @@
   .news-card-full {
     padding: 25px;
   }
-  .icons-section .icon-box .icon {
-    width: 270px !important;
-    height: 270px !important;
-  }
-  .icons-section .icon-box .icon img {
-    width: 270px !important;
-    height: 270px !important;
-  }
+
   .icon-box .title h1 {
     font-size: 24px;
   }
@@ -761,15 +793,15 @@
     line-height: 32px;
     padding-bottom: 30px;
   }
-  .team-section {
+  .team-section, .blog-section {
     padding: 60px 0;
   }
 }
 @media screen and (max-width: 640px) {
   .hero-section {
-    background: url("../public/images/v3/mainBanner-mobile.svg") no-repeat;
+    /* background: url("../public/images/v3/mainBanner-mobile.svg") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
 }
 .blog-img {

@@ -7,9 +7,9 @@ import dotImg from "../public/images/dot-img.png";
 // import icon3 from "../public/images/icon-3.png";
 // import icon4 from "../public/images/icon-4.png";
 // import founderTeam1 from "../public/images/founder-team-1.png";
-import founderTeam1 from "../public/images/Anish-Mehta-min.png";
-import founderTeam2 from "../public/images/team-1.jpg";
-import founderTeam3 from "../public/images/team-2.jpg";
+import founderTeam1 from "../public/images/new-team-1.png";
+import founderTeam2 from "../public/images/new-team-2.png";
+import founderTeam3 from "../public/images/new-team-3.png";
 import managementTeam1 from "../public/images/management-team-1.png";
 import managementTeam2 from "../public/images/management-team-2.png";
 import managementTeam3 from "../public/images/management-team-3.png";
@@ -77,7 +77,7 @@ export default function People() {
                 <link itemProp="url" href="https://animeta.ai/og-image.png" />
             </span>
             {/* <Welcome /> */}
-            <Header />
+            {/* <Header /> */}
             <section className="people-page-header">
                 <div className="container mx-auto">
                     <div className="people-hero-section">
@@ -167,13 +167,13 @@ export default function People() {
                         </div>
                     </div>
                 </div>
-                <div className="team-section">
+                <div className="team-section team-section2">
                     <h1 className="team-heading">Management Team</h1>
                     <div className="icons-section">
                         <div className="icon-box">
-                            {/* <div className="icon"> */}
+                            <div className="icon">
                                 <Image src={managementTeam1} alt="icon meta 2" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info"><div className="title">
                                 <h1>CHIEF EXECUTIVE <br />OFFICER</h1>
                             </div>
@@ -182,9 +182,9 @@ export default function People() {
                             </div></div>
                         </div>
                         <div className="icon-box">
-                            {/* <div className="icon"> */}
+                            <div className="icon">
                                 <Image src={managementTeam2} alt="icon meta 3" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info">
                                 <div className="title">
                                     <h1>CHIEF PRODUCT OFFICER<br />& DATA SCIENTIST</h1>
@@ -195,9 +195,9 @@ export default function People() {
                             </div>
                         </div>
                         <div className="icon-box">
-                            {/* <div className="icon"> */}
+                            <div className="icon">
                                 <Image src={managementTeam3} alt="icon meta 1" />
-                            {/* </div> */}
+                            </div>
                             <div className="icon-box-info">
                                 <div className="title">
                                     <h1>SVP - BRANDED CONTENT<br />& CREATOR STRATEGY</h1>

@@ -30,6 +30,7 @@ function Footer() {
                 <a
                   aria-label="Chat on WhatsApp"
                   href="https://wa.me/918104266277"
+                  target="_blank"
                 >
                   {" "}
                   <Image src={WhatsApp} className="lazyload" alt="FooterLogo" />

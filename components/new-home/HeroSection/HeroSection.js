@@ -9,11 +9,11 @@ const HeroScreen = () => {
                         <h1 className='section-title'>Stay Ahead, <br /> Stay relevant</h1>
                         <h4 className='section-sub-title'>AI powered tech-products <br /> for Creators & Brands</h4>
                     </div>
-                    {/* <div className='h-full flex flex-col gap-4 justify-center'>
+                    <div className='h-full flex flex-col gap-4 justify-center'>
                         <picture>
-                            <img src="/images/v2/Animeta-Homepage.png" alt="Hero Picture" className='hero-img' />
+                            <img src="/images/v3/girlCutOut-1.png" alt="Hero Picture" className='hero-img' />
                         </picture>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>

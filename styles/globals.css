@@ -384,11 +384,29 @@ body {
   @apply relative lg:mt-[-143px] sm:mt-[-100px] mt-[-110px] pb-12 z-10;
 }
 .ctaButtonSection .imageBox {
-  @apply xl:min-h-[100px] lg:min-h-[100px] md:min-h-[70px] sm:min-h-[100px] min-h-[100px];
+  @apply xl:min-h-[150px] lg:min-h-[100px] md:min-h-[70px] sm:min-h-[100px] min-h-[100px];
 }
+
 .ctaButtonSection .imageBox img,
 .brandLogo img {
   @apply xl:max-w-[60%] lg:max-w-[80%] md:max-w-[80%] sm:max-w-[70%] max-w-[65%];
+}
+
+.ctaButtonSection .imageBox img {
+  @apply xl:max-w-[100%] lg:max-w-[80%] md:max-w-[80%] sm:max-w-[70%] max-w-[75%];
+}
+
+.ctaButtonSection .imageBox img.image1 {
+  /* @apply h-[70px]
+  max-w-none */
+}
+.ctaButtonSection .imageBox img.image2 {
+  /* @apply h-[65px]
+  max-w-none */
+}
+.ctaButtonSection .imageBox img.image3 {
+  /* @apply h-[90px]
+max-w-none */
 }
 
 .ctaButtonSection .card.ctaBox {
@@ -426,6 +444,9 @@ body {
 .ctaButtonSection .card.ctaBox.bg-black .ctaContentBox h5 {
   @apply text-white;
 }
+.ctaButtonSection .card.ctaBox.bg-black .ctaContentBox .ctaButtons {
+@apply bg-white text-[#ED2127] hover:bg-[#ED2127] hover:text-white;
+}
 .ctaButtonSection .card.ctaBox .ctaButtons {
   @apply text-[#F6F6F6]
   font-[400]
@@ -433,7 +454,8 @@ body {
   px-4
   py-1
   rounded-full
-  bg-[#7B7B7B];
+  bg-[#7B7B7B]
+  hover:bg-black;
 }
 .ctaButtonSection .card.ctaBox .ctaContentBox {
   @apply gap-[20px] flex content-center flex-col items-start;
@@ -462,7 +484,7 @@ body {
   sm:text-[28px]
   sm:leading-[32px]
 
-  text-[22px]
+  text-[18px]
   leading-[24px]
   
   font-[600]
@@ -617,7 +639,7 @@ text-[#7b7b7b];
   @apply flex justify-start sm:justify-end;
 }
 .footer-social li {
-  @apply mx-[10px];
+  @apply mx-[10px] cursor-pointer;
 }
 .footer-social li:first-child {
   @apply ml-0;
@@ -671,26 +693,40 @@ text-[#7b7b7b];
 .container {
   @apply md:w-[94%];
 }
-
+.category {
+  @apply cursor-pointer
+}
 .category span {
   @apply !block;
 }
 
+.team-section2 .icons-section .icon-box .icon img {
+  transform: scale(1.35);
+}
+
+.whatsappButton {
+  @apply fixed bottom-[25px] left-[25px] w-[45px] sm:w-[55px] z-[99];
+}
+
 .hero-section {
-  background: url("../public/images/v3/mainBanner.svg") no-repeat;
+  background: transparent;
   @apply bg-cover bg-center 
   
   2xl:h-[90vh]
   xl:h-[90vh]
-  lg:h-[80vh]
-  md:h-[80vh]
-  sm:h-[70vh]
-  h-[100vh]
+  lg:h-[auto]
+  md:min-h-[520px]
+  sm:min-h-[520px]
+  h-[auto]
+
+  overflow-hidden
+  flex
+  items-center
   min-h-[700px];
 }
 
 .hero-img {
-  @apply xl:max-w-4xl lg:max-w-lg md:max-w-full xl:absolute xl:top-[91px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md;
+  @apply xl:max-w-4xl lg:max-w-lg md:max-w-full xl:absolute xl:top-[0px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md;
 }
 
 .cta-section-title {

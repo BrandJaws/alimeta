@@ -9,7 +9,7 @@ const CTAButtonsSection = () => {
                     <div className="card ctaBox bg-[#f6f6f6]">
                         <div className="imageBox">
                             <picture>
-                                <img src="/images/v3/animetaBrandStar.svg" alt="Brand Star" className='object-contain' />
+                                <img src="/images/v3/equal-animetaBrandStar.png" alt="Brand Star" className='object-contain image1' />
                             </picture>
                         </div>
                         <div className="ctaContentBox">
@@ -20,7 +20,7 @@ const CTAButtonsSection = () => {
                     <div className="card ctaBox bg-black text-white">
                         <div className="imageBox">
                             <picture>
-                                <img src="/images/v3/aniAiCreatorBuddy.svg" alt="Brand Star" className='object-contain' />
+                                <img src="/images/v3/equal-animetaAiCreatorBuddy.png" alt="Brand Star" className='object-contain image2' />
                             </picture>
                         </div>
                         <div className="ctaContentBox">
@@ -31,7 +31,7 @@ const CTAButtonsSection = () => {
                     <div className="card ctaBox bg-[#f6f6f6]">
                         <div className="imageBox">
                             <picture>
-                                <img src="/images/v3/animetaCreatorPartnerships.svg" alt="Brand Star" className='object-contain' />
+                                <img src="/images/v3/equal-animetaCreatorPartnerships.png" alt="Brand Star" className='object-contain image3' />
                             </picture>
                         </div>
                         <div className="ctaContentBox">

@@ -550,12 +550,11 @@ export default function News() {
         <link itemProp="url" href="https://animeta.ai/og-image.png" />
       </span>
       {/* <Welcome /> */}
-      <Header />
+      {/* <Header /> */}
       <section className="container mx-auto">
-        <div className="blog-section">
-          <div className="header">
-            <h2>Latest News</h2>
-          </div>
+        <div className="blog-section team-section">
+          
+          <h1 class="team-heading">Latest News</h1>
           <ul className="blog-categories-tab">
             {blogCategories.map((category, index) => {
               return (
