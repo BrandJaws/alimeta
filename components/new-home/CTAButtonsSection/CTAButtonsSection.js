@@ -35,7 +35,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5>YOU CREATE, We take care of everything else!</h5>
+                            <h5>YOU CREATE, <br /> We take care of everything else!</h5>
                             <a href="#animetaCreatorPartnerships" className='ctaButtons'>More info</a>
                         </div>
                     </div>
