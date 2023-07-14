@@ -705,7 +705,7 @@ text-[#7b7b7b];
 }
 
 .whatsappButton {
-  @apply fixed bottom-[25px] right-[25px] w-[45px] sm:w-[55px] z-[99] rotate-90;
+  @apply fixed bottom-[25px] right-[25px] w-[45px] sm:w-[55px] z-[99] rotate-[-90deg];
 }
 
 .hero-section {
