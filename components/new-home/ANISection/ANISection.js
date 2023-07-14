@@ -53,7 +53,7 @@ const ANISection = () => {
           <div className="imageBox  w-full sm:w-3/6">
             <picture>
               <img
-                src="/images/v3/creatorBuddy.png"
+                src="/images/v3/aboutAnimeta.svg"
                 alt="Brand Star"
                 className="object-cover w-full h-full"
               />
