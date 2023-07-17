@@ -18,7 +18,7 @@ const AnimetaStarMakerSection = () => {
             <div className="brandLogo">
               <picture>
                 <img
-                  src="/images/v3/animetaCreatorPartnerships.svg"
+                  src="/images/v3/animetaCreatorPartnerships.png"
                   alt="Brand Star"
                   className="object-contain"
                 />
