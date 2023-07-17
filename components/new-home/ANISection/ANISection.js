@@ -9,7 +9,7 @@ const ANISection = () => {
             <div className="brandLogo">
               <picture>
                 <img
-                  src="/images/v3/aniAiCreatorBuddy.svg"
+                  src="/images/v3/equal-animetaAiCreatorBuddy.png"
                   alt="Brand Star"
                   className="object-contain"
                 />
