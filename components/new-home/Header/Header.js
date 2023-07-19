@@ -29,9 +29,9 @@ const  Header = () => {
                                 <Image src={Logo} fill={true} loading='lazy' alt='logo' width={isScreen.width < 767 ? 160 : 200} height={isScreen.width < 767 ? 34 : 43} />
                             </a>
                         </Link>
-                        <button type='button' className='md:block lg:hidden' onClick={handleClick}>
+                        {/* <button type='button' className='md:block lg:hidden' onClick={handleClick}>
                             <RxHamburgerMenu className='text-[#E6E7E8] text-2xl' />
-                        </button>
+                        </button> */}
                     </div>
                     {/* <ul className='navbar lg:flex md:hidden sm:hidden xs:hidden flex-row gap-16 text-2xl uppercase'>
                         <li className='inline-flex'>
