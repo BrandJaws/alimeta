@@ -27,28 +27,28 @@ import Script from "next/script";
 import Welcome from "../components/welcome/Welcome";
 import Header from "../components/new-home/Header/Header";
 // const blogs = [
-  // {
-  //   img: blogImg6,
-  //   headlines:
-  //     "Newly launched AI-powered creator tech venture to focus on creator economy",
-  //   portal: "India TV",
-  //   date: "09 Feb 2023",
-  //   link: "https://www.indiatvnews.com/business/news/newly-launched-ai-powered-creator-tech-venture-animeta-to-focus-on-creator-economy-artificial-intelligence-india-2023-02-09-845800",
-  //   category: "Corporate PR",
-  //   description:
-  //     "As many sectors around the world took a nosedive due to Covid restrictions and Russia-Ukraine war, the creator economy showed picked up pace",
-  // },
-  // {
-  //   img: blogImg16,
-  //   headlines:
-  //     "Animeta strengthens leadership with key hires from Google Meta and Viacom",
-  //   portal: "E4M",
-  //   date: "13 Mar 2023",
-  //   link: "https://www.exchange4media.com/people-movement-news/animeta-strengthens-leadership-with-key-hires-from-google-meta-and-viacom-125657.html",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, today announced several strategic hires",
-  // },
+// {
+//   img: blogImg6,
+//   headlines:
+//     "Newly launched AI-powered creator tech venture to focus on creator economy",
+//   portal: "India TV",
+//   date: "09 Feb 2023",
+//   link: "https://www.indiatvnews.com/business/news/newly-launched-ai-powered-creator-tech-venture-animeta-to-focus-on-creator-economy-artificial-intelligence-india-2023-02-09-845800",
+//   category: "Corporate PR",
+//   description:
+//     "As many sectors around the world took a nosedive due to Covid restrictions and Russia-Ukraine war, the creator economy showed picked up pace",
+// },
+// {
+//   img: blogImg16,
+//   headlines:
+//     "Animeta strengthens leadership with key hires from Google Meta and Viacom",
+//   portal: "E4M",
+//   date: "13 Mar 2023",
+//   link: "https://www.exchange4media.com/people-movement-news/animeta-strengthens-leadership-with-key-hires-from-google-meta-and-viacom-125657.html",
+//   category: "Corporate PR",
+//   description:
+//     "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, today announced several strategic hires",
+// },
 //   {
 //     img: blogImg24,
 //     headlines:
@@ -71,38 +71,38 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
 //   },
-  // {
-  //   img: blogImg3,
-  //   headlines:
-  //     "Over 1 million Indian social media creators to earn $500 per month in the next three years: Report",
-  //   portal: "LiveMint",
-  //   date: "23 Apr 2023",
-  //   link: "https://www.livemint.com/news/india/over-1-million-indian-social-media-creators-to-earn-500-per-month-in-the-next-three-years-report/amp-11682270973943.html",
-  //   category: "Corporate PR",
-  //   description:
-  //     "New Delhi: India is leading the digital content creation wave with 1 million creators in the country estimated to have at least 100,000 subscribers or followers in three years",
-  // },
-  // {
-  //   img: blogImg1,
-  //   headlines:
-  //     "AI-based platform Animeta launched, to focus on creator economy",
-  //   portal: "The Economic Times",
-  //   date: "08 Feb 2023",
-  //   link: "https://m.economictimes.com/tech/startups/ai-based-platform-animeta-launched-to-focus-on-creator-economy/amp_articleshow/97730754.cms",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Former CEO of animation studio Cosmos-Maya, Anish Mehta, on Wednesday launched his new venture, Animeta",
-  // },
-  // {
-  //   img: blogImg2,
-  //   headlines: "Creator Tech Firm Animeta Taps Media Execs",
-  //   portal: "VC Circle",
-  //   date: "08 Feb 2023",
-  //   link: "https://www.vccircle.com/creatortech-firm-animeta-taps-media-execs",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
-  // },
+// {
+//   img: blogImg3,
+//   headlines:
+//     "Over 1 million Indian social media creators to earn $500 per month in the next three years: Report",
+//   portal: "LiveMint",
+//   date: "23 Apr 2023",
+//   link: "https://www.livemint.com/news/india/over-1-million-indian-social-media-creators-to-earn-500-per-month-in-the-next-three-years-report/amp-11682270973943.html",
+//   category: "Corporate PR",
+//   description:
+//     "New Delhi: India is leading the digital content creation wave with 1 million creators in the country estimated to have at least 100,000 subscribers or followers in three years",
+// },
+// {
+//   img: blogImg1,
+//   headlines:
+//     "AI-based platform Animeta launched, to focus on creator economy",
+//   portal: "The Economic Times",
+//   date: "08 Feb 2023",
+//   link: "https://m.economictimes.com/tech/startups/ai-based-platform-animeta-launched-to-focus-on-creator-economy/amp_articleshow/97730754.cms",
+//   category: "Corporate PR",
+//   description:
+//     "Former CEO of animation studio Cosmos-Maya, Anish Mehta, on Wednesday launched his new venture, Animeta",
+// },
+// {
+//   img: blogImg2,
+//   headlines: "Creator Tech Firm Animeta Taps Media Execs",
+//   portal: "VC Circle",
+//   date: "08 Feb 2023",
+//   link: "https://www.vccircle.com/creatortech-firm-animeta-taps-media-execs",
+//   category: "Corporate PR",
+//   description:
+//     "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
+// },
 //   {
 //     img: blogImg3,
 //     headlines: "Animeta launched to reshape the future of BACE",
@@ -133,38 +133,38 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "Rajesh Kamat, managing director of KKR-backed Emerald Media, and Den Networks founder and serial media entrepreneur Sameer Manchanda, have invested in Animeta",
 //   },
-  // {
-  //   img: blogImg1,
-  //   headlines:
-  //     "Anish Mehta announces the launch of ‘Animeta’; an AI-based self-service creator tech platform",
-  //   portal: "Event Faqs",
-  //   date: "09 Feb 2023",
-  //   link: "https://www.eventfaqs.com/news/ef-18915/anish-mehta-announces-the-launch-of-animeta-an-ai-based-self-service-creator-tech-platform",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Anish Mehta, the former CEO of Asian animation studio Cosmos-Maya, announced the launch of his new venture, Animeta",
-  // },
-  // {
-  //   img: blogImg8,
-  //   headlines:
-  //     "Indian Animation Boss Anish Mehta Launches AI-Powered Creator Platform",
-  //   portal: "Asia Pacific News",
-  //   date: "09 Feb 2023",
-  //   link: "https://content-technology.com/asia-pacific-news/indian-animation-boss-anish-mehta-launches-ai-powered-creator-platform/",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Anish Mehta, the former CEO of leading Asian animation studio Cosmos-Maya, has announced the launch of Animeta",
-  // },
-  // {
-  //   img: blogImg10,
-  //   headlines: "Animeta names Devdatta Potnis as chief executive officer",
-  //   portal: "Financial Express",
-  //   date: "15 Feb 2023",
-  //   link: "https://www.financialexpress.com/brandwagon/animeta-names-devdatta-potnis-as-chief-executive-officer/2982592/",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Animeta, an AI-powered tech creator, has named Devdatta Potnis as its chief executive officer. The tech platform, which was launched recently",
-  // },
+// {
+//   img: blogImg1,
+//   headlines:
+//     "Anish Mehta announces the launch of ‘Animeta’; an AI-based self-service creator tech platform",
+//   portal: "Event Faqs",
+//   date: "09 Feb 2023",
+//   link: "https://www.eventfaqs.com/news/ef-18915/anish-mehta-announces-the-launch-of-animeta-an-ai-based-self-service-creator-tech-platform",
+//   category: "Corporate PR",
+//   description:
+//     "Anish Mehta, the former CEO of Asian animation studio Cosmos-Maya, announced the launch of his new venture, Animeta",
+// },
+// {
+//   img: blogImg8,
+//   headlines:
+//     "Indian Animation Boss Anish Mehta Launches AI-Powered Creator Platform",
+//   portal: "Asia Pacific News",
+//   date: "09 Feb 2023",
+//   link: "https://content-technology.com/asia-pacific-news/indian-animation-boss-anish-mehta-launches-ai-powered-creator-platform/",
+//   category: "Corporate PR",
+//   description:
+//     "Anish Mehta, the former CEO of leading Asian animation studio Cosmos-Maya, has announced the launch of Animeta",
+// },
+// {
+//   img: blogImg10,
+//   headlines: "Animeta names Devdatta Potnis as chief executive officer",
+//   portal: "Financial Express",
+//   date: "15 Feb 2023",
+//   link: "https://www.financialexpress.com/brandwagon/animeta-names-devdatta-potnis-as-chief-executive-officer/2982592/",
+//   category: "Corporate PR",
+//   description:
+//     "Animeta, an AI-powered tech creator, has named Devdatta Potnis as its chief executive officer. The tech platform, which was launched recently",
+// },
 //   {
 //     img: blogImg10,
 //     headlines: "AI creator company Animeta appoints Devdatta Potnis as CEO",
@@ -195,17 +195,17 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "Singapore-based creator tech company Animeta, launched by former Cosmos-Maya CEO Anish Mehta has announced several strategic hires",
 //   },
-  // {
-  //   img: blogImg16,
-  //   headlines:
-  //     "Animeta taps talent from Google, Meta, Viacom & WarnerMedia for leadership roles",
-  //   portal: "The Economic Times",
-  //   date: "01 Mar 2023",
-  //   link: "https://economictimes.indiatimes.com/jobs/c-suite/animeta-taps-talent-from-google-meta-viacom-warnermedia-for-leadership-roles/articleshow/98324879.cms?from=mdr",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, on Wednesday announced several strategic hires",
-  // },
+// {
+//   img: blogImg16,
+//   headlines:
+//     "Animeta taps talent from Google, Meta, Viacom & WarnerMedia for leadership roles",
+//   portal: "The Economic Times",
+//   date: "01 Mar 2023",
+//   link: "https://economictimes.indiatimes.com/jobs/c-suite/animeta-taps-talent-from-google-meta-viacom-warnermedia-for-leadership-roles/articleshow/98324879.cms?from=mdr",
+//   category: "Corporate PR",
+//   description:
+//     "Animeta, the creator tech company recently launched by former Cosmos-Maya CEO Anish Mehta, on Wednesday announced several strategic hires",
+// },
 //   {
 //     img: blogImg16,
 //     headlines:
@@ -237,27 +237,27 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "Tech creator company Animeta has onboarded its first set of creator partners with a total monthly viewership of 1 billion plus and a cumulative subscriber base of over 50 million",
 //   },
-  // {
-  //   img: blogImg18,
-  //   headlines: "MarTech Interview with Anish Mehta, Founder at Animeta",
-  //   portal: "MarTech",
-  //   date: "16 Mar 2023",
-  //   link: "https://martechseries.com/mts-insights/interviews/martech-interview-with-anish-mehta-founder-at-animeta/",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Anish Mehta, Founder at Animeta chats about the burgeoning creator economy and what’s to be expected from this segment:",
-  // },
-  // {
-  //   img: blogImg19,
-  //   headlines:
-  //     "Animeta onboards its first set of exclusive creator partners with a total monthly viewership of 1 Billion",
-  //   portal: "Indian Television",
-  //   date: "16 Mar 2023",
-  //   link: "https://www.indiantelevision.com/iworld/over-the-top-services/animeta-onboards-its-first-set-of-exclusive-creator-partners-with-a-total-monthly-viewership-of-1-billion-230313",
-  //   category: "Corporate PR",
-  //   description:
-  //     "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
-  // },
+// {
+//   img: blogImg18,
+//   headlines: "MarTech Interview with Anish Mehta, Founder at Animeta",
+//   portal: "MarTech",
+//   date: "16 Mar 2023",
+//   link: "https://martechseries.com/mts-insights/interviews/martech-interview-with-anish-mehta-founder-at-animeta/",
+//   category: "Corporate PR",
+//   description:
+//     "Anish Mehta, Founder at Animeta chats about the burgeoning creator economy and what’s to be expected from this segment:",
+// },
+// {
+//   img: blogImg19,
+//   headlines:
+//     "Animeta onboards its first set of exclusive creator partners with a total monthly viewership of 1 Billion",
+//   portal: "Indian Television",
+//   date: "16 Mar 2023",
+//   link: "https://www.indiantelevision.com/iworld/over-the-top-services/animeta-onboards-its-first-set-of-exclusive-creator-partners-with-a-total-monthly-viewership-of-1-billion-230313",
+//   category: "Corporate PR",
+//   description:
+//     "Animeta, the AI-powered creator tech company, has aimed to bring a ‘studio model’ in the creator economy business, with a view to bringing about a greater degree of organization into the space",
+// },
 //   {
 //     img: blogImg8,
 //     headlines:
@@ -269,28 +269,28 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "5 Content Creators making a difference in varied content genres",
 //   },
-  // {
-  //   img: blogImg8,
-  //   headlines:
-  //     "International Content Creators Day 2023 Celebrating the Craft of digital content creation",
-  //   portal: "News 18",
-  //   date: "23 Apr 2023",
-  //   link: "https://www.news18.com/lifestyle/international-content-creators-day-2023-celebrating-the-craft-of-digital-content-creation-7610971.html",
-  //   category: "Corporate PR",
-  //   description:
-  //     "International Creators Day is a celebration of creativity and innovation that takes place on April 23rd every year",
-  // },
-  // {
-  //   img: blogImg3,
-  //   headlines:
-  //     "Over 1m Indian creators to cross $500/ month in next 3 years Animeta",
-  //   portal: "Adgully",
-  //   date: "23 Apr 2023",
-  //   link: "https://www.adgully.com/over-1m-indian-creators-to-cross-500us-month-in-next-3-years-animeta-130940.html",
-  //   category: "Corporate PR",
-  //   description:
-  //     "From passive addiction to being a hobby to a passion to a full-fledged profession, digital content creation has come a long way world over, and like other fronts, India is leading this trend too.",
-  // },
+// {
+//   img: blogImg8,
+//   headlines:
+//     "International Content Creators Day 2023 Celebrating the Craft of digital content creation",
+//   portal: "News 18",
+//   date: "23 Apr 2023",
+//   link: "https://www.news18.com/lifestyle/international-content-creators-day-2023-celebrating-the-craft-of-digital-content-creation-7610971.html",
+//   category: "Corporate PR",
+//   description:
+//     "International Creators Day is a celebration of creativity and innovation that takes place on April 23rd every year",
+// },
+// {
+//   img: blogImg3,
+//   headlines:
+//     "Over 1m Indian creators to cross $500/ month in next 3 years Animeta",
+//   portal: "Adgully",
+//   date: "23 Apr 2023",
+//   link: "https://www.adgully.com/over-1m-indian-creators-to-cross-500us-month-in-next-3-years-animeta-130940.html",
+//   category: "Corporate PR",
+//   description:
+//     "From passive addiction to being a hobby to a passion to a full-fledged profession, digital content creation has come a long way world over, and like other fronts, India is leading this trend too.",
+// },
 //   {
 //     img: blogImg23,
 //     headlines: "10 lakh content creators to earn INR 40k each month",
@@ -323,16 +323,16 @@ import Header from "../components/new-home/Header/Header";
 //     category: "Creator PR",
 //     description: "It has claimed in a statement that the creator economy has been a topic of interest for the entire world and there are many statistics that are often discussed. While every creator is a creator out of passion, a large chunk creates content as a hobby.",
 //   },
-  // {
-  //   img: blogImg8,
-  //   headlines: "Rahul Vaidya sings Mehndi rach gayi for Lakhneet Wedding",
-  //   portal: "Times Of India",
-  //   date: "14 Apr 2023",
-  //   link: "https://timesofindia.indiatimes.com/entertainment/punjabi/music/rahul-vaidya-sings-mehndi-rach-gayi-for-lakhneet-wedding/articleshow/99489595.cms?from=mdr",
-  //   category: "Creator PR",
-  //   description:
-  //     "Playback singer Rahul Vaidya has lent his voice to the original song, 'Mehndi Rach Gayi' for the wedding of the internet sensations Lakhan Rawat and Neetu Bisht Rawat also known as the 'Lakhneet Wedding'",
-  // },
+// {
+//   img: blogImg8,
+//   headlines: "Rahul Vaidya sings Mehndi rach gayi for Lakhneet Wedding",
+//   portal: "Times Of India",
+//   date: "14 Apr 2023",
+//   link: "https://timesofindia.indiatimes.com/entertainment/punjabi/music/rahul-vaidya-sings-mehndi-rach-gayi-for-lakhneet-wedding/articleshow/99489595.cms?from=mdr",
+//   category: "Creator PR",
+//   description:
+//     "Playback singer Rahul Vaidya has lent his voice to the original song, 'Mehndi Rach Gayi' for the wedding of the internet sensations Lakhan Rawat and Neetu Bisht Rawat also known as the 'Lakhneet Wedding'",
+// },
 //   {
 //     img: blogImg26,
 //     headlines: "The Evolution of Content Creation In The Age Of Artificial Intelligence",
@@ -404,16 +404,16 @@ import Header from "../components/new-home/Header/Header";
 //     category: "Creator PR",
 //     description: "",
 //   },
-  // {
-  //   img: blogImg8,
-  //   headlines:
-  //     "5 Content Creators making a difference in varied content genres",
-  //   portal: "Outlook",
-  //   date: "20 Mar 2023",
-  //   link: "https://www.outlookindia.com/art-entertainment/5-content-creators-making-a-difference-in-varied-content-genres-news-271720",
-  //   category: "Creator PR",
-  //   description: "",
-  // },
+// {
+//   img: blogImg8,
+//   headlines:
+//     "5 Content Creators making a difference in varied content genres",
+//   portal: "Outlook",
+//   date: "20 Mar 2023",
+//   link: "https://www.outlookindia.com/art-entertainment/5-content-creators-making-a-difference-in-varied-content-genres-news-271720",
+//   category: "Creator PR",
+//   description: "",
+// },
 //   {
 //     img: blogImg8,
 //     headlines: "3- Vandana Goswami: Ahmedabad coverage attached below.",
@@ -460,16 +460,16 @@ import Header from "../components/new-home/Header/Header";
 //     description:
 //       "Animeta, the AI-powered creator tech company, has announced the first set of its Animeta exclusive creators",
 //   },
-  // {
-  //   img: blogImg8,
-  //   headlines: "Animeta onboards first set of exclusive creator partners",
-  //   portal: "Buzz In Content",
-  //   date: "13 Mar 2023",
-  //   link: "https://www.buzzincontent.com/story/animeta-onboards-first-set-of-exclusive-creator-partners/",
-  //   category: "Creator PR",
-  //   description:
-  //     "Animeta, the AI-powered creator tech company, has announced the first set of its Animeta exclusive creators",
-  // },
+// {
+//   img: blogImg8,
+//   headlines: "Animeta onboards first set of exclusive creator partners",
+//   portal: "Buzz In Content",
+//   date: "13 Mar 2023",
+//   link: "https://www.buzzincontent.com/story/animeta-onboards-first-set-of-exclusive-creator-partners/",
+//   category: "Creator PR",
+//   description:
+//     "Animeta, the AI-powered creator tech company, has announced the first set of its Animeta exclusive creators",
+// },
 // ];
 
 export default function News() {
@@ -552,9 +552,9 @@ export default function News() {
       {/* <Welcome /> */}
       {/* <Header /> */}
       <section className="container mx-auto">
-        <div className="blog-section team-section">
-          
-          <h1 class="team-heading">Latest News</h1>
+        <div className="team-section">
+          {/* <h1 class="team-heading">Latest News</h1> */}
+
           <ul className="blog-categories-tab">
             {blogCategories.map((category, index) => {
               return (
@@ -567,7 +567,7 @@ export default function News() {
                   }`}
                   onClick={() => handleFilterBlog(category.slug)}
                 >
-                  <p>{category.name}</p>
+                  {category.name}
                 </li>
               );
             })}
@@ -591,32 +591,38 @@ export default function News() {
                     </Link>
                     <div className="blog-content">
                       <div className="blog-info">
-                        <h3>{item.portal}</h3>
-                        <p>
-                          {item.date} - <span>{item.category}</span>
-                        </p>
+                        <h3>
+                          {item.portal}
+                          <br />
+                          <span className="date">{item.date}</span> -{" "}
+                          <span className="category">{item.category}</span>
+                        </h3>
+                        <h2>
+                          <Link
+                            href={item.link}
+                            legacyBehavior
+                            className="cursor-pointer"
+                          >
+                            <a target="_blank">
+                              <h2
+                                className="blog-title"
+                                dangerouslySetInnerHTML={{
+                                  __html: item.headlines,
+                                }}
+                              />
+                            </a>
+                          </Link>
+                        </h2>
                       </div>
-                      <Link
-                        href={item.link}
-                        legacyBehavior
-                        className="cursor-pointer"
-                      >
-                        <a target="_blank">
-                          <h2
-                            className="blog-title"
-                            dangerouslySetInnerHTML={{ __html: item.headlines }}
-                          />
-                        </a>
-                      </Link>
-                      <Link
-                        href={item.link}
-                        legacyBehavior
-                        className="cursor-pointer"
-                      >
-                        <a target="_blank">
-                          Read More
-                        </a>
-                      </Link>
+                      <div className="readMoreutton">
+                        <Link
+                          href={item.link}
+                          legacyBehavior
+                          className="cursor-pointer"
+                        >
+                          <a target="_blank">Read More</a>
+                        </Link>
+                      </div>
                       {/* {item.description && (
                         <div
                           className="blog-description"
