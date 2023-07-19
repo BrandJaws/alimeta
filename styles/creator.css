@@ -237,16 +237,15 @@
   line-height: 26px;
 }
 
-.people-page-header {
+/* .people-page-header {
   background-color: #000;
   padding: 100px 0;
-}
-.people-page-header h1,
+} */
+/* .people-page-header h1,
 .people-page-header p {
   color: #fff;
 }
 .people-hero-section {
-  /* padding: 100px 0; */
   text-align: center;
 }
 .people-page-header p {
@@ -260,7 +259,7 @@
 }
 .people-page-header h1 span {
   color: #f00;
-}
+} */
 /* people page marquee */
 .marquee-section {
   background-color: #f00;
@@ -331,7 +330,7 @@
   transform: scale(1);
   border-radius: 50%;
 }
-.icons-section .icon-box {
+/* .icons-section .icon-box {
   width: 30%;
   text-align: center;
   display: inline-flex;
@@ -340,11 +339,11 @@
   flex-direction: column;
   gap: 50px;
   margin-bottom: 30px;
-}
+} */
 /* .icons-section .icon-box:first-child .icon img {
   transform: scale(1.6) translate(10px, 50px);
 } */
-.team-heading {
+/* .team-heading {
   font-size: 36px;
   line-height: 40px;
   font-weight: 800;
@@ -355,16 +354,16 @@
 .team-heading mark {
   background-color: #facbcc;
   color: #f00;
-}
-.icon-box .title h1 {
+} */
+/* .icon-box .title h1 {
   font-size: 28px;
   padding-bottom: 15px;
   font-weight: 600;
-}
-.icon-box .designation p {
+} */
+/* .icon-box .designation p {
   font-size: 22px;
   font-weight: 600;
-}
+} */
 
 .marquee-item {
   display: flex;

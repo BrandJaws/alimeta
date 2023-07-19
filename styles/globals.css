@@ -773,7 +773,16 @@ text-[#7b7b7b];
   lg:w-[calc(33.333333%-22px)]
   md:w-[calc(50%-12px)];
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
-  
+}
+.icons-section .icon-box {
+  @apply 2xl:w-[calc(33.333333%-32px)]
+  lg:w-[calc(33.333333%-22px)]
+  p-4
+  text-center
+  flex
+  flex-wrap
+  gap-10
+  justify-center
 }
 
 .single-blog-item .blog-card {
@@ -791,9 +800,7 @@ text-[#7b7b7b];
   @apply capitalize font-[600];
 }
 .blog-content .blog-info h2 {
-  @apply
-
-  2xl:text-[40px] 
+  @apply 2xl:text-[40px] 
   2xl:leading-[42px]
 
   lg:text-[28px] 
@@ -826,13 +833,13 @@ text-[#7b7b7b];
   font-size: 24px;
   font-weight: bold;
   color: #000;
-  @apply hover:text-[#ED2127]
+  @apply hover:text-[#ED2127];
 }
 .blog-card .blog-img span {
   @apply !w-full !block;
 }
 .blog-card img {
-  @apply 2xl:!h-[350px] xl:!h-[280px] lg:!h-[220px] !h-[200px] object-cover !w-full;
+  @apply 2xl:!h-[380px] !h-[300px] object-cover !w-full;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -849,11 +856,11 @@ text-[#7b7b7b];
 }
 
 .blog-categories-tab {
-  @apply 2xl:py-20 xl:py-12 py-10 flex align-middle justify-center list-none sm:flex-wrap md:gap-12 sm:gap-10 gap-4
+  @apply 2xl:py-20 xl:py-12 py-10 flex align-middle justify-center list-none sm:flex-wrap md:gap-12 sm:gap-10 gap-4;
 }
 
 .blog-categories-tab li {
-  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 py-1 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700]
+  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 py-1 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700];
 }
 .blog-categories-tab li.active::after {
   content: "";
@@ -864,6 +871,154 @@ text-[#7b7b7b];
   bottom: 0;
   left: 0;
 }
+
+.people-page-header {
+  @apply
+  2xl:h-[90%]
+  xl:h-[90%]
+  lg:h-[auto]
+  lg:min-h-[800px]
+  md:min-h-[580px]
+  sm:min-h-[520px]
+  h-[auto]
+
+  overflow-hidden
+  flex
+  items-end
+  min-h-[700px]
+  
+  pt-20;
+}
+.people-page-header .people-hero-section h1{
+  @apply 2xl:text-[96px] 
+  2xl:leading-[90px]
+
+  xl:text-[78px] 
+  xl:leading-[70px]
+
+  lg:text-[62px] 
+  lg:leading-[56px]
+  
+  md:text-[46px] 
+  md:leading-[40px]
+  
+  sm:text-[42px] 
+  sm:leading-[42px]
+
+  text-[48px] 
+  leading-[50px]
+  
+  font-[400] 
+  font-robotoCondensed
+  text-black
+  text-center
+  uppercase
+
+  mb-20;
+}
+.people-page-header .people-hero-section h1 span {
+  @apply text-[#ED2127]
+}
+
+.team-heading {
+@apply 2xl:text-[52px] 
+2xl:leading-[62px]
+
+lg:text-[40px] 
+lg:leading-[42px]
+
+md:text-[36px] 
+md:leading-[38px]
+
+sm:text-[28px] 
+sm:leading-[30px]
+
+text-[24px] 
+leading-[26px] 
+ 
+font-[500]
+font-robotoCondensed
+text-black
+uppercase
+text-center
+
+py-28
+
+}
+
+.icon-box .title h1 {
+@apply 2xl:text-[40px] 
+2xl:leading-[42px]
+
+lg:text-[28px] 
+lg:leading-[30px]
+
+md:text-[26px] 
+md:leading-[28px]
+
+sm:text-[26px] 
+sm:leading-[26px]
+
+text-[24px] 
+leading-[26px] 
+
+font-robotoCondensed leading-[36px] pb-4 font-[700] text-[#ED2127]
+}
+
+.icon-box .designation p {
+@apply 2xl:text-[32px] 
+2xl:leading-[30px]
+
+lg:text-[26px] 
+lg:leading-[28px]
+
+md:text-[26px] 
+md:leading-[28px]
+
+sm:text-[26px] 
+sm:leading-[26px]
+
+text-[24px] 
+leading-[26px] 
+
+font-[500] font-robotoCondensed
+}
+
+
+.team-section.team-section2 {
+  @apply pb-28;
+  
+}
+
+.modalContent {
+  @apply p-24;
+  border-bottom:1px solid #fff;
+}
+.modalContent h2{
+  @apply 2xl:text-[32px] 
+  2xl:leading-[30px]
+  
+  lg:text-[26px] 
+  lg:leading-[28px]
+  
+  md:text-[26px] 
+  md:leading-[28px]
+  
+  sm:text-[26px] 
+  sm:leading-[26px]
+  
+  text-[24px] 
+  leading-[26px] 
+  
+  font-[500] font-robotoCondensed
+  mb-8
+}
+.modalContent p{}
+.modalBox {}
+.modalBox {}
+
+
+
 
 
 
