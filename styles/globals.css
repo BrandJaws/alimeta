@@ -432,9 +432,7 @@ max-w-none */
   w-full;
 }
 .ctaButtonSection .card.ctaBox .ctaContentBox h5 {
-  @apply 
-  
-  text-[16px]
+  @apply text-[16px]
   leading-[22px]
   
   text-[#7B7B7B];
@@ -581,9 +579,7 @@ max-w-none */
   mb-4;
 }
 .aboutAnimeta p {
-  @apply 
-  
-  2xl:text-[24px]
+  @apply 2xl:text-[24px]
   2xl:leading-[30px]
   
   lg:text-[20px]
@@ -757,6 +753,121 @@ text-[#7b7b7b];
 .hero-img {
   /* @apply xl:max-w-[700px] lg:max-w-lg md:max-w-full xl:absolute xl:top-[0px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md; */
 }
+
+.blog-card {
+  @apply ease-in-out;
+}
+
+.blog-items {
+  @apply pb-16 flex flex-wrap justify-start 2xl:gap-12 xl:gap-8 gap-6;
+}
+
+.single-blog-item {
+  @apply flex bg-white
+  2xl:rounded-[46px]
+  md:rounded-[28px]
+  sm:rounded-[20px]
+  rounded-[16px]
+  overflow-hidden
+  2xl:w-[calc(33.333333%-32px)]
+  lg:w-[calc(33.333333%-22px)]
+  md:w-[calc(50%-12px)];
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  
+}
+
+.single-blog-item .blog-card {
+  @apply w-full flex flex-col;
+}
+
+.blog-content {
+  @apply 2xl:px-8 px-6 py-6 flex flex-col break-words h-full justify-between;
+  border-top: 1px solid #e6e7e8;
+}
+.blog-content .blog-info h3 {
+  @apply uppercase text-[16px] font-[600];
+}
+.blog-content .blog-info h3 span {
+  @apply capitalize font-[600];
+}
+.blog-content .blog-info h2 {
+  @apply
+
+  2xl:text-[40px] 
+  2xl:leading-[42px]
+
+  lg:text-[28px] 
+  lg:leading-[30px]
+  
+  md:text-[26px] 
+  md:leading-[28px]
+  
+  sm:text-[26px] 
+  sm:leading-[26px]
+
+  text-[24px] 
+  leading-[26px]
+   
+  font-[600]
+  font-robotoCondensed
+  text-black
+  
+  py-2.5;
+}
+
+.readMoreutton a {
+  @apply lowercase relative text-black font-[600] hover:text-[#ED2127];
+}
+.readMoreutton a:before {
+  content: "...";
+  position: absolute;
+  right: -18px;
+  bottom: -6px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  @apply hover:text-[#ED2127]
+}
+.blog-card .blog-img span {
+  @apply !w-full !block;
+}
+.blog-card img {
+  @apply 2xl:!h-[350px] xl:!h-[280px] lg:!h-[220px] !h-[200px] object-cover !w-full;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.blog-card:hover img {
+  transform: scale(1.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-categories-tab {
+  @apply 2xl:py-20 xl:py-12 py-10 flex align-middle justify-center list-none sm:flex-wrap md:gap-12 sm:gap-10 gap-4
+}
+
+.blog-categories-tab li {
+  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 py-1 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700]
+}
+.blog-categories-tab li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f00;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
 
 .cta-section-title {
   @apply lg:text-[4rem] 
