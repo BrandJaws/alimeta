@@ -2,19 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  /* padding: 0 0 280px 0; */
-  margin: 0;
-  /* font-family: 'Gotham'; */
-  font-family: "Roboto";
-}
+@import url("../public/fonts/roboto/stylesheet.css");
+@import url("../public/fonts/roboto-condensed/stylesheet.css");
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
   box-sizing: border-box;
 }
 html {
@@ -191,7 +188,7 @@ html {
   font-style: normal;
   font-display: swap;
 }
-
+/* 
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../public/fonts/RobotoCondensed-Light.eot");
@@ -321,7 +318,7 @@ html {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 body {
   @apply bg-[#e6e7e8];
@@ -725,7 +722,10 @@ text-[#7b7b7b];
 }
 
 .team-section2 .icons-section .icon-box .icon img {
-  transform: scale(1.35);
+  transform: scale(1);
+}
+.icons-section .icon-box .icon.rajesh img {
+  transform: scale(1.2);
 }
 
 .whatsappButton {
@@ -819,19 +819,19 @@ text-[#7b7b7b];
 }
 
 .readMoreutton a {
-  @apply lowercase relative text-black font-[600] hover:text-[#ED2127];
+  @apply lowercase relative text-black font-[600] hover:text-[#ED2127] font-roboto;
 }
 .readMoreutton a:before {
   content: "...";
   position: absolute;
-  right: -16px;
+  right: -20px;
   bottom: -4px;
   font-size: 22px;
   line-height: 22px;
   font-weight: bold;
   color: #000;
-  background-color: #facbcc;
   top: -4px;
+  @apply hover:text-[#ED2127];
 }
 .blog-card .blog-img span {
   @apply !w-full !block;
@@ -858,7 +858,7 @@ text-[#7b7b7b];
 }
 
 .blog-categories-tab li {
-  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700];
+  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[500];
 }
 mark {
   @apply bg-[#facbcc] text-[#000] py-1;
@@ -904,7 +904,7 @@ mark {
   mb-20;
 }
 .people-page-header .people-hero-section h1 span {
-  @apply text-[#ED2127]
+  @apply text-[#ED2127] font-[700] font-roboto
 }
 
 .team-heading {
@@ -923,8 +923,8 @@ sm:leading-[30px]
 text-[24px] 
 leading-[26px] 
  
-font-[500]
-font-robotoCondensed
+font-[400]
+font-roboto
 text-black
 uppercase
 text-center
@@ -949,7 +949,7 @@ sm:leading-[26px]
 text-[24px] 
 leading-[26px] 
 
-font-robotoCondensed leading-[36px] pb-4 text-[#ED2127]
+font-robotoCondensed leading-[36px] pb-4 text-[#ED2127] font-[700]
 }
 .icon-box .title mark {
   @apply bg-[#facbcc] text-[#ED2127] font-[400];
@@ -1048,8 +1048,8 @@ font-[500] font-robotoCondensed
 .navbar li a {
   @apply leading-[44px] w-full h-full block;
 }
-.navbar li a.active mark {
-  @apply text-[#f00] font-[600];
+.navbar li a.active {
+  @apply text-[#f00] font-[500];
 }
 
 .gallery {
