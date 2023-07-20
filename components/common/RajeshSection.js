@@ -26,9 +26,9 @@ function RajeshSection() {
                         <ul>
                             <li>Yupp TV (2016): Acquires a significant minority stake in YuppTV one of the world’s leading over-the-top (OTT) video platforms for South Asian content.</li>
                             <li>Amagi (2017): Acquires a significant minority stake in Amagi Media Labs, the leader in targeted TV advertising and cloud-based TV broadcast infrastructure. Fully exits with an approximate 3X return within 4 years.</li>
-                            <li>aCommerce (2017): Leads a US$65 Million Series B investment in aCommerce, Southeast Asia's leading ecommerce enabler and
-                                e-distributor to drive forward Southeast Asia's retail and ecommerce ecosystem. (IPO announced)</li>
-                            <li>Cosmos-Maya (2018) — Acquires controlling stake in Cosmos-Maya the market leader in IP-led Indian kid's animation content
+                            <li>aCommerce (2017): Leads a US$65 Million Series B investment in aCommerce, Southeast Asia&apos;s leading ecommerce enabler and
+                                e-distributor to drive forward Southeast Asia&apos;s retail and ecommerce ecosystem. (IPO announced)</li>
+                            <li>Cosmos-Maya (2018) — Acquires controlling stake in Cosmos-Maya the market leader in IP-led Indian kid&apos;s animation content
                                 through a combination of primary and secondary stake acquisition. Fully exits with an upwards of 3X return in a span of 3 years.</li>
                             <li>Global Sports Commerce -GSC (2018) — Acquires a significant minority stake in Global Sports Commerce (“GSC”), one of the world’s
                                 largest sports technology and management companies, for US$80mn, through a combination of primary and secondary investments.</li>
