@@ -6,11 +6,13 @@ function DevdattaSection() {
     return (
         <>
             <section className="py-4 bg-black text-white modalContent">
-                <div className='container mx-auto'>
-                    <h2>Devdatta Potnis</h2>
+                <div className='container mx-auto team-bio'>
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    With over 15 years in the media & entertainment space, Devdatta headed the revenue & strategy function at Cosmos-Maya and has
+                    been responsible in building Cosmos-Maya along with Anish since 2012. He has been responsible in getting content commissioning
+                    deals worth 100 Million USD+ and distributing it digitally worldwide in 120+ countries.</p>
+                    <p>Prior to Cosmos-Maya he has had significant stints across different media companies including Viacom18 Media Pvt. Ltd., Star India Pvt. Ltd, Reliance MediaWorks, Balaji Motion Pictures, among others.</p>
+                    <p>An ENTC Engineer from the University of Pune & MBA from MICA, Devdatta is passionate about the media business & loves to write.</p>
                 </div>
             </section>
         </>
@@ -18,3 +20,5 @@ function DevdattaSection() {
 }
 
 export default DevdattaSection
+
+

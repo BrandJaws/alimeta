@@ -586,7 +586,7 @@
     display: none;
   }
   .team-heading {
-    font-size: 28px;
+    font-size: 40px;
     line-height: 36px;
     padding-bottom: 50px;
   }
@@ -599,11 +599,17 @@
     height: 220px !important;
   }
   .icon-box .title h1 {
-    font-size:20px;
+    font-size:36px;
     line-height: 1.2;
   }
   .icon-box .designation p{
-    font-size:18px;
+    font-size:28px;
+  }
+  .modalContent {
+    padding: 4rem;
+  }
+  .icons-section {
+    gap: 0;
   }
 }
 
@@ -616,6 +622,7 @@
     width: 50%;
     flex: 0 0 50%;
     gap: 40px;
+    align-items: center;
   }
   .blog-content {
     padding: 15px;
@@ -743,20 +750,38 @@
   }
 
   .icon-box .title h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
   .icons-section .icon-box {
-    margin-bottom: 10px;
     gap: 30px;
   }
 
   .team-heading {
-    font-size: 28px;
-    line-height: 32px;
-    padding-bottom: 30px;
+    font-size: 36px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    padding-top: 2rem;
   }
   .blog-section {
     padding: 60px 0;
+  }
+  .people-page-header .people-hero-section h1 {
+    margin-bottom: 2rem;
+    font-size: 40px;
+  }
+  .modalContent {
+    padding: 2rem;
+    width: 100%;
+  }
+  .team-bio p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .people-page-header {
+    padding-top: 3rem;
+  }
+  .blog-categories-tab li {
+    line-height: 34px;
   }
 }
 @media screen and (max-width: 640px) {

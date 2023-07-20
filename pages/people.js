@@ -147,7 +147,7 @@ export default function People() {
           <h1 className="team-heading">Founding Team</h1>
           <div className="icons-section">
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "anishMehta" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("anishMehta")}
             >
               <div className="icon">
@@ -155,18 +155,18 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>FOUNDER</h1>
+                  <h1><mark>FOUNDER</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Anish Mehta</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "anishMehta" && <AnishSection />}</>
             )}
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "rajeshKamat" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("rajeshKamat")}
             >
               <div className="icon">
@@ -174,18 +174,18 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>FOUNDING INVESTOR</h1>
+                  <h1><mark>FOUNDING INVESTOR</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Rajesh Kamat</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "rajeshKamat" && <RajeshSection />}</>
             )}
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "sameerManchanda" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("sameerManchanda")}
             >
               <div className="icon">
@@ -193,19 +193,19 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>FOUNDING INVESTOR</h1>
+                  <h1><mark>FOUNDING INVESTOR</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Sameer Manchanda</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "sameerManchanda" && <SameerSection />}</>
             )}
           </div>
         </div>
-        {profileData && window.width > 640 && (
+        {profileData && window.width > 1024 && (
           <>
             {profileData === "anishMehta" ? (
               <AnishSection />
@@ -216,11 +216,11 @@ export default function People() {
             ) : null}
           </>
         )}
-        <div className="team-section team-section2 container mx-auto">
+        <div className={`team-section team-section2 container mx-auto ${profileData !== "devdattaPotnis" && profileData !== "krishnaDesai" && profileData !== "biswamitraRay" ? 'pb-28' : ''}`}>
           <h1 className="team-heading">Management Team</h1>
           <div className="icons-section">
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "devdattaPotnis" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("devdattaPotnis")}
             >
               <div className="icon">
@@ -228,21 +228,18 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>
-                    CHIEF EXECUTIVE <br />
-                    OFFICER
-                  </h1>
+                  <h1><mark>CHIEF EXECUTIVE <br />OFFICER</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Devdatta Potnis</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "devdattaPotnis" && <DevdattaSection />}</>
             )}
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "krishnaDesai" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("krishnaDesai")}
             >
               <div className="icon">
@@ -250,21 +247,18 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>
-                    CHIEF PRODUCT OFFICER
-                    <br />& DATA SCIENTIST
-                  </h1>
+                  <h1><mark>CHIEF PRODUCT OFFICER<br />& DATA SCIENTIST</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Krishna Desai</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "krishnaDesai" && <KrishnaSection />}</>
             )}
             <div
-              className="icon-box cursor-pointer"
+              className={`icon-box cursor-pointer ${profileData === "biswamitraRay" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
               onClick={() => handleSetProfileData("biswamitraRay")}
             >
               <div className="icon">
@@ -272,23 +266,19 @@ export default function People() {
               </div>
               <div className="icon-box-info">
                 <div className="title">
-                  <h1>
-                    SVP - BRANDED CONTENT
-                    <br />& CREATOR STRATEGY
-                  </h1>
+                  <h1><mark>SVP - BRANDED CONTENT<br />& CREATOR STRATEGY</mark></h1>
                 </div>
                 <div className="designation">
                   <p>Biswamitra Ray</p>
                 </div>
               </div>
             </div>
-            {profileData && window.width < 640 && (
+            {profileData && window.width < 1024 && (
               <>{profileData === "biswamitraRay" && <BiswamitraSection />}</>
             )}
           </div>
         </div>
-
-        {profileData && window.width > 640 && (
+        {profileData && window.width > 1024 && (
           <>
             {profileData === "devdattaPotnis" ? (
               <DevdattaSection />
@@ -299,8 +289,6 @@ export default function People() {
             ): null}
           </>
         )}
-
-
       </section>
     </>
   );

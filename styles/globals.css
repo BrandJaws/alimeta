@@ -775,16 +775,12 @@ text-[#7b7b7b];
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 .icons-section .icon-box {
-  @apply 2xl:w-[calc(33.333333%-32px)]
-  lg:w-[calc(33.333333%-22px)]
-  p-4
-  text-center
-  flex
-  flex-wrap
-  gap-10
-  justify-center
+  @apply 2xl:w-[calc(33.333333%-32px)] lg:w-[calc(33.333333%-22px)] px-4 py-8 text-center flex flex-wrap gap-10 justify-center w-full items-center flex-col;
 }
-
+.team-bio p {
+  @apply 2xl:text-[28px] 2xl:leading-[36px] xl:text-[26px] xl:leading-[32px]
+  lg:text-[24px] lg:leading-[28px] md:text-[22px] md:leading-[28px] sm:text-[20px] sm:leading-[26px] text-[24px] leading-[30px] font-[400] mb-6;
+}
 .single-blog-item .blog-card {
   @apply w-full flex flex-col;
 }
@@ -828,12 +824,14 @@ text-[#7b7b7b];
 .readMoreutton a:before {
   content: "...";
   position: absolute;
-  right: -18px;
-  bottom: -6px;
-  font-size: 24px;
+  right: -16px;
+  bottom: -4px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: bold;
   color: #000;
-  @apply hover:text-[#ED2127];
+  background-color: #facbcc;
+  top: -4px;
 }
 .blog-card .blog-img span {
   @apply !w-full !block;
@@ -860,7 +858,10 @@ text-[#7b7b7b];
 }
 
 .blog-categories-tab li {
-  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 py-1 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700];
+  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700];
+}
+mark {
+  @apply bg-[#facbcc] text-[#000] py-1;
 }
 .blog-categories-tab li.active::after {
   content: "";
@@ -873,21 +874,7 @@ text-[#7b7b7b];
 }
 
 .people-page-header {
-  @apply
-  2xl:h-[90%]
-  xl:h-[90%]
-  lg:h-[auto]
-  lg:min-h-[800px]
-  md:min-h-[580px]
-  sm:min-h-[520px]
-  h-[auto]
-
-  overflow-hidden
-  flex
-  items-end
-  min-h-[700px]
-  
-  pt-20;
+  @apply 2xl:h-[90%] xl:h-[90%] lg:h-[auto] lg:min-h-[400px] md:min-h-[350px] sm:min-h-[300px] h-[auto] overflow-hidden flex items-end pt-20;
 }
 .people-page-header .people-hero-section h1{
   @apply 2xl:text-[96px] 
@@ -962,7 +949,10 @@ sm:leading-[26px]
 text-[24px] 
 leading-[26px] 
 
-font-robotoCondensed leading-[36px] pb-4 font-[700] text-[#ED2127]
+font-robotoCondensed leading-[36px] pb-4 text-[#ED2127]
+}
+.icon-box .title mark {
+  @apply bg-[#facbcc] text-[#ED2127] font-[400];
 }
 
 .icon-box .designation p {
@@ -982,12 +972,6 @@ text-[24px]
 leading-[26px] 
 
 font-[500] font-robotoCondensed
-}
-
-
-.team-section.team-section2 {
-  @apply pb-28;
-  
 }
 
 .modalContent {
@@ -1064,8 +1048,8 @@ font-[500] font-robotoCondensed
 .navbar li a {
   @apply leading-[44px] w-full h-full block;
 }
-.navbar li a.active {
-  @apply text-[#f00];
+.navbar li a.active mark {
+  @apply text-[#f00] font-[600];
 }
 
 .gallery {

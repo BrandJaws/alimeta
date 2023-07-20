@@ -5,7 +5,9 @@ export default function Layout({children}){
     return(
         <div>
             <Header />
+            <section className="pt-[82px]">
             {children}
+            </section>
             <Footer />
         </div>
     )

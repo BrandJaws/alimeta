@@ -6,11 +6,9 @@ function KrishnaSection() {
     return (
         <>
            <section className="py-4 bg-black text-white modalContent">
-                <div className='container mx-auto'>
-                    <h2>Krishna Desai</h2>
-                    <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                <div className='container mx-auto team-bio'>
+                    <p>With 20+ years with leading players in the media marketing and television industry. KD's core competence lies in Content creation and acquisition, brand building, traditional & digital media marketing, sales & distribution strategy & planning, advertising media planning & buying, leveraging market research, translating consumer insights into actionable plans, ensuring the channel/product & content strategy in a rapidly evolving customer preference and growing competition, leading inter-functional & geographically distributed teams.</p>
+                    <p>He has worked with Turner International (now, Discovery Warner Media), as an Executive Director and Network Head, South Asia. Led a high performing team and shouldered responsibility for all Network functions for kids' business including content (creation, commissioning, localization, operations) communication (marketing and PR), P&L / budget planning, channel operations, long range planning and new business for South Asia and drove the P&L to its highest profitability in APAC.</p>
                 </div>
             </section>
         </>
