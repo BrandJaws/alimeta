@@ -35,12 +35,12 @@ const  Header = () => {
                         <ul className='navbar lg:flex md:hidden sm:hidden xs:hidden flex-row gap-16 text-2xl uppercase'>
                             <li className='inline-flex'>
                                 <Link href='/people' legacyBehavior>
-                                    <a className={`${router.asPath === "/people" ? 'active' : ''} text-[#E6E7E8]`}><mark>People</mark></a>
+                                    <a className={`${router.asPath === "/people" ? 'active' : ''} text-[#E6E7E8]`}>People</a>
                                 </Link>
                             </li>
                             <li className='inline-flex'>
                                 <Link href='/news' legacyBehavior>
-                                    <a className={`${router.asPath === "/news" ? 'active' : ''} text-[#E6E7E8]`}><mark>News</mark></a>
+                                    <a className={`${router.asPath === "/news" ? 'active' : ''} text-[#E6E7E8]`}>News</a>
                                 </Link>
                             </li>
                         </ul>

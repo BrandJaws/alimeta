@@ -567,7 +567,7 @@ export default function News() {
                   }`}
                   onClick={() => handleFilterBlog(category.slug)}
                 >
-                  <mark>{category.name}</mark>
+                  {category.name}
                 </li>
               );
             })}
@@ -592,10 +592,10 @@ export default function News() {
                     <div className="blog-content">
                       <div className="blog-info">
                         <h3>
-                          <mark>{item.portal}</mark>
+                          {item.portal}
                           <br />
-                          <mark><span className="date">{item.date}</span> -{" "}
-                          <span className="category">{item.category}</span></mark>
+                          <span className="date">{item.date}</span> -{" "}
+                          <span className="category">{item.category}</span>
                         </h3>
                         <h2>
                           <Link
@@ -604,9 +604,9 @@ export default function News() {
                             className="cursor-pointer"
                           >
                             <a target="_blank">
-                              <h2 className="blog-title"><span><mark dangerouslySetInnerHTML={{
+                              <h2 className="blog-title"><span dangerouslySetInnerHTML={{
                                   __html: item.headlines,
-                                }}></mark></span></h2>
+                                }}></span></h2>
                             </a>
                           </Link>
                         </h2>
@@ -617,7 +617,7 @@ export default function News() {
                           legacyBehavior
                           className="cursor-pointer"
                         >
-                          <a target="_blank"><mark>Read More</mark></a>
+                          <a target="_blank">Read More</a>
                         </Link>
                       </div>
                       {/* {item.description && (
