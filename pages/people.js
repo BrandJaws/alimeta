@@ -107,7 +107,7 @@ export default function People() {
             <h1>
               MEET THE <span>PEOPLE</span>
             </h1>
-            <Image src={teamBanner} alt="icon meta 1" />
+            <Image src={teamBanner} alt="icon meta 1" className="!w-full object-cover" />
             {/* <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p> */}
           </div>
         </div>
@@ -149,8 +149,8 @@ export default function People() {
                 </div>
             </section> */}
       <section className="people-page-icons-section">
-        <div className="team-section container mx-auto">
-          <h1 className="team-heading">Founding Team</h1>
+        <div className="team-section lg:container lg:mx-auto">
+          <h1 className="team-heading !pt-0">Founding Team</h1>
           <div className="icons-section">
             <div
               className={`icon-box cursor-pointer ${isActiveProfile && profileData === "anishMehta" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
@@ -222,7 +222,8 @@ export default function People() {
             ) : null}
           </>
         )}
-        <div className={`team-section team-section2 container mx-auto ${!isActiveProfile && profileData !== "devdattaPotnis" && profileData !== "krishnaDesai" && profileData !== "biswamitraRay" ? 'pb-28' : ''}`}>
+         {/* ${!isActiveProfile && profileData !== "devdattaPotnis" && profileData !== "krishnaDesai" && profileData !== "biswamitraRay" ? 'pb-28' : ''} */}
+        <div className={`team-section team-section2 lg:container lg:mx-auto`}>
           <h1 className="team-heading">Management Team</h1>
           <div className="icons-section">
             <div

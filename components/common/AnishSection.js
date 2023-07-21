@@ -14,7 +14,7 @@ function AnishSection() {
         border-left: 15px solid transparent;
         border-bottom: 15px solid black; */}
            <section className="py-4 bg-black text-white modalContent">
-                <div className='container mx-auto team-bio'>
+                <div className='lg:container md:container sm:w-auto mx-auto team-bio'>
                     <p>Anish has been the CEO & minority shareholder of Cosmos-Maya since 2012, one of the most accomplished & successful animation
                     studios from Asia. The studio has grown multi-fold because of his strong ability to maintain a fine balance between business &
                     creativity.</p>
