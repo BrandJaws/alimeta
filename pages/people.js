@@ -17,7 +17,7 @@ import teamBanner from "../public/images/v3/teamBanner.jpg";
 
 import Welcome from "../components/welcome/Welcome";
 import Header from "../components/new-home/Header/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 import AnishSection from "../components/common/AnishSection";
 import RajeshSection from "../components/common/RajeshSection";
@@ -26,11 +26,12 @@ import SameerSection from "../components/common/SameerSection";
 import DevdattaSection from "../components/common/DevdattaSection";
 import BiswamitraSection from "../components/common/BiswamitraSection";
 import KrishnaSection from "../components/common/KrishnaSection";
+import $ from "jquery";
 
 export default function People() {
   const [profileData, setProfileData] = useState(null);
   const [isActiveProfile, setIsActiveProfile] = useState(false);
-  const handleSetProfileData = (data) => {
+  const handleSetProfileData = (event, data) => {
     if (profileData === data && isActiveProfile) {
       setIsActiveProfile(false);
       setProfileData(null);
@@ -39,7 +40,12 @@ export default function People() {
       setIsActiveProfile(true);
     }
   };
-  const window = useWindowSize();
+  const windowSize = useWindowSize();
+  useEffect(() => {
+    if (profileData && typeof window !== "undefined") {
+      window.scroll(0, $("."+profileData).offset().top - 80);
+    }
+  }, [profileData]);
   return (
     <>
       <Head>
@@ -107,54 +113,19 @@ export default function People() {
             <h1>
               MEET THE <span>PEOPLE</span>
             </h1>
-            <Image src={teamBanner} alt="icon meta 1" className="!w-full object-cover" />
+            <img src="/images/v3/teamBanner.jpg" alt="icon meta 1" className="!w-full object-cover" />
+            {/* <Image src={teamBanner} alt="icon meta 1" className="!w-full object-cover" /> */}
             {/* <p className="bg-black"><mark>We offer financial investment, data analytics & business intelligence, content strategy<br className="break-in-title" />& creative supervision, brand, PR & social media.</mark></p> */}
           </div>
         </div>
       </section>
-      {/* <section className="people-page-marquee">
-                <div className="marquee-section">
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                    <div className="marquee-item">
-                        <Image src={dotImg} alt="dot img" />
-                        <span>PEOPLE</span>
-                    </div>
-                </div>
-            </section> */}
       <section className="people-page-icons-section">
         <div className="team-section lg:container lg:mx-auto">
           <h1 className="team-heading !pt-0">Founding Team</h1>
           <div className="icons-section">
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "anishMehta" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("anishMehta")}
+              className={`icon-box cursor-pointer anishMehta ${isActiveProfile && profileData === "anishMehta" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "anishMehta")}
             >
               <div className="icon">
                 <Image src={founderTeam1} alt="icon meta 1" />
@@ -168,12 +139,13 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "anishMehta" && <AnishSection />}</>
             )}
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "rajeshKamat" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("rajeshKamat")}
+              id="box"
+              className={`icon-box cursor-pointer rajeshKamat ${isActiveProfile && profileData === "rajeshKamat" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "rajeshKamat")}
             >
               <div className="icon rajesh">
                 <Image src={founderTeam2} alt="icon meta 4" />
@@ -187,12 +159,12 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "rajeshKamat" && <RajeshSection />}</>
             )}
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "sameerManchanda" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("sameerManchanda")}
+              className={`icon-box cursor-pointer sameerManchanda ${isActiveProfile && profileData === "sameerManchanda" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "sameerManchanda")}
             >
               <div className="icon">
                 <Image src={founderTeam3} alt="icon meta 1" />
@@ -206,12 +178,12 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "sameerManchanda" && <SameerSection />}</>
             )}
           </div>
         </div>
-        {profileData && window.width > 1024 && (
+        {profileData && windowSize.width > 1024 && (
           <>
             {isActiveProfile && profileData === "anishMehta" ? (
               <AnishSection />
@@ -227,10 +199,10 @@ export default function People() {
           <h1 className="team-heading">Management Team</h1>
           <div className="icons-section">
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "devdattaPotnis" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("devdattaPotnis")}
+              className={`icon-box cursor-pointer devdattaPotnis ${isActiveProfile && profileData === "devdattaPotnis" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "devdattaPotnis")}
             >
-              <div className="icon">
+              <div className="icon devdatta">
                 <Image src={managementTeam1} alt="icon meta 2" />
               </div>
               <div className="icon-box-info">
@@ -242,12 +214,12 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "devdattaPotnis" && <DevdattaSection />}</>
             )}
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "krishnaDesai" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("krishnaDesai")}
+              className={`icon-box cursor-pointer krishnaDesai ${isActiveProfile && profileData === "krishnaDesai" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "krishnaDesai")}
             >
               <div className="icon">
                 <Image src={managementTeam2} alt="icon meta 3" />
@@ -261,12 +233,12 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "krishnaDesai" && <KrishnaSection />}</>
             )}
             <div
-              className={`icon-box cursor-pointer ${isActiveProfile && profileData === "biswamitraRay" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
-              onClick={() => handleSetProfileData("biswamitraRay")}
+              className={`icon-box cursor-pointer biswamitraRay ${isActiveProfile && profileData === "biswamitraRay" && 'relative after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:border-solid after:border-t-0 after:border-r-[15px] after:border-l-[15px] after:border-b-[15px] after:border-b-black'}`}
+              onClick={(event) => handleSetProfileData(event, "biswamitraRay")}
             >
               <div className="icon">
                 <Image src={managementTeam3} alt="icon meta 1" />
@@ -280,12 +252,12 @@ export default function People() {
                 </div>
               </div>
             </div>
-            {profileData && window.width < 1024 && (
+            {profileData && windowSize.width < 1024 && (
               <>{isActiveProfile && profileData === "biswamitraRay" && <BiswamitraSection />}</>
             )}
           </div>
         </div>
-        {profileData && window.width > 1024 && (
+        {profileData && windowSize.width > 1024 && (
           <>
             {isActiveProfile && profileData === "devdattaPotnis" ? (
               <DevdattaSection />

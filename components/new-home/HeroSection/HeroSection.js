@@ -11,7 +11,7 @@ const HeroScreen = () => {
                     </div>
                     <div className='h-full flex flex-col gap-4 justify-center'>
                         <picture>
-                            <img src="/images/v3/girlCutOut-1.png" alt="Hero Picture" className='hero-img' />
+                            <img src="/images/v3/girlCutOut-2.png" alt="Hero Picture" className='hero-img' />
                         </picture>
                     </div>
                 </div>

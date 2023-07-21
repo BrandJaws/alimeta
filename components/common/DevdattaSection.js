@@ -6,7 +6,7 @@ function DevdattaSection() {
     return (
         <>
             <section className="py-4 bg-black text-white modalContent">
-                <div className='container mx-auto team-bio'>
+                <div className='lg:container md:container sm:w-auto mx-auto team-bio'>
                     <p>
                     With over 15 years in the media & entertainment space, Devdatta headed the revenue & strategy function at Cosmos-Maya and has
                     been responsible in building Cosmos-Maya along with Anish since 2012. He has been responsible in getting content commissioning

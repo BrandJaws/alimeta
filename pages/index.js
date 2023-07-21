@@ -112,7 +112,7 @@ export default function Home() {
       >
         <link itemprop="url" href="https://animeta.ai/og-image.png" />
       </span>
-      <Welcome />
+      {/* <Welcome /> */}
       <HeroSection />
       <CTAButtonsSection />
       {/* <section>
