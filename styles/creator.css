@@ -311,6 +311,7 @@
   overflow: hidden;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border: 1px solid #eee;
+  background: #fff;
 }
 .icons-section .icon-box .icon img {
   width: 300px !important;
@@ -627,7 +628,7 @@
     padding-bottom: 1rem;
   }
   .icon-box .designation p{
-    font-size:26px;
+    font-size:22px;
   }
   .icons-section .icon-box {
     width: 100%;
@@ -761,15 +762,15 @@
   }
 
   .icon-box .title h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .icons-section .icon-box {
     gap: 30px;
   }
 
   .team-heading {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 26px;
+    line-height: 30px;
     padding-bottom: 10px;
     padding-top: 2rem;
   }
@@ -777,8 +778,8 @@
     padding: 60px 0;
   }
   .people-page-header .people-hero-section h1 {
-    margin-bottom: 2rem;
-    font-size: 40px;
+    margin-bottom: 0;
+    font-size: 30px;
   }
   .modalContent {
     padding: 2rem;

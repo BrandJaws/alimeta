@@ -727,6 +727,10 @@ text-[#7b7b7b];
 .icons-section .icon-box .icon.rajesh img {
   transform: scale(1.2);
 }
+.icons-section .icon-box .icon.devdatta img {
+  transform: scale(1.6) translate(0px, 80px);
+  @apply xs:translate-y-20 xs:scale-150;
+}
 
 .whatsappButton {
   @apply fixed bottom-[25px] right-[25px] w-[45px] sm:w-[55px] z-[99] rotate-[-90deg];
@@ -880,7 +884,7 @@ mark {
   @apply 2xl:py-28 xl:py-24 lg:py-20 md:py-16 sm:py-14 xs:py-14;
 }
 .people-hero-section span {
-  @apply 2xl:!h-[600px] lg:!h-[370px] md:!h-[400px] sm:!h-[300px] xs:!h-[250px] !block !w-full;
+  @apply 2xl:!h-[600px] lg:!h-[400px] md:!h-[400px] sm:!h-[300px] xs:!h-[250px] !block !w-full;
 }
 .people-page-header .people-hero-section h1 span{
   display: inline !important;
@@ -901,8 +905,8 @@ mark {
   sm:text-[42px] 
   sm:leading-[42px]
 
-  text-[48px] 
-  leading-[50px]
+  xs:text-[32px] 
+  xs:leading-[36px]
   
   font-[400] 
   font-robotoCondensed
@@ -910,7 +914,7 @@ mark {
   text-center
   uppercase
 
-  mb-20;
+  lg:mb-20 md:mb-16 sm:mb-12 xs:mb-0;
 }
 .people-page-header .people-hero-section h1 span {
   @apply text-[#ED2127] font-[700] font-roboto

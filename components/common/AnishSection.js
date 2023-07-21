@@ -31,15 +31,17 @@ function AnishSection() {
                     <p>During his tenure as the CEO, the company grew from 30 employees to 1200 employees with 4 different business streams globally and
                     a revenue & EBITDA growth of 25x+ from 2012 to 2022.</p>
 
-                    <p>
-                        His most notable achievement as the CEO of the studio is to repeatedly get in organized investment into this business & consistently
-                        give them a profitable exit through a higher valuation of the company. Key milestones include:
+                    <div>
+                        <p>
+                            His most notable achievement as the CEO of the studio is to repeatedly get in organized investment into this business & consistently
+                            give them a profitable exit through a higher valuation of the company. Key milestones include:
+                        </p>
                         <ul>
-                            <li>Securing an angel investment from Singapore & providing a 5x exit in 2018.</li>
-                            <li>Securing PE investment from KKR backed Emerald Media in 2018 & providing a 4x exit in 2021 by getting the current investor, TPG
-                                backed NewQuest Capital Partners at a valuation of 90 Million USD.</li>
+                            <li><p>Securing an angel investment from Singapore & providing a 5x exit in 2018.</p></li>
+                            <li><p>Securing PE investment from KKR backed Emerald Media in 2018 & providing a 4x exit in 2021 by getting the current investor, TPG
+                                backed NewQuest Capital Partners at a valuation of 90 Million USD.</p></li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </section>
         </>
