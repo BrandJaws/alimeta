@@ -588,7 +588,7 @@
   .team-heading {
     font-size: 40px;
     line-height: 36px;
-    padding-bottom: 50px;
+    padding: 50px 0;
   }
   .icons-section .icon-box .icon {
     width: 220px !important;
@@ -599,14 +599,16 @@
     height: 220px !important;
   }
   .icon-box .title h1 {
-    font-size:36px;
+    font-size: 20px;
     line-height: 1.2;
+    padding-bottom: 1rem;
   }
   .icon-box .designation p{
-    font-size:28px;
+    font-size:18px;
   }
   .modalContent {
     padding: 4rem;
+    width: 100%;
   }
   .icons-section {
     gap: 0;
@@ -618,9 +620,18 @@
     width: 50%;
     flex: 0 0 50%;
   } */
+  
+  .icon-box .title h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+  }
+  .icon-box .designation p{
+    font-size:26px;
+  }
   .icons-section .icon-box {
-    width: 50%;
-    flex: 0 0 50%;
+    width: 100%;
+    flex: 0 0 100%;
     gap: 40px;
     align-items: center;
   }
