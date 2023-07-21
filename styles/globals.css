@@ -775,7 +775,7 @@ text-[#7b7b7b];
   overflow-hidden
   2xl:w-[calc(33.333333%-32px)]
   lg:w-[calc(33.333333%-22px)]
-  md:w-[calc(50%-12px)];
+  md:w-[calc(50%-12px)] sm:w-full;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 .icons-section .icon-box {
