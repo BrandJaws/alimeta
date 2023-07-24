@@ -120,9 +120,9 @@ export default function People() {
           </div>
         </div>
       </section>
-      <section className="people-page-icons-section">
+      <section className="people-page-icons-section !pb-20">
         <div className="team-section lg:container lg:mx-auto">
-          <h1 className="team-heading !pt-0">Founding Team</h1>
+          <h1 className="team-heading">Founding Team</h1>
           <div className="icons-section">
             <div
               className={`icon-box cursor-pointer anishMehta ${isActiveProfile && profileData === "anishMehta" && 'ArrowAftar'}`}

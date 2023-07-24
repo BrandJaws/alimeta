@@ -585,11 +585,11 @@
   .blog-title br {
     display: none;
   }
-  .team-heading {
+  /* .team-heading {
     font-size: 40px;
     line-height: 36px;
     padding: 50px 0;
-  }
+  } */
   .icons-section .icon-box .icon {
     width: 220px !important;
     height: 220px !important;
@@ -663,11 +663,12 @@
   .featured-items {
     min-height: 100%;
   }
-  .team-heading {
+  /* .team-heading {
     font-size: 30px;
     line-height: 36px;
     padding-bottom: 30px;
-  }.blog-section {
+  } */
+  .blog-section {
     padding: 70px 0;
   }
 }
@@ -766,13 +767,13 @@
   .icons-section .icon-box {
     gap: 30px;
   }
-
+/* 
   .team-heading {
     font-size: 26px;
     line-height: 30px;
     padding-bottom: 10px;
     padding-top: 2rem;
-  }
+  } */
   .blog-section {
     padding: 60px 0;
   }

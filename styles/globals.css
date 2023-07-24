@@ -946,11 +946,11 @@ mark {
   
   2xl:pt-[11.5rem]
 
-  md:pt-[8rem]
+  md:pt-[6rem]
 
-  sm:pt-[6rem]
+  sm:pt-[4rem]
 
-  pt-[4rem]
+  pt-[2rem]
 
   absolute
   left-auto
@@ -977,11 +977,11 @@ lg:leading-[42px]
 md:text-[36px] 
 md:leading-[38px]
 
-sm:text-[28px] 
-sm:leading-[30px]
+sm:text-[32px] 
+sm:leading-[36px]
 
-text-[24px] 
-leading-[26px] 
+text-[32px] 
+leading-[36px] 
  
 font-[400]
 font-roboto
@@ -989,7 +989,8 @@ text-black
 uppercase
 text-center
 
-py-28
+lg:py-28
+py-16
 
 }
 
@@ -1009,10 +1010,11 @@ sm:leading-[26px]
 text-[24px] 
 leading-[26px] 
 
-font-robotoCondensed leading-[36px] text-[#ED2127] font-[700]
+font-robotoCondensed text-[#ED2127] font-[700]
 lg:pb-8
 md:pb-4 
 sm:pb-4
+pb-4
 }
 .icon-box .title mark {
   @apply bg-[#facbcc] text-[#ED2127] font-[400];
@@ -1038,7 +1040,7 @@ font-[500] font-robotoCondensed
 }
 
 .modalContent {
-  @apply 2xl:py-[10rem] xl:py-[8rem] md:py-[6rem] py-[4rem];
+  @apply 2xl:py-[8rem] xl:py-[8rem] md:py-[6rem] py-[4rem] w-full;
   border-bottom:1px solid #fff;
 }
 .modalContent h2{
