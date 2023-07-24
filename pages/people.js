@@ -50,7 +50,7 @@ export default function People() {
     <>
       <Head>
         <meta
-          http-equiv="Content-Type"
+          httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
         <title>People | Animeta</title>

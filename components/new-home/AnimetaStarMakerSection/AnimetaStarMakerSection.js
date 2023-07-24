@@ -27,7 +27,7 @@ const AnimetaStarMakerSection = () => {
             <div className="sectionDescription">
               <h3>YOU CREATE,  <br /> We take care of everything else!</h3>
               <p>
-              We offer financial investment, data analytics & business intelligence, content strategy & creative supervision, brand, PR & social media expertise in addition to data driven, result oriented & authentic brand campaigns to our creator partners.
+              We offer data analytics and business intelligence, content strategy & creative supervision, PR & social media expertise in addition to data-driven, result-oriented, authentic brand campaigns & financial support to our creator partners.
               </p>
               <p></p>
             </div>
