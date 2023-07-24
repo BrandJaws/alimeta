@@ -21,7 +21,7 @@ const  Header = () => {
 
     return (
         <header>
-            <nav className='fixed top-0 left-0 right-0 py-6 bg-[#333132] z-[999]'>
+            <nav className='absolute top-0 left-0 right-0 py-6 bg-[#333132] z-[999]'>
                 <div className='container mx-auto flex flex-row justify-center h-full'>
                     <div className='flex flex-row justify-center items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
