@@ -26,7 +26,7 @@ const  Header = () => {
                     <div className='flex flex-row justify-center items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
                             <a className='inline-flex'>
-                                <Image src={Logo} fill={true} loading='lazy' alt='logo' width={isScreen.width < 767 ? 160 : 200} height={isScreen.width < 767 ? 34 : 43} />
+                                <Image src={Logo} fill="true" loading='lazy' alt='logo' width={isScreen.width < 767 ? 160 : 200} height={isScreen.width < 767 ? 34 : 43} />
                             </a>
                         </Link>
                         {/* <button type='button' className='md:block lg:hidden' onClick={handleClick}>

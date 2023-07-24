@@ -494,7 +494,7 @@ export default function News() {
     <>
       <Head>
         <meta
-          http-equiv="Content-Type"
+          httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
         <title>News | Animeta</title>

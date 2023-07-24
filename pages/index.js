@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <Head>
         <meta
-          http-equiv="Content-Type"
+          httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
         <title>AI Powered Creator Tech Company | Animeta</title>

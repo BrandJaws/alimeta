@@ -17,7 +17,7 @@ const ANISection = () => {
             </div>
             <div className="sectionDescription">
               <h3 className="textWhite">
-                AI-Powered <br /> Content Strategy App
+                AI-Powered <br /> Content Enabler App
               </h3>
               <p className="textWhite">
                 Ani is Animeta’s Creator content app that provides AI based
