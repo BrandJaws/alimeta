@@ -6,7 +6,7 @@ function RajeshSection() {
     return (
         <>
            <section className="py-4 bg-black text-white modalContent">
-                <div className='lg:container md:container sm:w-auto mx-auto team-bio'>
+                <div className='container mx-auto team-bio'>
                     <p>
                         Singapore-based Rajesh Kamat is currently the Managing Director of Emerald Media, a pan-Asian platform established by global
                         investment firm KKR to fund investment opportunities in the fast-growing media and entertainment industries.

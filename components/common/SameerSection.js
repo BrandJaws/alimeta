@@ -6,7 +6,7 @@ function SameerSection() {
     return (
         <>
            <section className="py-4 bg-black text-white modalContent">
-                <div className='lg:container md:container sm:w-auto mx-auto team-bio'>
+           <div className='container mx-auto team-bio'>
                     <p>
                     Sameer Manchanda is a qualified Chartered Accountant with over three decades of experience in the finance M&E industries.
                     </p>

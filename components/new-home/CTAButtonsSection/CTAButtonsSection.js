@@ -24,7 +24,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5 className='text-white'>AI-Powered Content Strategy App</h5>
+                            <h5 className='text-white'>AI-Powered Content Enabler App</h5>
                             <a href="#aniAiCreatorBuddy" className='ctaButtons'>More info</a>
                         </div>
                     </div>

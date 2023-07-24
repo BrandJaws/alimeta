@@ -725,11 +725,11 @@ text-[#7b7b7b];
   transform: scale(1);
 }
 .icons-section .icon-box .icon.rajesh img {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 .icons-section .icon-box .icon.devdatta img {
-  transform: scale(1.6) translate(0px, 80px);
-  @apply xs:translate-y-20 xs:scale-150;
+  /* transform: scale(1.6) translate(0px, 80px);
+  @apply xs:translate-y-20 xs:scale-150; */
 }
 
 .whatsappButton {
@@ -779,11 +779,35 @@ text-[#7b7b7b];
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 .icons-section .icon-box {
-  @apply 2xl:w-[calc(33.333333%-32px)] lg:w-[calc(33.333333%-22px)] md:min-h-full lg:h-full md:h-[480px] px-4 py-8 text-center flex flex-wrap gap-10 justify-center w-full items-center flex-col;
+  @apply 2xl:w-[calc(33.333333%-32px)] lg:w-[calc(33.333333%-22px)] md:w-[calc(33.333333%-22px)] sm:w-[calc(33.333333%-22px)] 
+  /* md:min-h-full lg:h-full md:h-[480px]  */
+  px-4 py-8 text-center flex flex-wrap gap-10 justify-start w-full items-center flex-col relative ;
 }
+.ArrowAftar{
+  @apply
+  after:absolute 
+  after:left-[calc(50%-15px)]
+  after:bottom-[-1px] 
+
+  after:h-0 after:w-0 after:border-x-[16px] after:border-x-transparent after:border-b-[16px] after:border-b-black
+}
+
+
+
+
 .team-bio p {
-  @apply 2xl:text-[28px] 2xl:leading-[36px] xl:text-[26px] xl:leading-[32px]
-  lg:text-[18px] lg:leading-[22px] md:text-[22px] md:leading-[24px] sm:text-[20px] sm:leading-[26px] text-[24px] leading-[30px] font-[400] mb-6;
+  @apply 
+  
+  lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-white
+  font-roboto 
+  mb-6;
 }
 .single-blog-item .blog-card {
   @apply w-full flex flex-col;
@@ -841,7 +865,7 @@ text-[#7b7b7b];
   @apply !w-full !block;
 }
 .blog-card img {
-  @apply 2xl:!h-[380px] !h-[300px] object-cover !w-full;
+  @apply 2xl:!h-[380px] !h-[300px] object-contain !w-full;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -878,17 +902,23 @@ mark {
 }
 
 .people-page-header {
-  @apply 2xl:h-[90%] xl:h-[90%] lg:h-[auto] h-[auto] overflow-hidden pt-20;
+  @apply 
+  /* 2xl:h-[100vh] xl:h-[100vh] lg:h-[auto]*/
+  h-[auto] overflow-hidden;
 }
 .people-page-icons-section {
-  @apply 2xl:py-28 xl:py-24 lg:py-20 md:py-16 sm:py-14 xs:py-14;
+  @apply py-6;
 }
+
+/* .people-page-header {
+  background:url(../public/images/v3/teamBanner.png);
+  @apply bg-cover bg-center 
+} */
+
 .people-hero-section span {
   @apply 2xl:!h-[600px] lg:!h-[400px] md:!h-[400px] sm:!h-[300px] xs:!h-[250px] !block !w-full;
 }
-.people-page-header .people-hero-section h1 span{
-  display: inline !important;
-}
+
 .people-page-header .people-hero-section h1{
   @apply 2xl:text-[96px] 
   2xl:leading-[90px]
@@ -913,11 +943,28 @@ mark {
   text-black
   text-center
   uppercase
+  
+  2xl:pt-[11.5rem]
 
-  lg:mb-20 md:mb-16 sm:mb-12 xs:mb-0;
+  md:pt-[6rem]
+
+  sm:pt-[4rem]
+
+  pt-[2rem]
+
+  absolute
+  left-auto
+  right-auto
+
+  w-full
+
+  text-center
+
+
+  /* lg:mb-20 md:mb-16 sm:mb-12 xs:mb-0; */
 }
 .people-page-header .people-hero-section h1 span {
-  @apply text-[#ED2127] font-[700] font-roboto
+  @apply text-[#ED2127] font-[700] font-roboto !inline
 }
 
 .team-heading {
@@ -930,11 +977,11 @@ lg:leading-[42px]
 md:text-[36px] 
 md:leading-[38px]
 
-sm:text-[28px] 
-sm:leading-[30px]
+sm:text-[32px] 
+sm:leading-[36px]
 
-text-[24px] 
-leading-[26px] 
+text-[32px] 
+leading-[36px] 
  
 font-[400]
 font-roboto
@@ -942,13 +989,14 @@ text-black
 uppercase
 text-center
 
-py-28
+lg:py-28
+py-16
 
 }
 
 .icon-box .title h1 {
-@apply 2xl:text-[40px] 
-2xl:leading-[42px]
+@apply 2xl:text-[36px] 
+2xl:leading-[38px]
 
 lg:text-[28px] 
 lg:leading-[30px]
@@ -962,7 +1010,11 @@ sm:leading-[26px]
 text-[24px] 
 leading-[26px] 
 
-font-robotoCondensed leading-[36px] pb-8 text-[#ED2127] font-[700]
+font-robotoCondensed text-[#ED2127] font-[700]
+lg:pb-8
+md:pb-4 
+sm:pb-4
+pb-4
 }
 .icon-box .title mark {
   @apply bg-[#facbcc] text-[#ED2127] font-[400];
@@ -988,7 +1040,7 @@ font-[500] font-robotoCondensed
 }
 
 .modalContent {
-  @apply p-24;
+  @apply 2xl:py-[8rem] xl:py-[8rem] md:py-[6rem] py-[4rem] w-full;
   border-bottom:1px solid #fff;
 }
 .modalContent h2{
