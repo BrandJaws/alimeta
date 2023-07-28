@@ -22,8 +22,8 @@ const  Header = () => {
     return (
         <header>
             <nav className='absolute top-0 left-0 right-0 py-6 bg-[#333132] z-[999]'>
-                <div className='container mx-auto flex flex-row justify-center h-full'>
-                    <div className='flex flex-row justify-center items-between w-full'>
+                <div className='container mx-auto flex flex-row justify-between h-full'>
+                    <div className='flex flex-row justify-between items-center w-full'>
                         <Link href='/' className={`${router.asPath === "/" ? 'active' : ''}`}>
                             <a className='inline-flex'>
                                 <Image src={Logo} fill="true" loading='lazy' alt='logo' width={isScreen.width < 767 ? 160 : 200} height={isScreen.width < 767 ? 34 : 43} />
