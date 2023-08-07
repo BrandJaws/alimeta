@@ -108,7 +108,7 @@ export default function Home() {
       <span
         itemprop="thumbnail"
         itemscope
-        itemtype="http://schema.org/ImageObject"
+        itemType="http://schema.org/ImageObject"
       >
         <link itemprop="url" href="https://animeta.ai/og-image.png" />
       </span>
