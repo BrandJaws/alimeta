@@ -28,19 +28,7 @@ function SameerSection() {
                     <p>
                     Sameer Machanda is presently the Non-executive Director and Chairman of DEN Networks. He serves on the Media & Entertainment committees of both CII and FICCI.
                     </p>
-                    <p>
-                    Biswamitra Ray, or Vishu as he is fondly known in the fraternity, joins the company after a long stint at Meta for 8 plus years, where he led Creator Strategy for Facebook and Instagram in India, and managed the platform’s relationship with the country’s most followed and talented creators.
-                    </p>
-                    <p>
-                    As one of the founding members of Meta’s India Media Partnerships team, Vishu has been at the forefront of consulting hundreds of top media partners across TV, digital publishers, creators and talent agencies, helping them build strong and meaningful content communities, and also drive significant business success, on Meta’s platforms. As one of the foremost advocates for creators, Vishu has led several key video product launches, monetizable content programs, pop-cultural campaigns, creator and brand education initiatives - such as ‘Born On Instagram’, ‘India Creator Day’ and many others, that have had an industry-wide impact, galvanizing and shaping
-                    the narrative for the Indian creator economy.
-                    </p>
-                    <p>
-                    Vishu has championed many creator grooming projects & programmes, which have helped 250K+ creators became ‘Mega’ & ‘Macro’ creators.
-                    </p>
-                    <p>
-                    Prior to this stint at Meta, he has worked with popular TV brands such as STAR Movies, STAR World, AXN, and Zoom, among others, and is a Electrical Engineer & an alumnus of MICA.
-                    </p>
+                   
                     {/* <h2>Sameer Manchanda</h2>
                     <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

@@ -450,6 +450,13 @@ max-w-none */
   bg-[#7B7B7B]
   hover:bg-black;
 }
+
+.buttonBox {
+  @apply inline-block bg-white text-[#ED2127] hover:bg-[#9f1b1f] hover:text-white text-[16px] leading-[22px] py-4 px-8 rounded-[16px];
+}
+
+
+
 .ctaButtonSection .card.ctaBox .ctaContentBox {
   @apply gap-[20px] flex content-center flex-col items-start;
 }
@@ -519,16 +526,16 @@ max-w-none */
   
   shadow-xl overflow-hidden bg-[#ED2127];
 }
-/* .gallery .galleryText {
-  @apply bg-[#ED2127]
-} */
+.gallery .galleryText {
+  @apply sm:pb-0 pb-8
+}
 
 .galleryText h2 {
   @apply 2xl:text-[64px]
   2xl:leading-[70px]
 
-  lg:text-[46px]
-  lg:leading-[52px]
+  lg:text-[42px]
+  lg:leading-[48px]
   
   md:text-[34px]
   md:leading-[40px]
@@ -543,7 +550,9 @@ max-w-none */
   font-robotoCondensed
   text-white
   uppercase
-  py-6;
+  sm:py-4
+  py-6
+  px-6;
 }
 
 .section-description p {
@@ -1062,10 +1071,6 @@ font-[500] font-robotoCondensed
   font-[500] font-robotoCondensed
   mb-8
 }
-
-
-
-
 
 .cta-section-title {
   @apply lg:text-[4rem] 

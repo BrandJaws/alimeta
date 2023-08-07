@@ -40,7 +40,9 @@ function Persons() {
             <div className="galleryRow flex flex-wrap items-center">
               <div className="w-full sm:w-1/2 text-center">
                 <div className="galleryText">
-                  <h2>calling all creators</h2>
+                  {/* <h2>calling all creators</h2> */}
+                  <h2>BECOME A VERIFIED ANIMETA CREATOR</h2>
+                  <a href="https://creatorform.animeta.ai/" className="buttonBox" rel="noreferrer" target="_blank">APPLY TO GET VERIFIED</a>
                 </div>
               </div>
               <div className="w-1/2 sm:w-1/4">
