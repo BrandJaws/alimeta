@@ -45,12 +45,12 @@ const AnimetaBrandStarSection = () => {
       <div className="container mx-auto">
         <div className="flex flex-col  gap-[20px] sm:flex-row ctaSectionContent">
           <div className="ctaBoxContent w-full sm:w-3/6 ">
-            <h3>Become <br />an Animeta <br /> Verified creator</h3>
+            <h3>Become an Animeta Verified creator</h3>
             <p>Improve your chances of getting discovered for brand deals, significantly! Build your complete profile, to make your portfolio stand out.</p>
             <a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='ctaButtons'>APPLY FOR VERIFICATION</a>
           </div>
           <div className="ctaBoxContent bg-black text-white w-full sm:w-3/6 ">
-            <h3>MANAGE A <br />ROSTER OF <br />TALENTS?</h3>
+            <h3>MANAGE A ROSTER OF TALENTS?</h3>
             <p>Sign up as a preferred agency partner on Animeta Brandstar, for bulk verification, data management access, and many other benefits. </p>
             <a href="#."   rel="noreferrer" className='ctaButtons'>Click Here</a>
           </div>
