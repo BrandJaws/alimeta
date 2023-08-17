@@ -47,12 +47,12 @@ const AnimetaBrandStarSection = () => {
           <div className="ctaBoxContent w-full sm:w-3/6 ">
             <h3>Become <br />an Animeta <br /> Verified creator</h3>
             <p>Improve your chances of getting discovered for brand deals, significantly! Build your complete profile, to make your portfolio stand out.</p>
-            <a href="https://creatorform.animeta.ai/" target="_blank" className='ctaButtons'>APPLY FOR VERIFICATION</a>
+            <a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='ctaButtons'>APPLY FOR VERIFICATION</a>
           </div>
           <div className="ctaBoxContent bg-black text-white w-full sm:w-3/6 ">
             <h3>MANAGE A <br />ROSTER OF <br />TALENTS?</h3>
             <p>Sign up as a preferred agency partner on Animeta Brandstar, for bulk verification, data management access, and many other benefits. </p>
-            <a href="#animetaBrandStar" className='ctaButtons'>Click Here</a>
+            <a href="#."   rel="noreferrer" className='ctaButtons'>Click Here</a>
           </div>
         </div>
       </div>
