@@ -2,6 +2,7 @@ import React from "react";
 
 const AnimetaBrandStarSection = () => {
   return (
+    <div>
     <section className="animetaContentSections" id="animetaBrandStar">
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row sectionContent">
@@ -28,17 +29,36 @@ const AnimetaBrandStarSection = () => {
               <h3>Influencer Marketing Platform</h3>
               <p>
                 Animeta Brandstar is a first of its kind tech-data enabled
-                influencer marketing, that enables brands to discover and
+                influencer marketing platform, that enables brands to discover and
                 execute campaigns, with the most relevant creators, in an
                 advanced data intuitive way; with a strong focus on ROI &
                 performance metrics.
               </p>
-              <p></p>
+              <a href="#animetaBrandStar" className='ctaButtons'>Request a Demo</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section className="animetaCtaSection mt-16 mb-16">
+      <div className="container mx-auto">
+        <div className="flex flex-col  gap-[20px] sm:flex-row ctaSectionContent">
+          <div className="ctaBoxContent w-full sm:w-3/6 ">
+            <h3>Become <br />an Animeta <br /> Verified creator</h3>
+            <p>Improve your chances of getting discovered for brand deals, significantly! Build your complete profile, to make your portfolio stand out.</p>
+            <a href="https://creatorform.animeta.ai/" target="_blank" className='ctaButtons'>APPLY FOR VERIFICATION</a>
+          </div>
+          <div className="ctaBoxContent bg-black text-white w-full sm:w-3/6 ">
+            <h3>MANAGE A <br />ROSTER OF <br />TALENTS?</h3>
+            <p>Sign up as a preferred agency partner on Animeta Brandstar, for bulk verification, data management access, and many other benefits. </p>
+            <a href="#animetaBrandStar" className='ctaButtons'>Click Here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
   );
 };
 

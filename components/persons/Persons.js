@@ -38,11 +38,12 @@ function Persons() {
         <div className="galleryBox">
           <article>
             <div className="galleryRow flex flex-wrap items-center">
-              <div className="w-full sm:w-1/2 text-center">
+              <div className="w-full sm:w-1/2 text-left">
                 <div className="galleryText">
                   {/* <h2>calling all creators</h2> */}
-                  <h2>BECOME A VERIFIED ANIMETA CREATOR</h2>
-                  <a href="https://creatorform.animeta.ai/" className="buttonBox" rel="noreferrer" target="_blank">APPLY TO GET VERIFIED</a>
+                  <h2>Want to join our Creator Partnerships program?</h2>
+                  <p>Click below to fill up your contact details or ping us on Whatsapp. </p>
+                 <p className="text-right !pb-0"> <a href="https://creatorform.animeta.ai/" className="buttonBox" rel="noreferrer" target="_blank">REQUEST A CALL</a></p>
                 </div>
               </div>
               <div className="w-1/2 sm:w-1/4">
