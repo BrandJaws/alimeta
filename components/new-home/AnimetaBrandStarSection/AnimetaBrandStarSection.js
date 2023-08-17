@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import RequestADemoForm from "../../common/RequestADemoForm";
 
 const AnimetaBrandStarSection = () => {
+  const [show, setShow] = useState(false);
   return (
     <div>
     <section className="animetaContentSections" id="animetaBrandStar">
@@ -34,7 +36,7 @@ const AnimetaBrandStarSection = () => {
                 advanced data intuitive way; with a strong focus on ROI &
                 performance metrics.
               </p>
-              <a href="#animetaBrandStar" className='ctaButtons'>Request a Demo</a>
+              <button onClick={() => setShow(true)} className='ctaButtons'>Request a Demo</button>
             </div>
           </div>
         </div>
@@ -58,6 +60,7 @@ const AnimetaBrandStarSection = () => {
       </div>
     </section>
 
+    {show && <RequestADemoForm show={show} setShow={setShow} />}
     </div>
   );
 };

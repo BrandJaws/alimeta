@@ -11,10 +11,11 @@ import p8 from "../../public/images/person-8.jpg";
 import p9 from "../../public/images/person-9.jpg";
 import p10 from "../../public/images/person-10.jpg";
 import Modal from "../modal/Modal";
-import Slider from "react-slick";
+import RequestACallForm from "../common/RequestACallForm";
 
 function Persons() {
   const [show, setShow] = useState(false);
+  const [isShowForm, setIsShowForm] = useState(false);
 
   const [videoPath, setVideoPath] = useState("");
 
@@ -43,7 +44,7 @@ function Persons() {
                   {/* <h2>calling all creators</h2> */}
                   <h2>Want to join our Creator Partnerships program?</h2>
                   <p>Click below to fill up your contact details or ping us on Whatsapp. </p>
-                 <p className="text-right !pb-0"> <a href="https://creatorform.animeta.ai/" className="buttonBox" rel="noreferrer" target="_blank">REQUEST A CALL</a></p>
+                 <p className="text-right !pb-0"> <button onClick={() => setIsShowForm(true)} className="buttonBox">REQUEST A CALL</button></p>
                 </div>
               </div>
               <div className="w-1/2 sm:w-1/4">
@@ -183,125 +184,8 @@ function Persons() {
           </article>
         </div>
       </div>
-      {/* <section className="mt-16">
-        <Slider {...settings}>
-          <div>
-            <div
-              onClick={() =>
-                setUrl("https://d3e066o7tnnbih.cloudfront.net/video8.mp4")
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p1} alt="p1" /> <h2>Pets</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/new_beauty_converted.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p2} alt="p2" /> <h2>Beauty</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl("https://d3e066o7tnnbih.cloudfront.net/new_home_diy.mp4")
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p3} alt="p3" /> <h2>DIY</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/family-parenting.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p4} alt="p4" /> <h2>Family</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/fashion-lifestyle.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p5} alt="p5" /> <h2>Fashion</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/new_food_beverage.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p6} alt="p6" /> <h2>Food</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl("https://d3e066o7tnnbih.cloudfront.net/new_gaming.mp4")
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p7} alt="p7" /> <h2>gaming</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/new_health_fitness_self_help.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p8} alt="p8" /> <h2>health</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/new_pranks_and_challenges.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p9} alt="p9" /> <h2>Pranks</h2>
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() =>
-                setUrl(
-                  "https://d3e066o7tnnbih.cloudfront.net/new_travel_new.mp4"
-                )
-              }
-              className="category"
-            >
-              <Image className="lazyload" src={p10} alt="p10" /> <h2>travel</h2>
-            </div>
-          </div>
-        </Slider>
-      </section> */}
       {show && <Modal show={show} setShow={setShow} videoPath={videoPath} />}
+      {isShowForm && <RequestACallForm show={isShowForm} setShow={setIsShowForm} />}
     </section>
   );
 }
