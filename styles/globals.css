@@ -472,7 +472,8 @@ max-w-none */
 .ctaBoxContent {
   @apply sm:rounded-[46px]
   rounded-[16px]   
-  px-14
+  px-6
+  lg:px-14
   py-12
   pb-6
   flex flex-col items-end
@@ -481,6 +482,7 @@ max-w-none */
 
 .ctaBoxContent.bg-black {
   @apply bg-[#231F20]
+  justify-between
 }
 
 .ctaBoxContent h3{
@@ -590,13 +592,15 @@ max-w-none */
 
 .animetaContentSections .sectionDescription .ctaButtons {
   @apply text-[#F6F6F6]
-  text-[20px]
+  text-[16px]
+  md:text-[16px]
+  lg:text-[20px]
   inline-block
   mt-8
   font-[400]
   font-roboto
-  px-16
-  py-4
+  px-8
+  py-2
   rounded-full
   bg-[#ED2127]
   hover:bg-black;
@@ -1252,4 +1256,15 @@ font-[500] font-robotoCondensed
   width: 18px;
   height: 28px;
   background-color: transparent;
+}
+
+
+.popupForm input::placeholder {
+  @apply block
+  text-gray-400
+  text-xs
+  font-bold
+  mb-2
+  text-[#7B7B7B]
+  !font-roboto 
 }

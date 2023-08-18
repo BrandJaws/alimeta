@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import RequestADemoForm from "../../common/RequestADemoForm";
+import RequestACallForm from "../../common/RequestACallForm";
 
 const AnimetaBrandStarSection = () => {
   const [show, setShow] = useState(false);
+  const [isShowForm, setIsShowForm] = useState(false);
   return (
     <div>
     <section className="animetaContentSections" id="animetaBrandStar">
@@ -49,18 +51,20 @@ const AnimetaBrandStarSection = () => {
           <div className="ctaBoxContent w-full sm:w-3/6 ">
             <h3>Become an Animeta Verified creator</h3>
             <p>Improve your chances of getting discovered for brand deals, significantly! Build your complete profile, to make your portfolio stand out.</p>
-            <a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='ctaButtons'>APPLY FOR VERIFICATION</a>
+            <a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='ctaButtons'>Apply for Verification</a>
           </div>
           <div className="ctaBoxContent bg-black text-white w-full sm:w-3/6 ">
             <h3>MANAGE A ROSTER OF TALENTS?</h3>
             <p>Sign up as a preferred agency partner on Animeta Brandstar, for bulk verification, data management access, and many other benefits. </p>
-            <a href="#."   rel="noreferrer" className='ctaButtons'>Click Here</a>
+            {/* <a href="#."   rel="noreferrer" className='ctaButtons'>Sign Up</a> */}
+            <button onClick={() => setIsShowForm(true)} className="ctaButtons">Sign Up</button>
           </div>
         </div>
       </div>
     </section>
 
     {show && <RequestADemoForm show={show} setShow={setShow} />}
+      {isShowForm && <RequestACallForm show={isShowForm} setShow={setIsShowForm} />}
     </div>
   );
 };
