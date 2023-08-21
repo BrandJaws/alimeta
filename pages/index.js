@@ -103,14 +103,14 @@ export default function Home() {
       </Head>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" async></Script>
       <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9081900158205152" async crossOrigin="anonymous"></Script>
-      <link itemprop="thumbnailUrl" href="https://animeta.ai/og-image.png" />
+      <link itemProp="thumbnailUrl" href="https://animeta.ai/og-image.png" />
 
       <span
-        itemprop="thumbnail"
-        itemscope
+        itemProp="thumbnail"
+        itemScope
         itemType="http://schema.org/ImageObject"
       >
-        <link itemprop="url" href="https://animeta.ai/og-image.png" />
+        <link itemProp="url" href="https://animeta.ai/og-image.png" />
       </span>
       {/* <Welcome /> */}
       <HeroSection />
