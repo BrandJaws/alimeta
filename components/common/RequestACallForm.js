@@ -10,11 +10,13 @@ function RequestACallForm({ setShow }) {
         fullname: '',
         company: '',
         email: '',
+        phone: ''
     });
     const [errors, setErrors] = useState({
         fullname: '',
         company: '',
         email: '',
+        phone: ''
     });
     const HandleChange = (e, formData, setFormData, errors, setErrors) => {
         useHandleChange(e, formData, setFormData, errors, setErrors);
@@ -39,25 +41,37 @@ function RequestACallForm({ setShow }) {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Headers': '*',
                     },
+                    mode: 'no-cors',
                     body: JSON.stringify(requestData),
                 });
                 if (response.ok) {
-                    setStatus('Thank you for your details. Someone from the Animeta team will shortly get in touch with you.');
+                    setStatus({
+                        status: 200,
+                        message: 'Thank you for your details. Someone from the Animeta team will shortly get in touch with you.'
+                    });
                 } else {
-                    setStatus('Error while submitting form');
+                    setStatus({
+                        status: 403,
+                        message: 'Error while submitting form'
+                    });
                 }
             } catch (error) {
-                setStatus('Error sending the form data: '+ error);
+                setStatus({
+                    status: 500,
+                    message: 'Error sending the form data: '+ error
+                });
             }
         }
     };
     return (
         <>
            <div className='overlay'></div>
-           <section className='modalBox popupForm'>
+           <section className='modalBox'>
                 <button onClick={() => setShow(false)} className='closePopup pr-4 !top-[35px] w-10 h-10'><Image className="lazyload" src={CloseIcon} width={40} height={40} alt="CloseIcon" /></button>
-                <form onSubmit={handleSubmit} className="bg-[#F6F6F6] shadow-md rounded-3xl px-4 sm:px-8 pt-10 pb-10 mb-4 flex flex-col max-w-lg mx-auto">
+                <form onSubmit={handleSubmit} className="bg-[#F6F6F6] shadow-md rounded-3xl px-4 sm:px-8 pt-10 pb-10 mb-4 flex flex-col max-w-lg mx-auto" autoComplete='off'>
                     <h2 className='text-center w-full text-[24px] uppercase mb-8'>Register your interest</h2>
                     <div className="mb-4">
                         <input 
@@ -95,15 +109,16 @@ function RequestACallForm({ setShow }) {
                     <div className="mb-6">
                         <input 
                             className="shadow appearance-none border rounded-[42px] w-full py-3.5 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                            id="number" 
+                            id="phone"
+                            name='phone' 
                             type="number" 
                             placeholder="Mobile/WA Number" />
                     </div>
                     <div className="flex items-center justify-between">
                         <button type='submit' className='ctaButtons !px-10 w-full !py-3 rounded-full !m-0 !bg-[#f00] !text-[16px] !text-[400] hover:!bg-[#000]'>Register Interest</button>
                     </div>
+                    {status && <p className={`text-center w-full mt-6 ${status.code === 200 ? 'text-green-600' : 'text-[#f00]'}`}>{status.message}</p>}
                 </form>
-                {status && <p className='text-sky-600'>{status}</p>}
             </section>
         </>
     )
