@@ -909,7 +909,17 @@ text-[#7b7b7b];
   after:h-0 after:w-0 after:border-x-[16px] after:border-x-transparent after:border-b-[16px] after:border-b-black
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 .team-bio p {
