@@ -3,21 +3,12 @@ import Image from "next/image";
 import CloseIcon from "../../public/images/close-icon.png";
 import useHandleChange from '../../hooks/useHandleChange';
 import { validateField } from '../../utils/helper';
+import { InitialDataForRequestACall } from '../../utils/data';
 
 function RequestACallForm({ setShow }) {
     const [status, setStatus] = useState(null);
-    const [formData, setFormData] = useState({
-        fullname: '',
-        company: '',
-        email: '',
-        phone: ''
-    });
-    const [errors, setErrors] = useState({
-        fullname: '',
-        company: '',
-        email: '',
-        phone: ''
-    });
+    const [formData, setFormData] = useState(InitialDataForRequestACall);
+    const [errors, setErrors] = useState(InitialDataForRequestACall);
     const HandleChange = (e, formData, setFormData, errors, setErrors) => {
         useHandleChange(e, formData, setFormData, errors, setErrors);
     }
@@ -35,32 +26,25 @@ function RequestACallForm({ setShow }) {
         });
         setErrors(updatedErrors);
         if (isValid) {
-            const requestData = { Requestademo: formData };
+            const requestData = { Talentagency: formData };
+            const params = new URLSearchParams(requestData);
             try {
-                const response = await fetch('https://hooks.zapier.com/hooks/catch/4631356/390ug8o/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*',
-                        'Access-Control-Allow-Headers': '*',
-                    },
-                    mode: 'no-cors',
-                    body: JSON.stringify(requestData),
-                });
-                if (response.ok) {
+                const url = 'https://hooks.zapier.com/hooks/catch/4631356/390ug8o/?'+params.toString();
+                const result = await fetch(url).then(response => response.json());
+                if (result.status === 'success') {
                     setStatus({
-                        status: 200,
+                        code: 200,
                         message: 'Thank you for your details. Someone from the Animeta team will shortly get in touch with you.'
                     });
                 } else {
                     setStatus({
-                        status: 403,
+                        code: 403,
                         message: 'Error while submitting form'
                     });
                 }
             } catch (error) {
                 setStatus({
-                    status: 500,
+                    code: 500,
                     message: 'Error sending the form data: '+ error
                 });
             }

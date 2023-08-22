@@ -13,19 +13,33 @@ import blogImg29 from "../public/images/Faisal-Khan-image-01-1.jpg";
 import blogImg30 from "../public/images/638226015414996271.jpg";
 
 export const blogCategories = [
-    {
-        name: "All Topics",
-        slug: "All Topics"
-    },
-    {
-        name: "Corporate PR",
-        slug: "Corporate PR"
-    },
-    {
-        name: "Creator PR",
-        slug: "Creator PR"
-    }
+  {
+      name: "All Topics",
+      slug: "All Topics"
+  },
+  {
+      name: "Corporate PR",
+      slug: "Corporate PR"
+  },
+  {
+      name: "Creator PR",
+      slug: "Creator PR"
+  }
 ]
+
+export const InitialDataForRequestADemo = {
+  fullname: '',
+  company: '',
+  email: '',
+  phone: ''
+}
+
+export const InitialDataForRequestACall = {
+  fullname: '',
+  company: '',
+  email: '',
+  phone: ''
+}
 
 export const news = [
     {
