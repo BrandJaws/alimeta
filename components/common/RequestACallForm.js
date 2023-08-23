@@ -18,19 +18,24 @@ function RequestACallForm({ setShow }) {
         let isValid = true;
         const updatedErrors = {};
         fieldNames.forEach((fieldName) => {
-          const errorMessage = validateField(fieldName, formData[fieldName]);
-          if (errorMessage) {
-            updatedErrors[fieldName] = errorMessage;
-            isValid = false;
-          }
+            const errorMessage = validateField(fieldName, formData[fieldName]);
+            if (errorMessage) {
+                updatedErrors[fieldName] = errorMessage;
+                isValid = false;
+            }
         });
         setErrors(updatedErrors);
         if (isValid) {
-            const requestData = { Talentagency: formData };
+            const requestData = { Talentagency: new URLSearchParams(formData) };
             const params = new URLSearchParams(requestData);
             try {
                 const url = 'https://hooks.zapier.com/hooks/catch/4631356/390ug8o/?'+params.toString();
-                const result = await fetch(url).then(response => response.json());
+                const result = await fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        Talentagency: formData
+                    })
+                }).then(response => response.json());
                 if (result.status === 'success') {
                     setStatus({
                         code: 200,
@@ -43,6 +48,7 @@ function RequestACallForm({ setShow }) {
                     });
                 }
             } catch (error) {
+                console.log(error);
                 setStatus({
                     code: 500,
                     message: 'Error sending the form data: '+ error

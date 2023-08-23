@@ -26,13 +26,16 @@ function RequestADemoForm({ setShow }) {
         });
         setErrors(updatedErrors);
         if (isValid) {
-            const requestData = {
-                Requestademo: new URLSearchParams(formData)
-            };
+            const requestData = { Requestademo: new URLSearchParams(formData) };
             const params = new URLSearchParams(requestData);
             try {
                 const url = 'https://hooks.zapier.com/hooks/catch/4631356/390ba88/?'+params.toString();
-                const result = await fetch(url).then(response => response.json());
+                const result = await fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        Requestademo: formData
+                    })
+                }).then(response => response.json());
                 if (result.status === 'success') {
                     setStatus({
                         code: 200,
