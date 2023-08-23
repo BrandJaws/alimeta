@@ -27,6 +27,9 @@ export const blogCategories = [
   }
 ]
 
+export const successMessage = 'Thank you for your details. Someone from the Animeta team will shortly get in touch with you.'
+export const errorMessage = 'Error while submitting form'
+
 export const InitialDataForRequestADemo = {
   fullname: '',
   company: '',

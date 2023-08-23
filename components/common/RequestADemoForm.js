@@ -3,7 +3,7 @@ import Image from "next/image";
 import CloseIcon from "../../public/images/close-icon.png";
 import { validateField } from '../../utils/helper';
 import useHandleChange from '../../hooks/useHandleChange';
-import { InitialDataForRequestADemo } from '../../utils/data';
+import { InitialDataForRequestADemo, errorMessage, successMessage } from '../../utils/data';
 
 function RequestADemoForm({ setShow }) {
     const [status, setStatus] = useState(null);
@@ -27,7 +27,7 @@ function RequestADemoForm({ setShow }) {
         setErrors(updatedErrors);
         if (isValid) {
             const requestData = {
-                Requestademo: formData
+                Requestademo: new URLSearchParams(formData)
             };
             const params = new URLSearchParams(requestData);
             try {
@@ -36,12 +36,12 @@ function RequestADemoForm({ setShow }) {
                 if (result.status === 'success') {
                     setStatus({
                         code: 200,
-                        message: 'Thank you for your details. Someone from the Animeta team will shortly get in touch with you.'
+                        message: successMessage
                     });
                 } else {
                     setStatus({
                         code: 403,
-                        message: 'Error while submitting form'
+                        message: errorMessage
                     });
                 }
             } catch (error) {
@@ -99,12 +99,14 @@ function RequestADemoForm({ setShow }) {
                             id="phone" 
                             name='phone'
                             type="number" 
+                            value={formData.phone}
+                            onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
                             placeholder="Mobile/WA Number" />
                     </div>
                     <div className="flex items-center justify-between">
                         <button type='submit' className='ctaButtons !px-10 w-full !py-3 rounded-full !m-0 !bg-[#f00] !text-[16px] !text-[400] hover:!bg-[#000]'>Request a Demo</button>
                     </div>
-                    {status && <p className={`text-center w-full mt-6 ${status.code === 200 ? 'text-green-600' : 'text-[#f00]'}`}>{status.message}</p>}
+                    {status && <p className={`text-center w-full mt-6 ${status.code === 200 ? 'text-black' : 'text-[#f00]'}`}>{status.message}</p>}
                 </form>
             </section>
         </>
