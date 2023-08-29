@@ -44,8 +44,8 @@ function Persons() {
                   {/* <h2>calling all creators</h2> */}
                   <h2>Want to join our Creator Partnerships program?</h2>
                   <p>Click below to fill up your contact details or ping us on Whatsapp. </p>
-                 {/* <p className="text-right !pb-0"> <button onClick={() => setIsShowForm(true)} className="buttonBox">Request a Call</button></p> */}
-                 <p className="text-right !pb-0"><a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='buttonBox'>Request a Call</a></p>
+                 <p className="text-right !pb-0"> <button onClick={() => setIsShowForm(true)} className="buttonBox">Request a Call</button></p>
+                 {/* <p className="text-right !pb-0"><a href="https://creatorform.animeta.ai/" target="_blank"  rel="noreferrer" className='buttonBox'>Request a Call</a></p> */}
                 </div>
               </div>
               <div className="w-1/2 sm:w-1/4">

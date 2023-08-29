@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RequestADemoForm from "../../common/RequestADemoForm";
-import RequestACallForm from "../../common/RequestACallForm";
+import SignUpForm from "../../common/SignUpForm";
 
 const AnimetaBrandStarSection = () => {
   const [show, setShow] = useState(false);
@@ -64,7 +64,7 @@ const AnimetaBrandStarSection = () => {
     </section>
 
     {show && <RequestADemoForm show={show} setShow={setShow} />}
-      {isShowForm && <RequestACallForm show={isShowForm} setShow={setIsShowForm} />}
+      {isShowForm && <SignUpForm show={isShowForm} setShow={setIsShowForm} />}
     </div>
   );
 };

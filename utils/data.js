@@ -39,6 +39,12 @@ export const InitialDataForRequestADemo = {
 
 export const InitialDataForRequestACall = {
   fullname: '',
+  email: '',
+  phone: ''
+}
+
+export const InitialDataForSignUp = {
+  fullname: '',
   company: '',
   email: '',
   phone: ''

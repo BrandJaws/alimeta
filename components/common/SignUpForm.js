@@ -3,12 +3,12 @@ import Image from "next/image";
 import CloseIcon from "../../public/images/close-icon.png";
 import useHandleChange from '../../hooks/useHandleChange';
 import { validateField } from '../../utils/helper';
-import { InitialDataForRequestACall, errorMessage, successMessage } from '../../utils/data';
+import { InitialDataForSignUp, errorMessage, successMessage } from '../../utils/data';
 
-function RequestACallForm({ setShow }) {
+function SignUpForm({ setShow }) {
     const [status, setStatus] = useState(null);
-    const [formData, setFormData] = useState(InitialDataForRequestACall);
-    const [errors, setErrors] = useState(InitialDataForRequestACall);
+    const [formData, setFormData] = useState(InitialDataForSignUp);
+    const [errors, setErrors] = useState(InitialDataForSignUp);
     const HandleChange = (e, formData, setFormData, errors, setErrors) => {
         useHandleChange(e, formData, setFormData, errors, setErrors);
     }
@@ -26,10 +26,10 @@ function RequestACallForm({ setShow }) {
         });
         setErrors(updatedErrors);
         if (isValid) {
-            // const requestData = { Talentagency: new URLSearchParams(formData) };
-            const params = new URLSearchParams(formData);
+            const requestData = { Talentagency: new URLSearchParams(formData) };
+            const params = new URLSearchParams(requestData);
             try {
-                const url = 'https://hooks.zapier.com/hooks/catch/4631356/390ugcf/?'+params.toString();
+                const url = 'https://hooks.zapier.com/hooks/catch/4631356/390ug8o/?'+params.toString();
                 const result = await fetch(url, {
                     method: 'POST',
                     body: JSON.stringify({
@@ -62,7 +62,7 @@ function RequestACallForm({ setShow }) {
            <section className='modalBox'>
                 <button onClick={() => setShow(false)} className='closePopup pr-4 !top-[35px] w-10 h-10'><Image className="lazyload" src={CloseIcon} width={40} height={40} alt="CloseIcon" /></button>
                 <form onSubmit={handleSubmit} className="bg-[#F6F6F6] shadow-md rounded-3xl px-4 sm:px-8 pt-10 pb-10 mb-4 flex flex-col max-w-lg mx-auto" autoComplete='off'>
-                    <h2 className='text-center w-full text-[24px] uppercase mb-8'>Request A Call</h2>
+                    <h2 className='text-center w-full text-[24px] uppercase mb-8'>Register your interest</h2>
                     <div className="mb-4">
                         <input 
                             className="shadow appearance-none border rounded-[42px] w-full py-3.5 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
@@ -71,8 +71,19 @@ function RequestACallForm({ setShow }) {
                             type="text" 
                             value={formData.fullname}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Creator Name" />
+                            placeholder="Full Name" />
                         <div className="error text-red-500">{errors.fullname}</div>
+                    </div>
+                    <div className="mb-4">
+                        <input 
+                            className="shadow appearance-none border rounded-[42px] w-full py-3.5 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                            id="company" 
+                            name='company' 
+                            type="text" 
+                            value={formData.company}
+                            onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
+                            placeholder="Brand/Company Name" />
+                        <div className="error text-red-500">{errors.company}</div>
                     </div>
                     <div className="mb-4">
                         <input 
@@ -105,4 +116,4 @@ function RequestACallForm({ setShow }) {
     )
 }
 
-export default RequestACallForm
+export default SignUpForm;
