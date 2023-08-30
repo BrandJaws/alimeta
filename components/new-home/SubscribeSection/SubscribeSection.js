@@ -10,15 +10,15 @@ const SubscribeSection = () => {
           <div className="imageBox  w-full sm:w-3/6">
             <picture>
               <img
-                src="/images/v3/aboutAnimeta.svg"
+                src="/images/v3/creatorBuddy.png"
                 alt="Brand Star"
-                className="object-cover w-full h-full"
+                className="object-cover rounded-[20px] w-full h-full"
               />
             </picture>
           </div>
           <div className="contentBox  w-full sm:w-3/6">
-            <div className="sectionDescription pl-0 pt-10 sm:pt-0 sm:pl-12">
-              <h2>about <br /> animeta</h2>
+            <div className="sectionDescription pl-0 pt-10 pb-24 sm:pt-0 sm:pl-12">
+              <h2>about animeta</h2>
               <p>
                 Animeta is a Singapore based Creator Tech company focused on
                 creating & nurturing digital creators by helping them grow their

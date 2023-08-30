@@ -13,19 +13,42 @@ import blogImg29 from "../public/images/Faisal-Khan-image-01-1.jpg";
 import blogImg30 from "../public/images/638226015414996271.jpg";
 
 export const blogCategories = [
-    {
-        name: "All Topics",
-        slug: "All Topics"
-    },
-    {
-        name: "Corporate PR",
-        slug: "Corporate PR"
-    },
-    {
-        name: "Creator PR",
-        slug: "Creator PR"
-    }
+  {
+      name: "All Topics",
+      slug: "All Topics"
+  },
+  {
+      name: "Corporate PR",
+      slug: "Corporate PR"
+  },
+  {
+      name: "Creator PR",
+      slug: "Creator PR"
+  }
 ]
+
+export const successMessage = 'Thank you for your details. Someone from the Animeta team will shortly get in touch with you.'
+export const errorMessage = 'Error while submitting form'
+
+export const InitialDataForRequestADemo = {
+  fullname: '',
+  company: '',
+  email: '',
+  phone: ''
+}
+
+export const InitialDataForRequestACall = {
+  fullname: '',
+  email: '',
+  phone: ''
+}
+
+export const InitialDataForSignUp = {
+  fullname: '',
+  company: '',
+  email: '',
+  phone: ''
+}
 
 export const news = [
     {

@@ -13,7 +13,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5>Influencer Marketing Platform</h5>
+                            <h5>Influncer marketing platform <br />for Brand and Talent Agency</h5>
                             <a href="#animetaBrandStar" className='ctaButtons'>More info</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5 className='text-white'>AI-Powered Content Enabler App</h5>
+                            <h5 className='text-white'>AI-Powered Content Strategy App</h5>
                             <a href="#aniAiCreatorBuddy" className='ctaButtons'>More info</a>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5>YOU CREATE, <br /> We take care of everything else!</h5>
+                            <h5>YOU CREATE, We take care of everything else!</h5>
                             <a href="#animetaCreatorPartnerships" className='ctaButtons'>More info</a>
                         </div>
                     </div>

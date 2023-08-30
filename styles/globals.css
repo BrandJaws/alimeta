@@ -411,7 +411,11 @@ max-w-none */
   
   lg:rounded-[46px]
   sm:rounded-[20px]
-  rounded-[16px] 
+  rounded-[16px]
+
+  flex
+  flex-col
+  justify-between
   
   lg:px-14
   sm:px-6
@@ -452,10 +456,8 @@ max-w-none */
 }
 
 .buttonBox {
-  @apply inline-block bg-white text-[#ED2127] hover:bg-[#9f1b1f] hover:text-white text-[16px] leading-[22px] py-4 px-8 rounded-[16px];
+  @apply rounded-full inline-block bg-white text-[#ED2127] hover:bg-[#9f1b1f] hover:text-white text-[16px] leading-[22px] py-2 px-12;
 }
-
-
 
 .ctaButtonSection .card.ctaBox .ctaContentBox {
   @apply gap-[20px] flex content-center flex-col items-start;
@@ -463,10 +465,84 @@ max-w-none */
 
 .animetaContentSections .sectionContent {
   @apply sm:rounded-[46px]
-  rounded-[16px] 
-  
+  rounded-[16px]   
   shadow-xl overflow-hidden bg-[#F6F6F6DE];
 }
+
+.ctaBoxContent {
+  @apply sm:rounded-[46px]
+  rounded-[16px]   
+  px-6
+  lg:px-14
+  py-12
+  pb-6
+  flex flex-col items-end
+  shadow-xl overflow-hidden bg-[#F6F6F6DE];
+}
+
+.ctaBoxContent.bg-black {
+  @apply bg-[#231F20]
+  justify-between
+}
+
+.ctaBoxContent h3{
+  @apply 2xl:text-[40px]
+  2xl:leading-[42px]
+
+  xl:text-[30px]
+  xl:leading-[32px]
+
+  lg:text-[26px]
+  lg:leading-[32px]
+
+  sm:text-[24px]
+  sm:leading-[30px]
+
+  text-[18px]
+  leading-[24px]
+  
+  font-[400]
+  tracking-wide
+  uppercase
+  font-robotoCondensed
+  text-black
+  w-full
+  mb-[20px];
+}
+
+.ctaBoxContent p{
+  @apply lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-[#7B7B7B]
+  font-roboto
+  mb-[30px];
+}
+
+.ctaBoxContent .ctaButtons {
+  @apply text-[#F6F6F6]
+  font-[400]
+  font-roboto
+  px-8
+  py-2
+  rounded-full
+  bg-[#7B7B7B]
+  hover:bg-black;
+}
+.ctaBoxContent.bg-black h3{
+  @apply text-white
+}
+
+.ctaBoxContent.bg-black .ctaButtons {
+@apply text-[#ED2127] bg-white hover:bg-[#ED2127] hover:text-[#fff]
+}
+
+
+
 .animetaContentSections .sectionContent.bgBlack {
   @apply bg-black;
 }
@@ -513,8 +589,25 @@ max-w-none */
   text-[#7B7B7B]
   font-roboto;
 }
+
+.animetaContentSections .sectionDescription .ctaButtons {
+  @apply text-[#F6F6F6]
+  text-[16px]
+  md:text-[16px]
+  lg:text-[20px]
+  inline-block
+  mt-8
+  font-[400]
+  font-roboto
+  px-8
+  py-2
+  rounded-full
+  bg-[#ED2127]
+  hover:bg-black;
+}
+
 .animetaContentSections .brandLogo {
-  @apply sm:mb-[80px] 
+  @apply sm:mb-[50px] 
   mb-[30px];
 }
 .appButtons {
@@ -527,21 +620,21 @@ max-w-none */
   shadow-xl overflow-hidden bg-[#ED2127];
 }
 .gallery .galleryText {
-  @apply sm:pb-0 pb-8
+  @apply px-12 py-6
 }
 
 .galleryText h2 {
-  @apply 2xl:text-[64px]
-  2xl:leading-[70px]
+  @apply 2xl:text-[58px]
+  2xl:leading-[62px]
 
-  lg:text-[42px]
-  lg:leading-[48px]
+  lg:text-[32px]
+  lg:leading-[38px]
   
-  md:text-[34px]
-  md:leading-[40px]
+  md:text-[22px]
+  md:leading-[28px]
   
-  sm:text-[28px]
-  sm:leading-[34px]
+  sm:text-[22px]
+  sm:leading-[28px]
 
   text-[22px]
   leading-[28px]
@@ -550,9 +643,24 @@ max-w-none */
   font-robotoCondensed
   text-white
   uppercase
-  sm:py-4
-  py-6
-  px-6;
+  pb-4
+  md:pb-2;
+}
+
+.galleryText p {
+  @apply lg:text-[20px]
+  lg:leading-[26px]
+
+  md:text-[16px]
+  md:leading-[22px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-[#ffffff]
+  font-roboto
+  pb-4;
 }
 
 .section-description p {
@@ -801,7 +909,17 @@ text-[#7b7b7b];
   after:h-0 after:w-0 after:border-x-[16px] after:border-x-transparent after:border-b-[16px] after:border-b-black
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 .team-bio p {
@@ -1148,4 +1266,15 @@ font-[500] font-robotoCondensed
   width: 18px;
   height: 28px;
   background-color: transparent;
+}
+
+
+.popupForm input::placeholder {
+  @apply block
+  text-gray-400
+  text-xs
+  font-bold
+  mb-2
+  text-[#7B7B7B]
+  !font-roboto 
 }
