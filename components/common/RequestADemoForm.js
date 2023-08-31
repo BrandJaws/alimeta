@@ -71,7 +71,7 @@ function RequestADemoForm({ setShow }) {
                             type="text" 
                             value={formData.fullname}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Full Name" />
+                            placeholder="Full Name*" />
                         <div className="error text-red-500">{errors.fullname}</div>
                     </div>
                     <div className="mb-4">
@@ -82,7 +82,7 @@ function RequestADemoForm({ setShow }) {
                             type="text" 
                             value={formData.company}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Brand/Company Name" />
+                            placeholder="Brand/Company Name*" />
                         <div className="error text-red-500">{errors.company}</div>
                     </div>
                     <div className="mb-4">
@@ -93,7 +93,7 @@ function RequestADemoForm({ setShow }) {
                             name='email' 
                             value={formData.email}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Email Address" />
+                            placeholder="Email Address*" />
                         <div className="error text-red-500">{errors.email}</div>
                     </div>
                     <div className="mb-6">
