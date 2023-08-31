@@ -71,7 +71,7 @@ function RequestACallForm({ setShow }) {
                             type="text" 
                             value={formData.fullname}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Creator Name" />
+                            placeholder="Creator Name*" />
                         <div className="error text-red-500">{errors.fullname}</div>
                     </div>
                     <div className="mb-4">
@@ -82,7 +82,7 @@ function RequestACallForm({ setShow }) {
                             name='email' 
                             value={formData.email}
                             onChange={(event) => HandleChange(event, formData, setFormData, errors, setErrors)}
-                            placeholder="Email Address" />
+                            placeholder="Email Address*" />
                         <div className="error text-red-500">{errors.email}</div>
                     </div>
                     <div className="mb-6">
